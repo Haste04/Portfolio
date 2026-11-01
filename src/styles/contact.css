@@ -24,3 +24,22 @@
   #contact .contact-email { font-size: clamp(.95rem, 4.2vw, 1.5rem); }
   #contact .contact-links { gap: .5rem 1.25rem; }
 }
+
+/* Scroll-progress reveal: engine owns opacity (and text translateY). No CSS transitions. */
+#contact[data-contact-motion="active"] [data-contact-item="heading"],
+#contact[data-contact-motion="active"] [data-contact-item="intro"],
+#contact[data-contact-motion="active"] [data-contact-item="links"] {
+  will-change: opacity, transform;
+}
+
+#contact[data-contact-motion="active"] [data-contact-item="mascot"] {
+  will-change: opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #contact [data-contact-item] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
