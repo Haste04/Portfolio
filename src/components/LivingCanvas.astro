@@ -1,0 +1,35 @@
+---
+import '../styles/living-canvas.css';
+interface Props {section:string}
+const {section}=Astro.props;
+const nodes: [number,number][]=[[90,150],[300,260],[510,160],[740,270],[920,150],[180,440],[420,490],[680,440],[890,510],[80,730],[490,770],[920,740]];
+const links: [number,number][]=[[0,1],[1,2],[2,3],[3,4],[0,5],[5,6],[6,7],[7,8],[5,9],[6,10],[8,11]];
+const signals=['M -80 250 C 250 20 680 520 1090 180','M -50 540 C 220 180 700 740 1100 470','M -60 820 C 300 480 780 1020 1100 720'];
+const contours=['M -70 300 C 130 40 310 70 430 250 S 740 530 1070 210','M -80 360 C 150 90 320 130 430 310 S 750 580 1090 270','M -90 430 C 160 160 330 190 430 380 S 770 650 1100 340','M -80 510 C 180 230 340 260 440 450 S 790 720 1100 420','M -70 600 C 170 300 340 330 450 530 S 810 810 1100 510'];
+---
+<div class="living-canvas" data-living-canvas={section} data-running="false" aria-hidden="true" inert>
+ {section==='about'&&<div class="living-light-follow" data-living-target="glow"><div class="living-light-breath"></div></div>}
+ {section==='education'&&<svg class="living-svg living-blueprint" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+  <defs><pattern id="living-blueprint-grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M100 0H0V100" class="living-grid-line"/></pattern></defs>
+  <rect width="1000" height="1000" fill="url(#living-blueprint-grid)" />
+  {Array.from({length:15},(_,i)=><circle data-living-target="node" class="living-blueprint-point" cx={100+(i%5)*200} cy={200+Math.floor(i/5)*300} r="3"/>)}
+ </svg>}
+ {section==='projects'&&<svg class="living-svg living-signals" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+  {signals.map((d,i)=><g><path class="living-track" d={d}/><path data-living-target="path" class="living-signal" style={`--signal-duration:${32+i*7}s;--signal-delay:-${i*9}s`} d={d} pathLength="1000"/></g>)}
+ </svg>}
+ {section==='tech-stack'&&<svg class="living-svg living-network" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+  {links.map(([a,b])=><path data-living-target="path" class="living-link" d={`M${nodes[a]![0]} ${nodes[a]![1]}L${nodes[b]![0]} ${nodes[b]![1]}`}/>)}
+  {nodes.map(([x,y])=><circle data-living-target="node" class="living-node" cx={x} cy={y} r="3.5"/>)}
+ </svg>}
+ {section==='experience'&&<svg class="living-svg living-contours" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+  {contours.map(d=><path data-living-target="path" class="living-contour" d={d}/>)}
+ </svg>}
+ {section==='contact'&&<svg class="living-svg living-rest" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+  {[0,1,2].map(i=><ellipse data-living-target="ripple" class="living-rest-ring" cx="500" cy="560" rx={170+i*95} ry={60+i*38} style={`--ripple-delay:-${i*6}s`}/>)}
+  <ellipse class="living-burst" data-living-burst cx="500" cy="560" rx="220" ry="90"/>
+ </svg>}
+</div>
+<script>
+ import {initLivingCanvas} from '../scripts/living-canvas/controller';
+ initLivingCanvas();
+</script>

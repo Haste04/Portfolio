@@ -1,0 +1,133 @@
+:root {
+  color-scheme: dark;
+  --color-background: #101114;
+  --color-surface: #24262c;
+  --color-text: #f3f1ed;
+  --color-accent: #d88a46;
+  --color-muted: #aaa9a6;
+  --color-border: #393a3f;
+  --color-border-soft: #28292e;
+  --font-display: 'Space Grotesk', 'Arial', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --text-small: 0.75rem;
+  --text-body: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --text-heading: clamp(2.5rem, 1.1rem + 5.5vw, 6.5rem);
+  --text-hero: clamp(3.65rem, 0.8rem + 10.2vw, 10rem);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-section: clamp(4.5rem, 8vw, 8rem);
+  --layout-max: 80rem;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --radius-pill: 999px;
+  --radius-panel: 1.25rem;
+  --border-subtle: 1px solid var(--color-border);
+  --nav-top: 1.25rem;
+  --nav-height: 4rem;
+  --anchor-offset: calc(var(--nav-top) + var(--nav-height) + 1.5rem);
+  --focus-ring: 2px solid var(--color-focus);
+  --motion-fast: 160ms;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root { --gutter: 2rem; }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  :root { --gutter: clamp(2.5rem, 4vw, 3.5rem); }
+}
+@media (min-width: 1440px) {
+  :root { --gutter: 4rem; --space-section: 8rem; }
+}
+@media (max-width: 767px) {
+  :root { --nav-top: 1rem; --nav-height: 3.5rem; --space-section: 4.5rem; }
+}
+
+/* Semantic theme surfaces and illustration treatment. Photo canvases remain intentionally dark. */
+:root {
+  --color-secondary: #c5c8c2;
+  --surface-panel: #1b1d22;
+  --surface-inset: #151619;
+  --surface-input: #202227;
+  --surface-map: #191b20;
+  --surface-hover: #292c32;
+  --surface-selected: #33271f;
+  --surface-selected-hover: #4a3221;
+  --surface-gradient-start: #202228;
+  --surface-gradient-end: #17191d;
+  --surface-project-green: #222a25;
+  --surface-project-blue: #1c2427;
+  --surface-project-paper: #2c2822;
+  --surface-project-withheld: #242225;
+  --color-accent-hover: #e49c60;
+  --color-accent-highlight: #efad74;
+  --color-map-land: #252b31;
+  --color-map-stroke: #4a5057;
+  --color-map-highlight: #494038;
+  --color-map-highlight-stroke: #c09368;
+  --color-map-context: #a5a7ae;
+  --color-map-caption: #b4b5bb;
+  --color-map-compass: #8c8f98;
+  --shadow-color: #000000;
+  --school-logo-filter: grayscale(1) invert(1);
+  --school-logo-blend: screen;
+  --color-surface-secondary: var(--surface-panel);
+  --color-surface-raised: var(--color-surface);
+  --color-divider: var(--color-border);
+  --color-input: var(--surface-input);
+  --color-focus: var(--color-accent);
+  --surface-photo: #101114;
+  --photo-ink: #f3f1ed;
+  --photo-accent: #d88a46;
+}
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-background: #f5f1e9;
+  --color-surface: #ffffff;
+  --color-text: #24262c;
+  --color-accent: #a45826;
+  --color-muted: #625b53;
+  --color-border: #c6b7a5;
+  --color-border-soft: #d9cdbd;
+  --color-secondary: #55504a;
+  --surface-panel: #ffffff;
+  --surface-inset: #eae3d8;
+  --surface-input: #fffdf9;
+  --surface-map: #eae3d8;
+  --surface-hover: #e4d8c8;
+  --surface-selected: #ecd8c0;
+  --surface-selected-hover: #e4c8a8;
+  --surface-gradient-start: #ffffff;
+  --surface-gradient-end: #f0e9df;
+  --surface-project-green: #eaf0e7;
+  --surface-project-blue: #eaf0f3;
+  --surface-project-paper: #efe6d6;
+  --surface-project-withheld: #efe8ed;
+  --color-accent-hover: #87471e;
+  --color-accent-highlight: #9b531e;
+  --color-map-land: #c8d0c9;
+  --color-map-stroke: #78877c;
+  --color-map-highlight: #ddc6a7;
+  --color-map-highlight-stroke: #945a27;
+  --color-map-context: #46534a;
+  --color-map-caption: #4f574f;
+  --color-map-compass: #566458;
+  --shadow-color: #514335;
+  --school-logo-filter: grayscale(1);
+  --school-logo-blend: multiply;
+  --color-border-strong: #ad9478;
+  --color-selected-ink: #87471e;
+  --text-label: .75rem;
+  --shadow-panel: 0 6px 18px color-mix(in srgb,var(--shadow-color) 6%,transparent);
+  --decoration-ink: color-mix(in srgb,var(--color-text) 14%,transparent);
+  --decoration-faint: color-mix(in srgb,var(--color-text) 7%,transparent);
+  --decoration-accent: color-mix(in srgb,var(--color-accent) 26%,transparent);
+  --decoration-accent-soft: color-mix(in srgb,var(--color-accent) 17%,transparent);
+  --orbit-ring: color-mix(in srgb,var(--color-accent) 48%,transparent);
+}
+
+:root { --theme-midnight: #101114; --theme-paper: #f5f1e9; --theme-amber: #d88a46; }

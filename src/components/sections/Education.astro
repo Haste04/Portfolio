@@ -1,0 +1,115 @@
+---
+import { schoolLogoUrl } from '../../../scripts/school-logos.mjs';
+import SectionFrame from '../SectionFrame.astro';
+import { sections } from '../../data/portfolio';
+import { educationEntries, educationPlaces, educationPoint } from '../../data/education';
+import geography from '../../data/philippines-map.json';
+import '../../styles/education.css';
+const pointFor = (id: string) => educationPoint(educationPlaces.find(place => place.id === id)!.coordinates);
+const journey = educationEntries.map(entry => pointFor(entry.place).join(',')).join(' ');
+---
+<SectionFrame section={sections[2]}>
+  <p slot="intro" class="section-introduction">A foundation in Computer Science. A habit of showing up and learning.</p>
+  <div class="education-journey" data-education-journey>
+    <figure class="education-atlas" data-component-reveal="education:0">
+      <div class="education-map-topline"><span class="eyebrow">PH / A learning journey</span><span>{String(educationEntries.length).padStart(2, '0')} stages · 06 places</span></div>
+      <div class="education-map-canvas">
+        <svg class="education-map" viewBox="0 0 600 620" aria-hidden="true" focusable="false">
+          <defs>
+            <pattern id="education-grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="var(--color-text)" stroke-width=".5" /></pattern>
+          </defs>
+          <rect class="education-map-grid" x="0" y="0" width="600" height="620" fill="url(#education-grid)" />
+          <g data-education-camera transform="matrix(1 0 0 1 0 0)">
+          <g class="education-islands">
+            {geography.islands.map(island => <path d={island.path} fill={island.tint} />)}
+          </g>
+          <g class="education-region-labels"><text x="185" y="180">LUZON</text><text x="258" y="315">VISAYAS</text><text x="325" y="555">MINDANAO</text></g>
+          <polyline class="education-route" points={journey} />
+          </g>
+          <g class="education-connectors">
+            {educationPlaces.map(place => {
+              const [x, y] = educationPoint(place.coordinates);
+              return <path class="education-leader" data-map-connector={place.id} data-point-x={x} data-point-y={y} data-label-x={place.callout[0]} data-label-y={place.callout[1]}
+                style={`--place-color: ${place.color}`} d={`M${x} ${y} L${place.callout[0]} ${place.callout[1]}`} />;
+            })}
+          </g>
+          <g data-education-camera transform="matrix(1 0 0 1 0 0)">
+
+          {educationPlaces.map(place => {
+            const [x, y] = educationPoint(place.coordinates);
+            return <g class="education-map-point" data-map-point={place.id} style={`--place-color: ${place.color}`}>
+              <a href={`#education-stage-${educationEntries.find(entry => entry.place === place.id)!.id}`} data-education-pin={place.id} tabindex="-1">
+              <circle cx={x} cy={y} r="18" fill="transparent" pointer-events="all" />
+              <circle class="education-point-halo" cx={x} cy={y} r="13" />
+              <circle class="education-point-core" cx={x} cy={y} r="4" />
+              </a>
+            </g>;
+          })}</g>
+        </svg>
+        <nav class="education-map-hotspots" aria-label="Education locations in the Philippines">
+          {educationPlaces.map(place => {
+            const entries = educationEntries.filter(entry => entry.place === place.id);
+            return <a class="education-hotspot" href={`#education-stage-${entries[0]!.id}`} data-education-place={place.id}
+              aria-label={`${place.label}: ${entries.map(entry => entry.stage).join('; ')}`}
+              aria-controls={entries.map(entry => `education-stage-${entry.id}`).join(' ')}
+              style={`--place-color: ${place.color}; --callout-x: ${place.callout[0] / 6}%; --callout-y: ${place.callout[1] / 6.2}%`}>
+              <span class="education-hotspot-number" aria-hidden="true">{place.steps}</span><span>{place.shortLabel}</span>
+            </a>;
+          })}
+        </nav>
+      </div>
+      <div class="education-map-actions" data-education-camera-controls hidden>
+        <span data-education-view-label>Full Philippines</span>
+        <button type="button" data-education-reset disabled aria-label="Reset map to the full Philippines view">Reset View</button>
+      </div>
+      <figcaption><span class="education-route-key" aria-hidden="true"></span>Follow the numbered chapters. Select a place to explore.<small>City-level locations · outline simplified for display</small></figcaption>
+    </figure>
+    <div class="education-details" data-component-reveal="education:1">
+      <div class="education-location-control" data-education-controls hidden>
+        <label for="education-location">Explore a place</label>
+        <select id="education-location" data-education-location-select>
+          {educationPlaces.map(place => <option value={place.id} selected={place.id === 'cagayan-de-oro'}>{place.label}</option>)}
+        </select>
+      </div>
+      <nav class="education-stage-navigation" aria-label="Education stages" data-education-stage-nav>
+        <ol>
+          {educationEntries.map((entry, index) => <li>
+            <a href={`#education-stage-${entry.id}`} data-education-stage={entry.id} data-stage-place={entry.place}>
+              <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>{entry.stage}
+            </a>
+          </li>)}
+        </ol>
+      </nav>
+      <div class="education-card"><div class="education-panels">
+        {educationEntries.map((entry, index) => {
+          const logo = schoolLogoUrl(entry.logo);
+          const place = educationPlaces.find(place => place.id === entry.place)!;
+          return <article class="education-entry" id={`education-stage-${entry.id}`} data-education-panel={entry.id} data-entry-place={entry.place} aria-labelledby={`school-${entry.id}`}>
+            {logo && <div class="school-watermark" aria-hidden="true">
+              <img class="school-watermark-image" data-education-logo src={logo} alt="" width="384" height="384" loading="lazy" decoding="async" />
+            </div>}
+            <header class="education-entry-topline">
+              <p class="eyebrow"><span class="education-chapter">{String(index + 1).padStart(2, '0')}</span> / {String(educationEntries.length).padStart(2, '0')}<span class="education-chapter-label">Education chapter</span></p>
+            </header>
+            <p class="education-level">{entry.stage}</p>
+            <h3 id={`school-${entry.id}`}>{entry.schoolName}</h3>
+            <p class="education-location"><span aria-hidden="true">↗</span>{place.label}</p>
+            <p class="education-note">{entry.notes}</p>
+            <div class="education-recognition"><h4>Recognition & service</h4>{entry.recognition.length > 0 ? <ul>{entry.recognition.map(item => <li>{item}</li>)}</ul> : <p>No information provided.</p>}</div>
+          </article>;
+        })}
+      </div>
+      <nav class="education-chapter-controls" data-education-chapter-controls aria-label="Chronological education navigation" hidden>
+        <button type="button" data-education-previous disabled><span aria-hidden="true">←</span>Previous</button>
+        <button type="button" data-education-next>Next<span aria-hidden="true">→</span></button>
+      </nav>
+      </div>
+      <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-education-status></p>
+    </div>
+  </div>
+</SectionFrame>
+<script>
+  import { initEducationJourney } from '../../scripts/education';
+  initEducationJourney();
+  window.addEventListener('pageshow', initEducationJourney);
+</script>

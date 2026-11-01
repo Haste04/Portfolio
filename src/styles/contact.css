@@ -1,0 +1,26 @@
+/* Contact: a centered closing composition; mascot transforms remain controller-owned. */
+#contact .section-layout { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
+#contact .section-marker { display: block; }
+#contact .section-index { justify-content: center; padding-top: 0; }
+#contact .section-body { width: 100%; }
+#contact .section-heading { max-width: 18ch; margin-inline: auto; font-size: clamp(2.4rem, 6vw, 5.75rem); }
+#contact .section-introduction { max-width: 64ch; margin: 1.5rem auto 0; text-wrap: pretty; }
+#contact .section-content { margin-top: clamp(1.5rem, 3vw, 3rem); }
+#contact .contact-layout { display: flex; flex-direction: column; align-items: center; gap: clamp(2rem, 4vw, 3.5rem); }
+#contact .resting-stage { position: relative; width: min(100%, 38rem); max-width: none; min-height: 0; margin: 0; align-items: center; gap: 1rem; }
+#contact .resting-stage .fresh-dock { width: 100%; height: clamp(280px, 34vw, 440px); margin: 0; }
+#contact .resting-line { width: 75%; max-width: 25rem; background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--color-accent) 37.647%, transparent), transparent); }
+#contact .resting-caption { font-size: .6875rem; letter-spacing: .02em; }
+#contact .contact-main { width: 100%; max-width: 52rem; text-align: center; }
+#contact .contact-email { font-size: clamp(1rem, 2.8vw, 2.125rem); }
+#contact .contact-links { justify-content: center; gap: .5rem 2rem; margin-top: .75rem; }
+#contact .contact-footer { margin-top: clamp(3rem, 5vw, 5rem); }
+#contact .closing-scene-type { opacity: .2; }
+#contact .closing-scene-halo { opacity: .55; }
+@media (max-width: 767px) {
+  #contact .section-layout { gap: 1rem; }
+  #contact .section-introduction { margin-top: 1.25rem; }
+  #contact .resting-stage .fresh-dock { height: clamp(270px, 78vw, 330px); }
+  #contact .contact-email { font-size: clamp(.95rem, 4.2vw, 1.5rem); }
+  #contact .contact-links { gap: .5rem 1.25rem; }
+}

@@ -1,0 +1,29 @@
+---
+import SectionFrame from '../SectionFrame.astro';
+import CinematicScene from '../CinematicScene.astro';
+import MascotDock from '../MascotDock.astro';
+import { sections } from '../../data/portfolio';
+import '../../styles/contact.css';
+---
+<SectionFrame section={sections[6]}>
+  <CinematicScene slot="scenery" kind="closing" />
+  <p slot="intro" class="section-introduction">Have a project in mind, a question, or an opportunity? Let’s connect.</p>
+  <div class="contact-layout">
+    <div class="resting-stage" data-mascot-anchor="contact"><MascotDock dock="contact" section="contact" /><div class="resting-line"></div><span class="resting-caption">Even curiosity needs a little rest.</span></div>
+    <div class="contact-main">
+      <p class="eyebrow">Start with a hello</p>
+      <a class="contact-email" href="mailto:haggaiestavilla04@gmail.com">haggaiestavilla04@gmail.com <span aria-hidden="true">↗</span></a>
+      <div class="contact-links">
+        <a class="text-link" href="https://www.linkedin.com/in/haggai-estavilla-027702236/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://github.com/Haste04" target="_blank" rel="noopener noreferrer">GitHub <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://www.facebook.com/haggai.estavilla.5" target="_blank" rel="noopener noreferrer">Facebook <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://www.instagram.com/allivatse_iaggah/" target="_blank" rel="noopener noreferrer">Instagram <span class="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+        <a class="text-link resume-link" href="/downloads/Estavilla%20Resume.pdf" download="Estavilla Resume.pdf">Download Résumé <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </div>
+  <footer class="contact-footer">
+    <p>© {new Date().getFullYear()} Haggai P. Estavilla</p>
+    <a class="text-link" href="#home">Back to Top <span aria-hidden="true">↑</span></a>
+  </footer>
+</SectionFrame>

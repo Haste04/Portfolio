@@ -1,0 +1,110 @@
+/* Education only: a small editorial atlas, enhanced from native chapter anchors. */
+#education .section-introduction { max-width: none; }
+#education [hidden] { display: none !important; }
+#education .education-journey { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); align-items: start; gap: clamp(1.5rem, 4vw, 4rem); }
+#education .education-atlas { margin: 0; min-width: 0; border: var(--border-subtle); border-radius: 6px; background: radial-gradient(ellipse at 60% 60%, color-mix(in srgb, var(--color-accent) 3.137%, transparent), transparent 65%), var(--surface-map); }
+#education .education-map-topline { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; padding: 1.25rem 1.5rem 0; }
+#education .education-map-topline > span:last-child { color: var(--color-muted); font-size: .625rem; }
+#education .education-map-canvas { position: relative; aspect-ratio: 600 / 620; }
+#education .education-map { display: block; width: 100%; height: 100%; }
+#education .education-map-grid { opacity: .45; }
+#education .education-islands { stroke: color-mix(in srgb, var(--color-map-stroke) 29.020%, transparent); stroke-width: .8; stroke-linejoin: round; }
+#education .education-region-labels { fill: color-mix(in srgb, var(--color-map-context) 45.098%, transparent); font: 500 11px var(--font-body); letter-spacing: 3px; }
+#education .education-route { fill: none; stroke: color-mix(in srgb, var(--color-accent) 43.922%, transparent); stroke-width: 1.5; stroke-dasharray: 4 5; stroke-linecap: round; stroke-linejoin: round; }
+#education .education-leader { fill: none; stroke: var(--place-color); stroke-width: .8; opacity: .55; }
+#education .education-point-halo { fill: var(--place-color); fill-opacity: .12; stroke: var(--place-color); stroke-opacity: .4; stroke-width: .8; }
+#education .education-point-core { fill: var(--place-color); stroke: var(--color-background); stroke-width: 1.2; }
+#education .education-map-point.is-selected .education-point-halo { fill: var(--color-accent); fill-opacity: .2; stroke: var(--color-accent); stroke-opacity: 1; stroke-width: 2; }
+#education .education-map-point.is-selected .education-point-core { fill: var(--color-accent-highlight); }
+#education .education-map-hotspots { position: absolute; inset: 0; }
+#education .education-hotspot { position: absolute; left: var(--callout-x); top: var(--callout-y); transform: translate(-50%, -50%); display: flex; align-items: center; gap: .45rem; width: clamp(90px, 26%, 150px); min-height: 44px; padding: .5rem .6rem; border: 1px solid color-mix(in srgb, var(--color-text) 12.549%, transparent); border-radius: 4px; background: var(--surface-panel); color: var(--color-text); font-size: .6875rem; line-height: 1.35; }
+#education .education-hotspot-number { flex: 0 0 auto; color: var(--place-color); font: 500 .5625rem / 1.4 var(--font-body); }
+#education .education-hotspot[aria-current='location'] { border-color: var(--color-accent); background: var(--surface-selected); box-shadow: 0 0 18px color-mix(in srgb, var(--color-accent) 6.275%, transparent); }
+#education .education-hotspot:hover { border-color: var(--place-color); background: var(--surface-hover); }
+#education .education-atlas figcaption { padding: 1.25rem 1.5rem; border-top: 1px solid var(--color-border-soft); color: var(--color-muted); font-size: .6875rem; line-height: 1.7; }
+#education .education-atlas figcaption small { display: block; padding-top: .35rem; font-size: .5625rem; color: var(--color-muted); }
+#education .education-route-key { display: inline-block; width: 1.5rem; margin-inline-end: .5rem; border-top: 1px dashed var(--color-accent); vertical-align: middle; }
+#education .education-details { min-width: 0; }
+#education .education-location-control { display: grid; gap: .625rem; }
+#education .education-location-control label { color: var(--color-muted); font-size: .6875rem; }
+#education .education-location-control select { display: block; width: 100%; min-width: 0; min-height: 48px; padding: .75rem 2rem .75rem .875rem; border: var(--border-subtle); border-radius: 4px; background: var(--surface-input); color: var(--color-text); font: inherit; font-size: .875rem; color-scheme: inherit; }
+#education .education-stage-navigation ol { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 1rem 0 1.5rem; }
+#education .education-stage-navigation li { min-width: 0; max-width: 100%; }
+#education .education-stage-navigation a { display: flex; align-items: center; gap: .625rem; min-height: 44px; padding: .65rem .875rem; border: 1px solid var(--color-border); border-radius: 4px; font-size: .75rem; line-height: 1.5; }
+#education .education-stage-navigation a > span { color: var(--color-muted); font-size: .625rem; }
+#education .education-stage-navigation a[aria-current='step'] { color: var(--color-accent); border-color: color-mix(in srgb, var(--color-accent) 37.647%, transparent); background: color-mix(in srgb, var(--color-accent) 5.098%, transparent); }
+#education .education-stage-navigation a:hover { border-color: var(--color-accent); }
+#education .education-entry { position: relative; isolation: isolate; overflow: clip; padding: clamp(1.5rem, 3vw, 2.5rem); border: var(--border-subtle); border-top-color: color-mix(in srgb, var(--color-accent) 43.922%, transparent); background: var(--surface-input); border-radius: 6px; scroll-margin-top: var(--anchor-offset); }
+#education .education-entry + .education-entry { margin-top: 1rem; }
+#education [data-enhanced] .education-entry { margin-top: 0; }
+/* Centered school seal: monochrome screen blending removes white image canvases without editing artwork. */
+#education .school-watermark { position: absolute; z-index: 0; inset: 0; overflow: clip; display: grid; place-items: center; border-radius: inherit; opacity: .06; mix-blend-mode: var(--school-logo-blend); pointer-events: none; user-select: none; }
+#education .school-watermark-image { display: block; width: min(86%, 28rem); height: auto; aspect-ratio: 1; object-fit: contain; filter: var(--school-logo-filter); }
+/* Aloran's source seal has an uneven outer cut; crop its display without changing the artwork. */
+#education .education-entry[data-entry-place='aloran'] .school-watermark-image { clip-path: circle(50% at 50% 50%); }
+#education .education-entry > :not(.school-watermark) { position: relative; z-index: 1; }
+#education .education-entry-topline { display: flex; align-items: start; justify-content: flex-end; min-height: 2.75rem; }
+#education .education-entry-topline .eyebrow { margin-top: .25rem; text-align: right; }
+#education .education-chapter { font: 500 1.5rem / 1 var(--font-display); color: var(--color-accent); letter-spacing: -.03em; }
+#education .education-chapter-label { display: block; padding-top: .5rem; font-size: .5625rem; letter-spacing: .08em; }
+#education .education-level { margin: 1.25rem 0 .875rem; color: var(--color-accent); font-size: .8125rem; line-height: 1.6; }
+#education .education-entry h3 { margin: 0; font: 500 clamp(1.75rem, 2.8vw, 2.5rem) / 1.2 var(--font-display); letter-spacing: -.04em; overflow-wrap: anywhere; }
+#education .education-location { display: flex; gap: .625rem; align-items: baseline; margin: 1rem 0 0; font-size: .8125rem; color: var(--color-muted); }
+#education .education-location > span { color: var(--color-accent); }
+#education .education-note { margin: 1.5rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--color-border); color: var(--color-muted); font-size: .9375rem; line-height: 1.8; }
+#education .education-recognition { margin-top: 1.75rem; }
+#education .education-recognition h4 { margin: 0 0 1rem; color: var(--color-text); font-size: .75rem; font-weight: 500; }
+#education .education-recognition ul { display: grid; gap: .75rem; padding: 0; margin: 0; list-style: none; }
+#education .education-recognition li { display: grid; grid-template-columns: .35rem minmax(0, 1fr); gap: .65rem; color: var(--color-muted); font-size: .8125rem; line-height: 1.65; }
+#education .education-recognition li::before { content: ''; width: 4px; height: 4px; margin-top: .55rem; border-radius: 50%; background: var(--color-accent); }
+@media (max-width: 1023px) {
+  #education .education-journey { grid-template-columns: minmax(0, 1fr); gap: 2rem; max-width: 48rem; margin-inline: auto; }
+}
+@media (max-width: 767px) {
+  #education .education-map-topline { padding: 1rem 1rem 0; }
+  #education .education-map-topline .eyebrow { font-size: .5625rem; }
+  #education .education-atlas figcaption { padding: 1rem; }
+  #education .education-hotspot { gap: .3rem; padding: .4rem; font-size: .625rem; }
+  #education .education-hotspot-number { font-size: .5rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #education .education-hotspot, #education .education-stage-navigation a { transition: background-color 160ms ease, border-color 160ms ease; }
+  #education [data-enhanced] .education-entry { animation: education-panel-in 180ms ease both; }
+}
+html:has([data-fresh-pause][aria-pressed='true']) #education .education-entry, html:has(#fresh-companion[data-paused='true']) #education .education-entry { animation: none; }
+@keyframes education-panel-in { from { opacity: .65; } to { opacity: 1; } }
+
+/* Refinement: interactive camera owns SVG geometry only; labels stay at readable screen sizes. */
+#education .education-map-canvas { overflow: clip; }
+#education .education-map-hotspots { pointer-events: none; }
+#education .education-hotspot { pointer-events: auto; }
+#education .education-hotspot:focus-visible { outline-offset: -3px; }
+#education [data-education-pin] { cursor: pointer; }
+#education [data-enhanced] .education-map-point:not(.is-selected) { opacity: .55; }
+#education [data-map-view='zoomed'] .education-hotspot:not([aria-current]) { opacity: .85; }
+#education .education-map-actions { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .25rem 1.25rem .75rem; }
+#education .education-map-actions > span { color: var(--color-muted); font-size: .625rem; }
+#education .education-map-actions button, #education .education-chapter-controls button { min-height: 44px; padding: .6rem 1rem; border: 1px solid var(--color-border); border-radius: 4px; background: var(--color-surface); color: var(--color-text); font: 500 .75rem / 1.5 var(--font-body); cursor: pointer; }
+#education .education-map-actions button:hover:enabled, #education .education-chapter-controls button:hover:enabled { border-color: var(--color-accent); color: var(--color-accent); }
+#education button:disabled { opacity: .45; cursor: default; }
+#education [data-enhanced] .education-card { overflow: clip; background: var(--surface-input); border: var(--border-subtle); border-top-color: color-mix(in srgb, var(--color-accent) 43.922%, transparent); border-radius: 6px; }
+#education [data-enhanced] .education-panels { display: grid; }
+/* Stacked, invisible chapters reserve the tallest card without layout reads or clipping. */
+#education [data-enhanced] .education-entry { grid-area: 1 / 1; min-width: 0; margin: 0; border: 0; background: var(--surface-input); }
+#education [data-enhanced] .education-entry.is-inactive { visibility: hidden; pointer-events: none; animation: none; }
+#education .education-recognition > p { margin: 0; color: var(--color-muted); font-size: .8125rem; }
+#education .education-chapter-controls { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: 1.25rem clamp(1.5rem, 3vw, 2.5rem); border-top: 1px solid var(--color-border); }
+#education .education-chapter-controls button { display: inline-flex; align-items: center; gap: .875rem; }
+@media (max-width: 767px) {
+  #education .education-map-actions { padding-inline: 1rem; }
+  #education .education-chapter-controls { padding-inline: 1.25rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  #education [data-enhanced] .education-entry:not(.is-inactive) { animation: education-panel-in 180ms ease both; }
+}
+html:has([data-fresh-pause][aria-pressed='true']) #education [data-enhanced] .education-entry,
+html:has(#fresh-companion[data-paused='true']) #education [data-enhanced] .education-entry { animation: none; }
+
+
+/* SVG pointer focus uses the selected halo; keyboard labels retain their visible outline. */
+#education [data-education-pin]:focus { outline: none; }

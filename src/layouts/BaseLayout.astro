@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+import '../styles/portfolio.css';
+import '../styles/cinematic.css';
+import '../styles/theme.css';
+import ThemeEmblem from '../components/ThemeEmblem.astro';
+import {themeInitScript} from '../scripts/theme-preference';
+import { portfolio } from '../data/portfolio';
+import branding from '../data/branding.json';
+const faviconUrl=branding.favicon.output+'?v='+branding.favicon.sha256.slice(0,12);
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = `${portfolio.name} — ${portfolio.title}`,
+  description = portfolio.description,
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#101114" />
+    <script is:inline set:html={themeInitScript} />
+    <title>{title}</title>
+    <link rel="icon" type="image/png" sizes="64x64" href={faviconUrl} />
+    <link rel="preload" href="/fonts/space-grotesk-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <slot />
+    <ThemeEmblem />
+    <script>
+      import { initComponentReveals } from '../scripts/component-reveals';
+      initComponentReveals();
+    </script>
+  </body>
+</html>

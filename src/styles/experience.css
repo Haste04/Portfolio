@@ -1,0 +1,102 @@
+/* Experience only: page-depth wrappers and interactive view transforms are independent. */
+#experience .section-introduction{max-width:none}
+#experience [hidden]{display:none!important}
+#experience .experience-showcase{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+#experience .experience-profile{min-width:0;padding:clamp(1.25rem,2.5vw,2rem);border:1px solid var(--color-border);border-top-color:color-mix(in srgb, var(--color-accent) 40.000%, transparent);background:linear-gradient(145deg,var(--surface-gradient-start),var(--surface-gradient-end));border-radius:8px}
+#experience .experience-period{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.5rem;font-size:.625rem}
+#experience .experience-company{margin:0;font:500 clamp(1.4rem,2.25vw,2.25rem)/1.18 var(--font-display);letter-spacing:-.035em}
+#experience .experience-company-identity{display:flex;align-items:center;gap:1rem;margin:0 0 .875rem;min-width:0;min-height:calc(clamp(1.9rem,3.4vw,3rem) * 2.24)}
+#experience .experience-company-mark{display:grid;place-items:center;flex:0 0 128px;width:128px;height:56px}
+#experience .experience-company-mark img{display:block;width:100%;height:100%;object-fit:contain}
+#experience .experience-company-mark svg{width:36px;height:36px;color:var(--color-accent)}
+#experience .experience-company{min-width:0;overflow-wrap:anywhere}
+#experience .experience-role{margin:0 0 .75rem;color:var(--color-text);font:500 clamp(1rem,1.5vw,1.15rem)/1.5 var(--font-display)}
+#experience .experience-location{display:flex;gap:.5rem;margin:0;color:var(--color-muted);font-size:.75rem;line-height:1.7}
+#experience .experience-location>span{color:var(--color-accent)}
+#experience .experience-overview{margin:1.25rem 0 1.75rem;font-size:.875rem;line-height:1.85;color:var(--color-muted)}
+#experience .experience-work-label{font-size:.625rem;margin:0 0 1rem;color:var(--color-accent)}
+#experience .experience-contributions details{padding-inline:.625rem;margin-inline:-.625rem;border-left:2px solid transparent}
+#experience .experience-contributions details[open]{border-left-color:var(--color-accent);background:linear-gradient(90deg,color-mix(in srgb, var(--color-accent) 3.922%, transparent),transparent)}
+#experience .experience-contributions summary:hover .experience-entry-title{color:var(--color-accent)}
+#experience .experience-contributions summary{display:flex;gap:.75rem;min-height:76px;padding:1rem 0;font-size:.9375rem}
+#experience .experience-entry-number{color:var(--color-accent);font-size:.625rem;align-self:start;padding-top:.25rem}
+#experience .experience-entry-title{flex:1;min-width:0;line-height:1.5;font-weight:500}
+#experience .experience-summary-note{font-size:.6875rem;line-height:1.6;margin-top:.25rem}
+#experience .experience-contributions details>p{font-size:.8125rem;padding:0 0 1.25rem 1.6rem}
+#experience .experience-visual-depth{min-width:0}
+#experience .experience-atlas{border:1px solid var(--color-border);border-top-color:color-mix(in srgb, var(--color-accent) 40.000%, transparent);border-radius:8px;background:var(--surface-map);overflow:clip}
+#experience .experience-view{min-width:0;padding:clamp(1rem,2vw,1.75rem);display:flex;flex-direction:column}
+#experience .experience-visual-header{display:flex;flex-wrap:wrap;gap:1rem;align-items:start;justify-content:space-between}
+#experience .experience-visual-header .eyebrow{font-size:.625rem;margin:0 0 .75rem}
+#experience .experience-visual-header h3{font:500 clamp(1.6rem,2.5vw,2.25rem)/1.15 var(--font-display);letter-spacing:-.045em;margin:0}
+#experience .experience-cebu-map{display:block;width:100%;min-height:0;height:auto;flex:1;overflow:hidden}
+#experience .experience-map-grid{opacity:.14}
+#experience .experience-coast{fill:var(--color-map-land);stroke:var(--color-map-stroke);stroke-width:1.1;vector-effect:non-scaling-stroke}
+#experience .experience-coast.is-cebu{fill:var(--color-map-highlight);stroke:var(--color-map-highlight-stroke);stroke-width:1.4}
+#experience .experience-map-region{fill:color-mix(in srgb, var(--color-text) 15.686%, transparent);font:500 34px var(--font-display);letter-spacing:12px}
+#experience .experience-map-context{fill:var(--color-map-context);font:400 13px var(--font-body);letter-spacing:2px}
+#experience .experience-map-leader{fill:none;stroke:color-mix(in srgb, var(--color-accent) 46.667%, transparent);stroke-width:1.2}
+#experience .experience-city-label{fill:var(--color-text);font:500 26px var(--font-display);paint-order:stroke;stroke:var(--surface-map);stroke-width:4px;stroke-linejoin:round}
+#experience .experience-city-caption{fill:var(--color-map-caption);font:400 15px var(--font-body)}
+#experience .experience-map-compass{fill:none;stroke:var(--color-map-compass);stroke-width:1.2}
+#experience .experience-city-aura{fill:color-mix(in srgb, var(--color-accent) 3.529%, transparent);stroke:color-mix(in srgb, var(--color-accent) 16.863%, transparent);stroke-width:1}
+#experience .experience-city-halo{fill:color-mix(in srgb, var(--color-accent) 14.118%, transparent);stroke:color-mix(in srgb, var(--color-accent-highlight) 81.569%, transparent);stroke-width:1.6}
+#experience .experience-city-pin{fill:var(--color-accent-highlight);stroke:var(--surface-gradient-end);stroke-width:3}
+#experience .experience-cebu-map a{cursor:pointer;touch-action:pan-y pinch-zoom}
+#experience .experience-cebu-map a:focus-visible{outline:none}
+#experience .experience-cebu-map a:focus-visible .experience-city-halo{stroke:var(--color-text);stroke-width:3}
+/* Balance the removed 52px CTA space around the location label; keep map and preview geometry fixed. */
+#experience .experience-map-footer{margin-top:.75rem;flex-shrink:0;border-top:1px solid var(--color-border);padding-block:calc(1rem + 26px) 26px}
+#experience .experience-map-footer>p{margin:0 0 1rem;font-size:.8125rem;line-height:1.8}
+#experience .experience-map-footer small{display:block;color:var(--color-muted);font-size:.625rem}
+#experience .experience-coming-soon{display:block;margin-top:.625rem;color:var(--color-muted);font-size:.625rem}
+#experience [data-experience-enhanced] .experience-atlas{position:relative;height:clamp(40rem,56vw,48rem)}
+#experience [data-experience-enhanced] .experience-view{position:absolute;inset:0}
+#experience .experience-filmstrip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.625rem;margin-top:1rem;flex-shrink:0}
+#experience .experience-filmstrip>a{position:relative;display:block;height:clamp(64px,6vw,86px);min-width:0;border:1px solid var(--color-border);border-radius:5px;overflow:hidden;background:var(--color-background);transition:border-color 160ms}
+#experience .experience-filmstrip>a:hover{border-color:var(--color-accent)}
+#experience .experience-filmstrip img{display:block;width:100%;height:100%;object-fit:cover}
+#experience .experience-filmstrip span{position:absolute;right:5px;bottom:5px;padding:2px 5px;border-radius:3px;background:color-mix(in srgb, var(--surface-photo) 85.098%, transparent);color:var(--photo-ink);font-size:.5625rem}
+#experience .experience-back{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;font-size:.6875rem;color:var(--color-text)}
+#experience .experience-back:hover{color:var(--color-accent)}
+#experience .experience-gallery-empty{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem .75rem}
+#experience .experience-gallery-empty>svg{width:88px;height:80px;fill:none;stroke:color-mix(in srgb, var(--color-accent) 46.667%, transparent);stroke-width:1;margin-bottom:1.5rem}
+#experience .experience-gallery-empty .eyebrow{font-size:.5625rem;line-height:1.8;margin:0 0 .75rem}
+#experience .experience-gallery-empty h4{margin:0 0 1rem;font:500 clamp(1.7rem,3vw,2.5rem)/1.15 var(--font-display);letter-spacing:-.05em}
+#experience .experience-gallery-empty>p:last-child{max-width:32ch;font-size:.8125rem;color:var(--color-muted);line-height:1.9;margin:0}
+#experience .experience-gallery-content{display:flex;flex-direction:column;min-height:0;flex:1;margin-top:1.5rem}
+#experience .experience-photo{display:flex;flex-direction:column;min-height:0;flex:1;margin:0}
+#experience .experience-photo-stage{min-height:0;flex:1;display:grid;place-items:center;background:var(--surface-photo);border:1px solid var(--color-border);border-radius:4px;overflow:hidden}
+#experience .experience-photo-stage img{width:100%;height:100%;min-height:0;object-fit:contain}
+#experience .experience-photo-stage>p{font-size:.8125rem;line-height:1.8;padding:1.5rem;color:var(--photo-ink)}
+#experience .experience-photo figcaption{min-height:2.5rem;padding-top:.75rem;color:var(--color-muted);font-size:.6875rem;line-height:1.7}
+#experience .experience-photo-controls{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+#experience .experience-photo-controls button{width:44px;height:44px;border:1px solid var(--color-border);border-radius:50%;background:var(--color-surface);color:var(--color-text);cursor:pointer}
+#experience .experience-photo-controls button:disabled{opacity:.4;cursor:default}
+#experience [data-experience-counter]{color:var(--color-accent);font-size:.75rem;letter-spacing:.1em}
+#experience .experience-thumbnails{display:flex;gap:.5rem;overflow-x:auto;padding:.75rem .125rem .25rem;flex-shrink:0}
+#experience .experience-thumbnails>:is(a,button){display:grid;place-items:center;flex:0 0 72px;min-height:56px;padding:3px;border:1px solid var(--color-border);border-radius:4px;background:var(--color-background);color:var(--color-text);font:500 .75rem var(--font-body);cursor:pointer}
+#experience .experience-thumbnails img{width:64px;height:48px;object-fit:contain}
+#experience .experience-thumbnails [aria-pressed='true']{border-color:var(--color-accent)}
+/* Retain the previous identity-row footprint so the map does not move when stacked. */
+@media(min-width:768px) and (max-width:1023px){#experience .experience-company-identity{min-height:56px}}
+@media(max-width:1023px){
+ #experience .experience-showcase{grid-template-columns:minmax(0,1fr);max-width:46rem;margin-inline:auto;gap:1.5rem}
+ #experience [data-experience-enhanced] .experience-atlas{height:42rem}
+}
+@media(max-width:767px){
+ #experience .experience-profile{padding:1.25rem}
+ #experience .experience-company-mark{flex-basis:96px;width:96px;height:48px}
+ #experience .experience-company-identity{gap:.75rem;margin-top:0;min-height:calc(clamp(1.8rem,7vw,2.5rem) * 2.24)}
+ #experience .experience-filmstrip{gap:.5rem;margin-top:.75rem}
+ #experience .experience-filmstrip>a{height:60px}
+ #experience .experience-company{font-size:clamp(1.1rem,5.5vw,1.375rem)}
+ #experience [data-experience-enhanced] .experience-atlas{height:36rem}
+ #experience .experience-visual-header h3{font-size:1.6rem}
+ #experience .experience-gallery-header{gap:.5rem}
+ #experience .experience-gallery-header>div{flex-basis:100%}
+}
+
+
+@media(max-width:359px){#experience .experience-company-identity{min-height:96.75px}}
+@media(prefers-reduced-motion:reduce){#experience .experience-filmstrip>a{transition:none}}

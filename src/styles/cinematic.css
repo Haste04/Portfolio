@@ -1,0 +1,125 @@
+/* Phase 4. Static composition is the baseline; JavaScript never owns mascot geometry. */
+.portfolio-section { position: relative; isolation: isolate; overflow-x: clip; }
+.portfolio-section > .content-container { position: relative; z-index: 2; }
+.cinematic-scene, .section-scenery { position: absolute; inset: 0; overflow: clip; pointer-events: none; z-index: -1; }
+.scene-grid { position: absolute; inset: 0 -5%; background: linear-gradient(90deg, transparent calc(50% - .5px), color-mix(in srgb, var(--color-text) 3.137%, transparent) 50%, transparent calc(50% + .5px)); background-size: 25% 100%; mask-image: linear-gradient(transparent, var(--shadow-color) 30%, var(--shadow-color) 65%, transparent); }
+.scene-halo { position: absolute; width: min(54rem, 75vw); aspect-ratio: 1; border: 1px solid color-mix(in srgb, var(--color-accent) 37.647%, transparent); border-radius: 50%; background: radial-gradient(ellipse at 50% 50%, color-mix(in srgb, var(--color-accent) 4.314%, transparent), transparent 65%); }
+.scene-halo > span { position: absolute; inset: 14%; border: 1px solid color-mix(in srgb, var(--color-accent) 18.824%, transparent); border-radius: 50%; }
+.hero-scene-halo { left: 52%; top: -8%; }
+.scene-type { position: absolute; margin: 0; width: max-content; font: 600 clamp(6rem, 20vw, 23rem)/.85 var(--font-display); letter-spacing: -.075em; color: transparent; -webkit-text-stroke: 1px color-mix(in srgb, var(--color-text) 14.902%, transparent); }
+.hero-scene-type { left: 1%; top: 32%; bottom: auto; }
+.scene-horizon { position: absolute; inset: 0; }
+.scene-horizon > span { position: absolute; display: block; height: 1px; background: color-mix(in srgb, var(--color-accent) 31.373%, transparent); width: 34%; left: 4%; top: 16%; }
+.scene-horizon > span:last-child { left: 60%; top: 74%; width: 36%; }
+.scene-horizon > span::after { content: ''; position: absolute; right: 0; top: -2px; width: 5px; height: 5px; border-radius: 50%; background: var(--color-accent); }
+.hero-section { padding-bottom: clamp(6rem, 12vw, 11rem); }
+.hero-section .section-layout { row-gap: clamp(3rem, 5vw, 5rem); }
+.hero-name { position: relative; }
+.section-heading { max-width: 16ch; word-spacing: .12em; }
+.section-echo { position: absolute; top: clamp(4rem, 9vw, 9rem); right: 1%; font: 500 clamp(11rem, 27vw, 31rem)/.8 var(--font-display); letter-spacing: -.08em; color: transparent; -webkit-text-stroke: 1px color-mix(in srgb, var(--color-text) 9.412%, transparent); }
+.section-hairline { position: absolute; top: 5rem; left: var(--gutter); width: min(18rem, 30vw); height: 1px; background: linear-gradient(90deg, color-mix(in srgb, var(--color-accent) 31.373%, transparent), transparent); }
+.scroll-cue { display: inline-flex; align-items: center; gap: 1rem; margin-top: 2rem; min-height: 44px; font-size: .625rem; text-transform: uppercase; letter-spacing: .12em; color: var(--color-muted); }
+.scroll-cue::before { content: ''; width: 36px; height: 1px; background: var(--color-accent); }
+.scroll-cue > span { color: var(--color-accent); font-size: 1rem; }
+.scroll-cue:hover { color: var(--color-text); }
+#projects { background: linear-gradient(180deg, var(--color-background), var(--surface-inset) 25%, var(--color-background) 100%); }
+#projects .section-heading { max-width: 13ch; }
+.project-collection { gap: clamp(6rem, 13vw, 12rem); }
+.project-showcase { border-top-color: color-mix(in srgb, var(--color-text) 16.078%, transparent); }
+.project-visual { border-radius: 5px; box-shadow: 0 15px 30px color-mix(in srgb, var(--shadow-color) 16.863%, transparent); border-color: color-mix(in srgb, var(--color-map-context) 25.098%, transparent); }
+.project-image-inset { overflow: clip; }
+.project-image-plane { position: relative; transform-origin: center; }
+.project-image { border-color: color-mix(in srgb, var(--color-text) 18.824%, transparent); }
+.project-showcase:focus-within .project-visual { border-color: color-mix(in srgb, var(--color-accent) 50.196%, transparent); }
+.project-progress { position: absolute; inset: auto 0 0; height: 1px; display: block; background: var(--color-accent); transform-origin: left; }
+.project-information { margin-top: clamp(2rem, 4vw, 4rem); column-gap: clamp(2rem, 7vw, 7rem); }
+.project-information h3 { font-size: clamp(2.5rem, 5.2vw, 4.75rem); max-width: 16ch; }
+.project-lifevent, .project-philchan-cebu { display: block; }
+.project-lifevent .project-information, .project-philchan-cebu .project-information { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); margin-top: clamp(2rem, 4vw, 4rem); }
+.project-lifevent .project-description-block, .project-philchan-cebu .project-description-block { margin-top: 0; }
+.project-seek-first-books .project-visual { width: 100%; margin-left: 0; background: var(--surface-project-paper); }
+.project-philchan-cebu .project-visual { background: var(--surface-project-withheld); }
+.project-philchan-cebu .media-withheld { min-height: clamp(280px, 30vw, 430px); }
+.project-philchan-cebu .project-information { grid-column: auto; grid-row: auto; }
+.case-study { margin-top: 2.5rem; }
+.case-study > summary:hover { color: var(--color-accent); }
+.constellation-stage { position: relative; }
+.constellation-stage::before { content: ''; position: absolute; inset: 0; border: 1px solid color-mix(in srgb, var(--color-accent) 10.196%, transparent); border-radius: 50%; transform: scale(.84); pointer-events: none; }
+.technology-constellation { overflow: visible; }
+.constellation-orbits path { stroke: color-mix(in srgb, var(--color-accent) 43.922%, transparent); }
+.technology-constellation a circle { stroke: var(--color-border); }
+.technology-constellation a[aria-current='true'] circle { fill: var(--surface-selected-hover); stroke-width: 2px; }
+.skill-category { border-radius: 2px; }
+.skill-category:hover { border-color: color-mix(in srgb, var(--color-accent) 29.020%, transparent); }
+.closing-scene-halo { width: min(70rem, 100vw); left: 38%; bottom: -28%; border-color: color-mix(in srgb, var(--color-accent) 37.647%, transparent); background: radial-gradient(ellipse, color-mix(in srgb, var(--color-accent) 7.059%, transparent), transparent 68%); }
+.closing-scene-type { top: 34%; bottom: auto; left: -2%; font-size: clamp(5rem, 15vw, 19rem); -webkit-text-stroke-color: color-mix(in srgb, var(--color-accent) 17.255%, transparent); }
+#contact .section-heading { max-width: 16ch; }
+#contact .section-content { margin-top: clamp(3rem, 7vw, 7rem); }
+.contact-email { position: relative; }
+.contact-email::after { content: ''; display: block; height: 1px; background: var(--color-accent); transform: scaleX(0); transform-origin: left; }
+.contact-email:hover::after, .contact-email:focus-visible::after { transform: scaleX(1); }
+.contact-links .text-link { border-bottom: 1px solid color-mix(in srgb, var(--color-accent) 20.784%, transparent); }
+.contact-links .text-link:hover { border-color: var(--color-accent); }
+@media (min-width: 1024px) {
+  .hero-name { font-size: clamp(5.4rem, 9.2vw, 9rem); }
+}
+@media (max-width: 1439px) {
+  .hero-scene-halo { top: 4%; }
+}
+@media (max-width: 1023px) {
+  .scene-type { -webkit-text-stroke-color: color-mix(in srgb, var(--color-text) 3.529%, transparent); }
+  .project-lifevent .project-information, .project-philchan-cebu .project-information { column-gap: 2rem; }
+}
+@media (max-width: 767px) {
+  .hero-section { padding-bottom: 5rem; }
+  .hero-scene-halo { width: 125vw; left: 25%; top: 14%; }
+  .hero-scene-type { font-size: 28vw; top: 56%; bottom: auto; }
+  .scene-grid { background-size: 50% 100%; }
+  .section-echo { font-size: 42vw; top: 3rem; right: 5%; }
+  .project-lifevent .project-image-inset, .project-image-inset { padding: .5rem; }
+  .project-information, .project-lifevent .project-information, .project-philchan-cebu .project-information { grid-template-columns: 1fr; gap: 1.5rem; }
+  .project-information h3 { font-size: clamp(2.25rem, 10vw, 3.5rem); }
+  .project-collection { gap: 5rem; }
+  .closing-scene-halo { bottom: -25%; width: 160vw; left: 0; }
+  .closing-scene-type { font-size: 24vw; top: 55%; bottom: auto; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .skill-category, .project-visual { transition: border-color 180ms ease, background-color 180ms ease; }
+  .contact-email::after { transition: transform 250ms ease; }
+}
+
+/* Static depth artwork and branding; no scroll animation owner. */
+.scene-halo { border-width: 2px; border-color: color-mix(in srgb, var(--color-accent) 45.882%, transparent); }
+.scene-halo > span { inset: 14%; border-style: dashed; border-color: color-mix(in srgb, var(--color-accent) 29.020%, transparent); }
+.scene-halo > i { position: absolute; left: 49%; top: -5px; width: 9px; height: 9px; background: var(--color-accent); border-radius: 50%; }
+.scene-orbit-depth { position: absolute; left: 47%; top: 8%; width: min(51rem, 65vw); aspect-ratio: 1; pointer-events: none; }
+.scene-orbit-depth > span { position: absolute; inset: 8%; border: 1px solid color-mix(in srgb, var(--color-text) 18.824%, transparent); border-radius: 50%; transform: rotate(-30deg) scaleY(.4); }
+.scene-orbit-depth > span:last-child { inset: 20%; transform: rotate(42deg) scaleY(.7); border-color: color-mix(in srgb, var(--color-accent) 27.059%, transparent); }
+.hero-scene-type { -webkit-text-stroke-color: color-mix(in srgb, var(--color-text) 22.353%, transparent); }
+.section-depth-shape { position: absolute; top: 48%; left: -8%; width: 65%; height: clamp(8rem, 22vw, 22rem); border: 1px solid color-mix(in srgb, var(--color-accent) 14.118%, transparent); background: linear-gradient(105deg, color-mix(in srgb, var(--color-accent) 3.137%, transparent), transparent); pointer-events: none; }
+#education .section-depth-shape { left: 78%; width: 15%; top: 25%; height: 60%; border-color: color-mix(in srgb, var(--color-text) 7.451%, transparent); }
+#projects .section-depth-shape { display: none; }
+#tech-stack .section-depth-shape { top: 25%; left: 2%; width: 38%; aspect-ratio: 1; height: auto; border-radius: 50%; }
+#experience .section-depth-shape { top: 20%; left: 55%; width: 42%; height: 60%; border-color: color-mix(in srgb, var(--color-text) 6.275%, transparent); }
+.project-anthea .project-visual { box-shadow: 0 22px 44px color-mix(in srgb, var(--shadow-color) 25.098%, transparent); }
+.closing-scene .scene-orbit-depth { top: 20%; left: 40%; }
+.closing-scene-type { -webkit-text-stroke-color: color-mix(in srgb, var(--color-accent) 27.059%, transparent); }
+.portfolio-logo { display: block; width: 76px; height: auto; aspect-ratio: 1254 / 480; object-fit: contain; }
+.navigation-brand { display: flex; flex-shrink: 0; align-items: center; justify-content: center; min-width: 82px; min-height: 44px; margin-right: 4px; border-radius: var(--radius-pill); }
+.navigation-brand .portfolio-logo { width: 64px; border-radius: 3px; }
+.desktop-navigation { display: flex; align-items: center; }
+.wordmark .portfolio-logo { width: 88px; border-radius: 3px; }
+.mobile-navigation .menu-mark { display: flex; align-items: center; }
+.mobile-navigation .portfolio-logo { width: 68px; border-radius: 3px; }
+@media(max-width: 1023px) {
+  .navigation-links a { padding-inline: .6rem; }
+  .navigation-brand { min-width: 70px; }
+  .scene-orbit-depth { width: 75vw; left: 35%; }
+}
+@media(max-width: 767px) {
+  .desktop-navigation { display: none; }
+  .scene-orbit-depth { display: none; }
+  .section-depth-shape { opacity: .35; }
+  .scene-halo { border-width: 1px; }
+}
+

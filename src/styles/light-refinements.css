@@ -1,0 +1,96 @@
+/* Warm Paper V2. Every rule is theme-scoped; interaction transforms and dark styles keep their owners. */
+
+/* Readable editorial metadata without changing the heading scale or photographic copy. */
+:root[data-theme='light'] :is(.section-index,.eyebrow,.scroll-cue){font-size:var(--text-label)}
+:root[data-theme='light'] .section-index{color:var(--color-secondary)}
+:root[data-theme='light'] .stage-caption{font-size:var(--text-label)}
+:root[data-theme='light'] .stage-annotation{font-size:.71875rem}
+:root[data-theme='light'] .section-echo{-webkit-text-stroke-color:var(--decoration-faint)}
+:root[data-theme='light'] .scene-type{-webkit-text-stroke-color:var(--decoration-ink)}
+:root[data-theme='light'] .scene-halo{border-width:1px;border-color:var(--decoration-accent)}
+:root[data-theme='light'] .scene-halo>span{border-color:var(--decoration-accent-soft)}
+:root[data-theme='light'] .scene-orbit-depth>span{border-color:var(--decoration-ink)}
+:root[data-theme='light'] .scene-orbit-depth>span:last-child{border-color:var(--decoration-accent-soft)}
+
+/* Education: white chapter, warm atlas, legible chapter controls and callouts. */
+:root[data-theme='light'] #education :is(.education-atlas,[data-enhanced] .education-card){border-color:var(--color-border);box-shadow:var(--shadow-panel)}
+:root[data-theme='light'] #education :is(.education-hotspot,.education-stage-navigation a){border-color:var(--color-border)}
+:root[data-theme='light'] #education .education-hotspot{font-size:.75rem}
+:root[data-theme='light'] #education .education-hotspot-number{font-size:.625rem}
+:root[data-theme='light'] #education .education-region-labels{fill:var(--color-map-context);font-size:14px}
+:root[data-theme='light'] #education :is(.eyebrow,.education-location-control label,.education-map-topline>span:last-child,.education-map-actions>span,.education-atlas figcaption,.education-chapter-label){font-size:var(--text-label)}
+:root[data-theme='light'] #education .education-atlas figcaption small{font-size:.6875rem}
+:root[data-theme='light'] #education .education-recognition h4{font-size:.875rem;font-weight:600}
+:root[data-theme='light'] #education .education-recognition li{font-size:.875rem;color:var(--color-secondary)}
+:root[data-theme='light'] #education .education-stage-navigation a[aria-current='step']{color:var(--color-selected-ink);background:var(--surface-selected);border-color:var(--color-accent)}
+:root[data-theme='light'] #education .education-chapter-controls button:enabled{border-color:var(--color-border-strong);font-size:.8125rem}
+:root[data-theme='light'] #education button:disabled{opacity:1;color:var(--color-muted);background:var(--surface-inset);border-color:var(--color-border-soft)}
+
+/* Projects: strengthen the selector's visual presence without touching its 3D model or opacity bank. */
+:root[data-theme='light'] #projects .orbit-depth-plane{background:radial-gradient(ellipse at 50% 48%,color-mix(in srgb,var(--color-accent) 9%,transparent),transparent 67%)}
+:root[data-theme='light'] #projects .orbit-depth-plane svg{stroke:var(--orbit-ring);stroke-width:1.2}
+:root[data-theme='light'] #projects .orbit-depth-plane ellipse+ellipse{stroke:var(--decoration-ink)}
+:root[data-theme='light'] #projects .orbit-front-arc{stroke:var(--color-accent);stroke-width:1.6}
+:root[data-theme='light'] #projects .orbit-token{color:var(--color-text);border-color:var(--color-border-strong);box-shadow:0 4px 12px color-mix(in srgb,var(--shadow-color) 10%,transparent)}
+:root[data-theme='light'] #projects .orbit-item-name{font-size:.875rem;font-weight:600}
+:root[data-theme='light'] #projects .orbit-item-number{font-size:.6875rem;color:var(--color-secondary)}
+:root[data-theme='light'] #projects .orbit-item[aria-pressed='true'] .orbit-token{border:2px solid var(--color-accent);background:var(--surface-selected);color:var(--color-accent);box-shadow:0 10px 22px color-mix(in srgb,var(--shadow-color) 18%,transparent),0 0 0 3px color-mix(in srgb,var(--color-accent) 12%,transparent)}
+:root[data-theme='light'] #projects .orbit-item[aria-pressed='true'] .orbit-item-name{font-weight:700}
+:root[data-theme='light'] #projects .orbit-navigation button{border-color:var(--color-border-strong);background:var(--color-surface)}
+:root[data-theme='light'] #projects [data-orbit-indicator]{font-size:.875rem;background:var(--color-surface);padding:.375rem .625rem;border:1px solid var(--color-border);border-radius:4px}
+:root[data-theme='light'] #projects .orbit-help{font-size:.8125rem;color:var(--color-secondary)}
+:root[data-theme='light'] #projects .orbit-project-card{border-color:var(--color-border);border-top-color:var(--color-border-strong)}
+:root[data-theme='light'] #projects :is(.orbit-project-card .eyebrow,.project-status,.browser-title,.orbit-project-visual .project-caption,.orbit-project-role h4){font-size:var(--text-label)}
+:root[data-theme='light'] #projects .orbit-project-description{font-size:.9375rem;color:var(--color-secondary)}
+:root[data-theme='light'] #projects .orbit-project-card .technology-tags li{font-size:.75rem;line-height:1.5;background:var(--surface-input);color:var(--color-secondary)}
+:root[data-theme='light'] #projects .orbit-project-card :is(.case-study>summary,.text-link){font-size:.875rem}
+
+/* Toolkit chambers retain their grid positions and equal sizing. Logo colors are untouched. */
+:root[data-theme='light'] #tech-stack .technology-category{background:var(--color-surface);border-color:var(--color-border);box-shadow:var(--shadow-panel)}
+:root[data-theme='light'] #tech-stack .technology-category-heading{border-bottom:1px solid var(--color-border-soft);margin-bottom:.5rem}
+:root[data-theme='light'] #tech-stack .technology-category-heading h3{font-size:.875rem;font-weight:600}
+:root[data-theme='light'] #tech-stack .technology-category-heading>span{font-size:.6875rem}
+:root[data-theme='light'] #tech-stack .technology-caption{font-size:.75rem;color:var(--color-secondary)}
+:root[data-theme='light'] #tech-stack .technology-button[aria-pressed='true']{border-color:var(--color-accent);background:var(--surface-selected)}
+:root[data-theme='light'] #tech-stack .technology-button:hover:not(:disabled){border-color:var(--color-border-strong);background:var(--surface-hover)}
+:root[data-theme='light'] #tech-stack .technology-category-depth:focus-within .technology-category{border-color:var(--color-accent)}
+:root[data-theme='light'] #tech-stack :is(.toolkit-switcher label,.tech-focus-identity .eyebrow,.tech-focus-category){font-size:var(--text-label)}
+:root[data-theme='light'] #tech-stack .toolkit-back{font-size:.8125rem;border-color:var(--color-border-strong)}
+:root[data-theme='light'] #tech-stack [data-gallery-view='focus'] .toolkit-stage{border-color:var(--color-border);box-shadow:var(--shadow-panel)}
+
+/* Professional copy is clearer; atlas, logo and filmstrip dimensions stay fixed. */
+:root[data-theme='light'] #experience :is(.experience-profile,.experience-atlas){border-color:var(--color-border)}
+:root[data-theme='light'] #experience :is(.experience-period,.experience-work-label,.experience-entry-number,.experience-summary-note){font-size:var(--text-label)}
+:root[data-theme='light'] #experience .experience-overview{color:var(--color-secondary);font-size:.9375rem}
+:root[data-theme='light'] #experience .experience-contributions details{border-top-color:var(--color-border)}
+:root[data-theme='light'] #experience .experience-contributions details[open]{background:linear-gradient(90deg,color-mix(in srgb,var(--color-accent) 7%,transparent),transparent)}
+:root[data-theme='light'] #experience .experience-contributions details>p{font-size:.875rem;color:var(--color-secondary)}
+:root[data-theme='light'] #experience .experience-city-caption{fill:var(--color-secondary)}
+:root[data-theme='light'] #experience .experience-photo figcaption{font-size:.8125rem}
+
+/* A clear centered invitation and one emphasized download action. */
+:root[data-theme='light'] #contact .contact-email{font-weight:500;color:var(--color-accent)}
+:root[data-theme='light'] #contact .contact-email::after{transform:scaleX(1);opacity:.45}
+:root[data-theme='light'] #contact .contact-links .text-link{font-size:.9375rem;border-bottom-color:var(--color-border-strong)}
+:root[data-theme='light'] #contact .contact-links .resume-link{color:var(--color-selected-ink);padding:.5rem 1rem;border:1px solid var(--color-accent);border-radius:var(--radius-pill);background:var(--surface-selected);font-weight:600}
+:root[data-theme='light'] #contact .contact-links .text-link:hover{color:var(--color-accent);border-color:var(--color-accent)}
+:root[data-theme='light'] #contact .contact-footer p{font-size:.75rem}
+:root[data-theme='light'] #contact .closing-scene-type{-webkit-text-stroke-color:var(--decoration-faint)}
+
+/* Existing navigation layout, stronger selected and focus states. */
+:root[data-theme='light'] :is(.desktop-navigation,.mobile-navigation){box-shadow:var(--shadow-panel)}
+:root[data-theme='light'] .navigation-links a[aria-current='location']{color:var(--color-selected-ink);background:var(--surface-selected)}
+:root[data-theme='light'] :is(.theme-toggle,.navigation-visibility-toggle){border-color:var(--color-border-strong);box-shadow:var(--shadow-panel)}
+:root[data-theme='light'] .navigation-visibility-toggle{font-size:.75rem}
+:root[data-theme='light'] :is(.theme-toggle,.navigation-visibility-toggle):hover{background:var(--surface-selected)}
+@media(max-width:767px){
+ :root[data-theme='light'] #education .education-hotspot{font-size:.6875rem}
+ :root[data-theme='light'] #education .education-hotspot-number{font-size:.5625rem}
+ :root[data-theme='light'] #contact .contact-email{font-size:clamp(1rem,4.2vw,1.5rem)}
+ :root[data-theme='light'] #contact .contact-links .text-link{font-size:.875rem}
+}
+
+/* Explicit states retain their original ownership over the stronger default boundary. */
+:root[data-theme='light'] #education .education-hotspot:hover:not([aria-current]){border-color:var(--place-color)}
+:root[data-theme='light'] #education .education-hotspot[aria-current='location']{border-color:var(--color-accent)}
+:root[data-theme='light'] #contact .contact-links .resume-link:hover{color:var(--color-selected-ink)}

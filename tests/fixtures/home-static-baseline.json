@@ -1,0 +1,3511 @@
+{
+  "description": "Pre-Phase-4.7 Hero layout; matching runtime, six widths, both themes; motion reduced to stabilize geometry.",
+  "development": {
+    "dark-1920": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1920,
+        "height": 1046.90625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 320,
+        "y": 393.765625,
+        "width": 631.375,
+        "height": 273.59375,
+        "fontSize": "144px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 320,
+        "y": 695.359375,
+        "width": 631.375,
+        "height": 33.59375,
+        "fontSize": "24px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 320,
+        "y": 752.953125,
+        "width": 423.9375,
+        "height": 100.78125,
+        "fontSize": "19.2px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 320,
+        "y": 885.734375,
+        "width": 631.375,
+        "height": 59.90625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 320,
+        "y": 977.640625,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 1015.375,
+        "y": 360.5,
+        "width": 584.625,
+        "height": 694.40625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 1015.375,
+        "y": 415.09375,
+        "width": 584.625,
+        "height": 584.625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 19.1875,
+        "y": 519,
+        "width": 1731.46875,
+        "height": 312.796875,
+        "fontSize": "368px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 998.390625,
+        "y": 100.25,
+        "width": 864,
+        "height": 864,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1230.90625,
+        "width": 1920,
+        "height": 2026.6875,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3257.59375,
+        "width": 1920,
+        "height": 1401.203125,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4658.796875,
+        "width": 1920,
+        "height": 1379.875,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 6038.671875,
+        "width": 1920,
+        "height": 1427.15625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 7465.828125,
+        "width": 1920,
+        "height": 1442.234375,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 8908.0625,
+        "width": 1920,
+        "height": 1443.625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-1366": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1366,
+        "height": 1004.71875,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 54.640625,
+        "y": 384.640625,
+        "width": 624.15625,
+        "height": 238.75,
+        "fontSize": "125.672px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 54.640625,
+        "y": 651.390625,
+        "width": 624.15625,
+        "height": 33.21875,
+        "fontSize": "23.728px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 54.640625,
+        "y": 708.609375,
+        "width": 423.484375,
+        "height": 100.734375,
+        "fontSize": "19.181px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 54.640625,
+        "y": 841.34375,
+        "width": 624.15625,
+        "height": 59.90625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 54.640625,
+        "y": 933.25,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 733.421875,
+        "y": 337.09375,
+        "width": 577.9375,
+        "height": 687.71875,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 733.421875,
+        "y": 391.6875,
+        "width": 577.9375,
+        "height": 577.9375,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 13.65625,
+        "y": 505.5,
+        "width": 1285.421875,
+        "height": 232.21875,
+        "fontSize": "273.2px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 710.3125,
+        "y": 224.1875,
+        "width": 864,
+        "height": 864,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1188.71875,
+        "width": 1366,
+        "height": 1985.515625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3174.234375,
+        "width": 1366,
+        "height": 1352.578125,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4526.8125,
+        "width": 1366,
+        "height": 1322.625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 5849.4375,
+        "width": 1366,
+        "height": 1358.25,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 7207.6875,
+        "width": 1366,
+        "height": 1397.578125,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 8605.265625,
+        "width": 1366,
+        "height": 1365.140625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-1024": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1024,
+        "height": 784.765625,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 40.953125,
+        "y": 313.046875,
+        "width": 467.890625,
+        "height": 178.96875,
+        "fontSize": "94.208px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 40.953125,
+        "y": 520.015625,
+        "width": 467.890625,
+        "height": 29.375,
+        "fontSize": "20.992px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 40.953125,
+        "y": 573.390625,
+        "width": 396.984375,
+        "height": 94.40625,
+        "fontSize": "17.984px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 40.953125,
+        "y": 699.796875,
+        "width": 467.890625,
+        "height": 59.90625,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 40.953125,
+        "y": 791.703125,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 549.796875,
+        "y": 302.875,
+        "width": 433.234375,
+        "height": 543.015625,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 549.796875,
+        "y": 357.46875,
+        "width": 433.234375,
+        "height": 433.234375,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 10.234375,
+        "y": 435.125,
+        "width": 963.609375,
+        "height": 174.0625,
+        "fontSize": "204.8px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 532.46875,
+        "y": 215.390625,
+        "width": 768,
+        "height": 768,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 968.765625,
+        "width": 1024,
+        "height": 1894.46875,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 2863.234375,
+        "width": 1024,
+        "height": 1239.046875,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4102.28125,
+        "width": 1024,
+        "height": 1184.90625,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 5287.1875,
+        "width": 1024,
+        "height": 1224.953125,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 6512.140625,
+        "width": 1024,
+        "height": 1306.671875,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 7818.8125,
+        "width": 1024,
+        "height": 1125.25,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-768": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 768,
+        "height": 662.09375,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 32,
+        "y": 288.5,
+        "width": 370.296875,
+        "height": 125.46875,
+        "fontSize": "66.048px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 32,
+        "y": 441.96875,
+        "width": 370.296875,
+        "height": 26.5,
+        "fontSize": "18.944px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 32,
+        "y": 492.46875,
+        "width": 370.296875,
+        "height": 89.71875,
+        "fontSize": "17.088px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 32,
+        "y": 614.1875,
+        "width": 370.296875,
+        "height": 59.90625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 32,
+        "y": 706.09375,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 433.015625,
+        "y": 312.90625,
+        "width": 302.984375,
+        "height": 412.765625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 433.015625,
+        "y": 367.5,
+        "width": 302.984375,
+        "height": 302.984375,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 7.671875,
+        "y": 395.859375,
+        "width": 722.703125,
+        "height": 130.546875,
+        "fontSize": "153.6px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 399.359375,
+        "y": 210.46875,
+        "width": 576,
+        "height": 576,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 846.09375,
+        "width": 768,
+        "height": 2924.21875,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3770.3125,
+        "width": 768,
+        "height": 2241.640625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 6011.953125,
+        "width": 768,
+        "height": 2017.015625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 8028.96875,
+        "width": 768,
+        "height": 1512.625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9541.59375,
+        "width": 768,
+        "height": 2063.546875,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11605.140625,
+        "width": 768,
+        "height": 974.234375,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-390": {
+      "#home": {
+        "x": 0,
+        "y": 164,
+        "width": 390,
+        "height": 1109.921875,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 20,
+        "y": 260.5,
+        "width": 350,
+        "height": 103.34375,
+        "fontSize": "54.4px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 20,
+        "y": 387.84375,
+        "width": 350,
+        "height": 22.390625,
+        "fontSize": "16px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 20,
+        "y": 434.234375,
+        "width": 350,
+        "height": 84,
+        "fontSize": "16px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 20,
+        "y": 542.234375,
+        "width": 350,
+        "height": 59.90625,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 20,
+        "y": 634.140625,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 20,
+        "y": 734.140625,
+        "width": 350,
+        "height": 459.78125,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 20,
+        "y": 788.734375,
+        "width": 350,
+        "height": 350,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 3.890625,
+        "y": 785.546875,
+        "width": 513.796875,
+        "height": 92.8125,
+        "fontSize": "109.2px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 97.5,
+        "y": 319.375,
+        "width": 487.5,
+        "height": 487.5,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1273.921875,
+        "width": 390,
+        "height": 2573.953125,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3847.875,
+        "width": 390,
+        "height": 1840.90625,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 5688.78125,
+        "width": 390,
+        "height": 1926.46875,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 7615.25,
+        "width": 390,
+        "height": 1829.9375,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9445.1875,
+        "width": 390,
+        "height": 1980.4375,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11425.625,
+        "width": 390,
+        "height": 1040.046875,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-320": {
+      "#home": {
+        "x": 0,
+        "y": 164,
+        "width": 320,
+        "height": 1067.921875,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 20,
+        "y": 260.5,
+        "width": 280,
+        "height": 103.34375,
+        "fontSize": "54.4px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 20,
+        "y": 387.84375,
+        "width": 280,
+        "height": 22.390625,
+        "fontSize": "16px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 20,
+        "y": 434.234375,
+        "width": 280,
+        "height": 112,
+        "fontSize": "16px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 20,
+        "y": 570.234375,
+        "width": 280,
+        "height": 59.90625,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 20,
+        "y": 662.140625,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 20,
+        "y": 762.140625,
+        "width": 280,
+        "height": 389.78125,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 20,
+        "y": 816.734375,
+        "width": 280,
+        "height": 280,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 3.1875,
+        "y": 762.03125,
+        "width": 421.578125,
+        "height": 76.140625,
+        "fontSize": "89.6px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 80,
+        "y": 313.5,
+        "width": 400,
+        "height": 400,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1231.921875,
+        "width": 320,
+        "height": 2638.84375,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3870.765625,
+        "width": 320,
+        "height": 1885.453125,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 5756.21875,
+        "width": 320,
+        "height": 2033.875,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 7790.09375,
+        "width": 320,
+        "height": 1853.9375,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9644.03125,
+        "width": 320,
+        "height": 2111.65625,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11755.6875,
+        "width": 320,
+        "height": 1096.15625,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "light-1920": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1920,
+        "height": 1050,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 320,
+        "y": 396.0625,
+        "width": 631.375,
+        "height": 273.59375,
+        "fontSize": "144px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 320,
+        "y": 697.65625,
+        "width": 631.375,
+        "height": 33.59375,
+        "fontSize": "24px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 320,
+        "y": 755.25,
+        "width": 423.9375,
+        "height": 100.78125,
+        "fontSize": "19.2px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 320,
+        "y": 888.03125,
+        "width": 631.375,
+        "height": 59.90625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 320,
+        "y": 979.9375,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 1015.375,
+        "y": 362,
+        "width": 584.625,
+        "height": 696,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 1015.375,
+        "y": 418.1875,
+        "width": 584.625,
+        "height": 584.625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 19.1875,
+        "y": 520,
+        "width": 1731.46875,
+        "height": 312.796875,
+        "fontSize": "368px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 998.390625,
+        "y": 100,
+        "width": 864,
+        "height": 864,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1234,
+        "width": 1920,
+        "height": 2028.1875,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3262.1875,
+        "width": 1920,
+        "height": 1415.109375,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4677.296875,
+        "width": 1920,
+        "height": 1402.578125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 6079.875,
+        "width": 1920,
+        "height": 1452.15625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 7532.03125,
+        "width": 1920,
+        "height": 1490.578125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 9022.609375,
+        "width": 1920,
+        "height": 1449.515625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-1366": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1366,
+        "height": 1007.8125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 54.640625,
+        "y": 386.9375,
+        "width": 624.15625,
+        "height": 238.75,
+        "fontSize": "125.672px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 54.640625,
+        "y": 653.6875,
+        "width": 624.15625,
+        "height": 33.21875,
+        "fontSize": "23.728px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 54.640625,
+        "y": 710.90625,
+        "width": 423.484375,
+        "height": 100.734375,
+        "fontSize": "19.181px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 54.640625,
+        "y": 843.640625,
+        "width": 624.15625,
+        "height": 59.90625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 54.640625,
+        "y": 935.546875,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 733.421875,
+        "y": 338.59375,
+        "width": 577.9375,
+        "height": 689.3125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 733.421875,
+        "y": 394.78125,
+        "width": 577.9375,
+        "height": 577.9375,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 13.65625,
+        "y": 506.5,
+        "width": 1285.421875,
+        "height": 232.21875,
+        "fontSize": "273.2px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 710.3125,
+        "y": 224.3125,
+        "width": 864,
+        "height": 864,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1191.8125,
+        "width": 1366,
+        "height": 1987.015625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3178.828125,
+        "width": 1366,
+        "height": 1369.71875,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4548.546875,
+        "width": 1366,
+        "height": 1341.390625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 5889.9375,
+        "width": 1366,
+        "height": 1383.25,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 7273.1875,
+        "width": 1366,
+        "height": 1445.921875,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 8719.109375,
+        "width": 1366,
+        "height": 1371.03125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-1024": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1024,
+        "height": 787.859375,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 40.953125,
+        "y": 315.34375,
+        "width": 467.890625,
+        "height": 178.96875,
+        "fontSize": "94.208px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 40.953125,
+        "y": 522.3125,
+        "width": 467.890625,
+        "height": 29.375,
+        "fontSize": "20.992px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 40.953125,
+        "y": 575.6875,
+        "width": 396.984375,
+        "height": 94.40625,
+        "fontSize": "17.984px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 40.953125,
+        "y": 702.09375,
+        "width": 467.890625,
+        "height": 59.90625,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 40.953125,
+        "y": 794,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 549.796875,
+        "y": 304.375,
+        "width": 433.234375,
+        "height": 544.609375,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 549.796875,
+        "y": 360.5625,
+        "width": 433.234375,
+        "height": 433.234375,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 10.234375,
+        "y": 436.109375,
+        "width": 963.609375,
+        "height": 174.0625,
+        "fontSize": "204.8px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 532.46875,
+        "y": 215.5,
+        "width": 768,
+        "height": 768,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 971.859375,
+        "width": 1024,
+        "height": 1895.96875,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 2867.828125,
+        "width": 1024,
+        "height": 1256.359375,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4124.1875,
+        "width": 1024,
+        "height": 1214.625,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 5338.8125,
+        "width": 1024,
+        "height": 1240.953125,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 6579.765625,
+        "width": 1024,
+        "height": 1331.625,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 7911.390625,
+        "width": 1024,
+        "height": 1131.140625,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-768": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 768,
+        "height": 663.59375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 32,
+        "y": 290,
+        "width": 370.296875,
+        "height": 125.46875,
+        "fontSize": "66.048px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 32,
+        "y": 443.46875,
+        "width": 370.296875,
+        "height": 26.5,
+        "fontSize": "18.944px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 32,
+        "y": 493.96875,
+        "width": 370.296875,
+        "height": 89.71875,
+        "fontSize": "17.088px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 32,
+        "y": 615.6875,
+        "width": 370.296875,
+        "height": 59.90625,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 32,
+        "y": 707.59375,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 433.015625,
+        "y": 313.609375,
+        "width": 302.984375,
+        "height": 414.359375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 433.015625,
+        "y": 369.796875,
+        "width": 302.984375,
+        "height": 302.984375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 7.671875,
+        "y": 396.34375,
+        "width": 722.703125,
+        "height": 130.546875,
+        "fontSize": "153.6px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 399.359375,
+        "y": 210.53125,
+        "width": 576,
+        "height": 576,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 847.59375,
+        "width": 768,
+        "height": 2925.71875,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3773.3125,
+        "width": 768,
+        "height": 2265.640625,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 6038.953125,
+        "width": 768,
+        "height": 2046.234375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 8085.1875,
+        "width": 768,
+        "height": 1539.125,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9624.3125,
+        "width": 768,
+        "height": 2112.59375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11736.90625,
+        "width": 768,
+        "height": 980.125,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-390": {
+      "#home": {
+        "x": 0,
+        "y": 164,
+        "width": 390,
+        "height": 1113.015625,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 20,
+        "y": 262,
+        "width": 350,
+        "height": 103.34375,
+        "fontSize": "54.4px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 20,
+        "y": 389.34375,
+        "width": 350,
+        "height": 22.390625,
+        "fontSize": "16px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 20,
+        "y": 435.734375,
+        "width": 350,
+        "height": 84,
+        "fontSize": "16px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 20,
+        "y": 543.734375,
+        "width": 350,
+        "height": 59.90625,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 20,
+        "y": 635.640625,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 20,
+        "y": 735.640625,
+        "width": 350,
+        "height": 461.375,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 20,
+        "y": 791.828125,
+        "width": 350,
+        "height": 350,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 3.890625,
+        "y": 787.28125,
+        "width": 513.796875,
+        "height": 92.8125,
+        "fontSize": "109.2px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 97.5,
+        "y": 319.8125,
+        "width": 487.5,
+        "height": 487.5,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1277.015625,
+        "width": 390,
+        "height": 2573.953125,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3850.96875,
+        "width": 390,
+        "height": 1895.546875,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 5746.515625,
+        "width": 390,
+        "height": 1989.671875,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 7736.1875,
+        "width": 390,
+        "height": 1883.4375,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9619.625,
+        "width": 390,
+        "height": 2009.140625,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11628.765625,
+        "width": 390,
+        "height": 1045.9375,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-320": {
+      "#home": {
+        "x": 0,
+        "y": 164,
+        "width": 320,
+        "height": 1071.015625,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 20,
+        "y": 262,
+        "width": 280,
+        "height": 103.34375,
+        "fontSize": "54.4px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 20,
+        "y": 389.34375,
+        "width": 280,
+        "height": 22.390625,
+        "fontSize": "16px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 20,
+        "y": 435.734375,
+        "width": 280,
+        "height": 112,
+        "fontSize": "16px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 20,
+        "y": 571.734375,
+        "width": 280,
+        "height": 59.90625,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 20,
+        "y": 663.640625,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 20,
+        "y": 763.640625,
+        "width": 280,
+        "height": 391.375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 20,
+        "y": 819.828125,
+        "width": 280,
+        "height": 280,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 3.1875,
+        "y": 763.765625,
+        "width": 421.578125,
+        "height": 76.140625,
+        "fontSize": "89.6px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 80,
+        "y": 313.9375,
+        "width": 400,
+        "height": 400,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1235.015625,
+        "width": 320,
+        "height": 2638.84375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3873.859375,
+        "width": 320,
+        "height": 1934.734375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 5808.59375,
+        "width": 320,
+        "height": 2174.1875,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 7982.78125,
+        "width": 320,
+        "height": 1883.4375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9866.21875,
+        "width": 320,
+        "height": 2182.390625,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 12048.609375,
+        "width": 320,
+        "height": 1103.15625,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    }
+  },
+  "production": {
+    "dark-1920": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1920,
+        "height": 1046.90625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 320,
+        "y": 393.765625,
+        "width": 631.375,
+        "height": 273.59375,
+        "fontSize": "144px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 320,
+        "y": 695.359375,
+        "width": 631.375,
+        "height": 33.59375,
+        "fontSize": "24px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 320,
+        "y": 752.953125,
+        "width": 423.9375,
+        "height": 100.78125,
+        "fontSize": "19.2px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 320,
+        "y": 885.734375,
+        "width": 631.375,
+        "height": 59.90625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 320,
+        "y": 977.640625,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 1015.375,
+        "y": 360.5,
+        "width": 584.625,
+        "height": 694.40625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 1015.375,
+        "y": 415.09375,
+        "width": 584.625,
+        "height": 584.625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 19.1875,
+        "y": 519,
+        "width": 1731.46875,
+        "height": 312.796875,
+        "fontSize": "368px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 998.390625,
+        "y": 100.25,
+        "width": 864,
+        "height": 864,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1230.90625,
+        "width": 1920,
+        "height": 2026.6875,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3257.59375,
+        "width": 1920,
+        "height": 1401.203125,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4658.796875,
+        "width": 1920,
+        "height": 1375.515625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 6034.3125,
+        "width": 1920,
+        "height": 1427.15625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 7461.46875,
+        "width": 1920,
+        "height": 1442.234375,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 8903.703125,
+        "width": 1920,
+        "height": 1443.625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-1366": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1366,
+        "height": 1004.71875,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 54.640625,
+        "y": 384.640625,
+        "width": 624.15625,
+        "height": 238.75,
+        "fontSize": "125.672px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 54.640625,
+        "y": 651.390625,
+        "width": 624.15625,
+        "height": 33.21875,
+        "fontSize": "23.728px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 54.640625,
+        "y": 708.609375,
+        "width": 423.484375,
+        "height": 100.734375,
+        "fontSize": "19.181px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 54.640625,
+        "y": 841.34375,
+        "width": 624.15625,
+        "height": 59.90625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 54.640625,
+        "y": 933.25,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 733.421875,
+        "y": 337.09375,
+        "width": 577.9375,
+        "height": 687.71875,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 733.421875,
+        "y": 391.6875,
+        "width": 577.9375,
+        "height": 577.9375,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 13.65625,
+        "y": 505.5,
+        "width": 1285.421875,
+        "height": 232.21875,
+        "fontSize": "273.2px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 710.3125,
+        "y": 224.1875,
+        "width": 864,
+        "height": 864,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1188.71875,
+        "width": 1366,
+        "height": 1985.515625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3174.234375,
+        "width": 1366,
+        "height": 1352.578125,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4526.8125,
+        "width": 1366,
+        "height": 1322.625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 5849.4375,
+        "width": 1366,
+        "height": 1358.25,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 7207.6875,
+        "width": 1366,
+        "height": 1397.578125,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 8605.265625,
+        "width": 1366,
+        "height": 1365.140625,
+        "fontSize": "18px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-1024": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1024,
+        "height": 784.765625,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 40.953125,
+        "y": 313.046875,
+        "width": 467.890625,
+        "height": 178.96875,
+        "fontSize": "94.208px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 40.953125,
+        "y": 520.015625,
+        "width": 467.890625,
+        "height": 29.375,
+        "fontSize": "20.992px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 40.953125,
+        "y": 573.390625,
+        "width": 396.984375,
+        "height": 94.40625,
+        "fontSize": "17.984px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 40.953125,
+        "y": 699.796875,
+        "width": 467.890625,
+        "height": 59.90625,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 40.953125,
+        "y": 791.703125,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 549.796875,
+        "y": 302.875,
+        "width": 433.234375,
+        "height": 543.015625,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 549.796875,
+        "y": 357.46875,
+        "width": 433.234375,
+        "height": 433.234375,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 10.234375,
+        "y": 435.125,
+        "width": 963.609375,
+        "height": 174.0625,
+        "fontSize": "204.8px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 532.46875,
+        "y": 215.390625,
+        "width": 768,
+        "height": 768,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 968.765625,
+        "width": 1024,
+        "height": 1894.46875,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 2863.234375,
+        "width": 1024,
+        "height": 1239.046875,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4102.28125,
+        "width": 1024,
+        "height": 1184.90625,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 5287.1875,
+        "width": 1024,
+        "height": 1224.953125,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 6512.140625,
+        "width": 1024,
+        "height": 1306.671875,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 7818.8125,
+        "width": 1024,
+        "height": 1125.25,
+        "fontSize": "17.408px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-768": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 768,
+        "height": 662.09375,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 32,
+        "y": 288.5,
+        "width": 370.296875,
+        "height": 125.46875,
+        "fontSize": "66.048px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 32,
+        "y": 441.96875,
+        "width": 370.296875,
+        "height": 26.5,
+        "fontSize": "18.944px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 32,
+        "y": 492.46875,
+        "width": 370.296875,
+        "height": 89.71875,
+        "fontSize": "17.088px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 32,
+        "y": 614.1875,
+        "width": 370.296875,
+        "height": 59.90625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 32,
+        "y": 706.09375,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 433.015625,
+        "y": 312.90625,
+        "width": 302.984375,
+        "height": 412.765625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 433.015625,
+        "y": 367.5,
+        "width": 302.984375,
+        "height": 302.984375,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 7.671875,
+        "y": 395.859375,
+        "width": 722.703125,
+        "height": 130.546875,
+        "fontSize": "153.6px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 399.359375,
+        "y": 210.46875,
+        "width": 576,
+        "height": 576,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 846.09375,
+        "width": 768,
+        "height": 2924.21875,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3770.3125,
+        "width": 768,
+        "height": 2241.640625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 6011.953125,
+        "width": 768,
+        "height": 2013.25,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 8025.203125,
+        "width": 768,
+        "height": 1512.625,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9537.828125,
+        "width": 768,
+        "height": 2063.546875,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11601.375,
+        "width": 768,
+        "height": 974.234375,
+        "fontSize": "16.896px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-390": {
+      "#home": {
+        "x": 0,
+        "y": 164,
+        "width": 390,
+        "height": 1109.921875,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 20,
+        "y": 260.5,
+        "width": 350,
+        "height": 103.34375,
+        "fontSize": "54.4px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 20,
+        "y": 387.84375,
+        "width": 350,
+        "height": 22.390625,
+        "fontSize": "16px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 20,
+        "y": 434.234375,
+        "width": 350,
+        "height": 84,
+        "fontSize": "16px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 20,
+        "y": 542.234375,
+        "width": 350,
+        "height": 59.90625,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 20,
+        "y": 634.140625,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 20,
+        "y": 734.140625,
+        "width": 350,
+        "height": 459.78125,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 20,
+        "y": 788.734375,
+        "width": 350,
+        "height": 350,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 3.890625,
+        "y": 785.546875,
+        "width": 513.796875,
+        "height": 92.8125,
+        "fontSize": "109.2px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 97.5,
+        "y": 319.375,
+        "width": 487.5,
+        "height": 487.5,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1273.921875,
+        "width": 390,
+        "height": 2573.953125,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3847.875,
+        "width": 390,
+        "height": 1840.90625,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 5688.78125,
+        "width": 390,
+        "height": 1926.46875,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 7615.25,
+        "width": 390,
+        "height": 1829.9375,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9445.1875,
+        "width": 390,
+        "height": 1980.4375,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11425.625,
+        "width": 390,
+        "height": 1040.046875,
+        "fontSize": "16.14px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "dark-320": {
+      "#home": {
+        "x": 0,
+        "y": 164,
+        "width": 320,
+        "height": 1067.921875,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 20,
+        "y": 260.5,
+        "width": 280,
+        "height": 103.34375,
+        "fontSize": "54.4px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 20,
+        "y": 387.84375,
+        "width": 280,
+        "height": 22.390625,
+        "fontSize": "16px",
+        "color": "rgb(216, 138, 70)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 20,
+        "y": 434.234375,
+        "width": 280,
+        "height": 112,
+        "fontSize": "16px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 20,
+        "y": 570.234375,
+        "width": 280,
+        "height": 59.90625,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 20,
+        "y": 662.140625,
+        "width": 206.171875,
+        "height": 44,
+        "fontSize": "10px",
+        "color": "rgb(170, 169, 166)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 20,
+        "y": 762.140625,
+        "width": 280,
+        "height": 389.78125,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 20,
+        "y": 816.734375,
+        "width": 280,
+        "height": 280,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 3.1875,
+        "y": 762.03125,
+        "width": 421.578125,
+        "height": 76.140625,
+        "fontSize": "89.6px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 80,
+        "y": 313.5,
+        "width": 400,
+        "height": 400,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1231.921875,
+        "width": 320,
+        "height": 2638.84375,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3870.765625,
+        "width": 320,
+        "height": 1885.453125,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 5756.21875,
+        "width": 320,
+        "height": 2032.53125,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 7788.75,
+        "width": 320,
+        "height": 1853.9375,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9642.6875,
+        "width": 320,
+        "height": 2111.65625,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11754.34375,
+        "width": 320,
+        "height": 1096.15625,
+        "fontSize": "16px",
+        "color": "rgb(243, 241, 237)",
+        "opacity": "1"
+      }
+    },
+    "light-1920": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1920,
+        "height": 1050,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 320,
+        "y": 396.0625,
+        "width": 631.375,
+        "height": 273.59375,
+        "fontSize": "144px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 320,
+        "y": 697.65625,
+        "width": 631.375,
+        "height": 33.59375,
+        "fontSize": "24px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 320,
+        "y": 755.25,
+        "width": 423.9375,
+        "height": 100.78125,
+        "fontSize": "19.2px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 320,
+        "y": 888.03125,
+        "width": 631.375,
+        "height": 59.90625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 320,
+        "y": 979.9375,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 1015.375,
+        "y": 362,
+        "width": 584.625,
+        "height": 696,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 1015.375,
+        "y": 418.1875,
+        "width": 584.625,
+        "height": 584.625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 19.1875,
+        "y": 520,
+        "width": 1731.46875,
+        "height": 312.796875,
+        "fontSize": "368px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 998.390625,
+        "y": 100,
+        "width": 864,
+        "height": 864,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1234,
+        "width": 1920,
+        "height": 2028.1875,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3262.1875,
+        "width": 1920,
+        "height": 1415.109375,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4677.296875,
+        "width": 1920,
+        "height": 1399.640625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 6076.9375,
+        "width": 1920,
+        "height": 1452.15625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 7529.09375,
+        "width": 1920,
+        "height": 1490.578125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 9019.671875,
+        "width": 1920,
+        "height": 1449.515625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-1366": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1366,
+        "height": 1007.8125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 54.640625,
+        "y": 386.9375,
+        "width": 624.15625,
+        "height": 238.75,
+        "fontSize": "125.672px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 54.640625,
+        "y": 653.6875,
+        "width": 624.15625,
+        "height": 33.21875,
+        "fontSize": "23.728px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 54.640625,
+        "y": 710.90625,
+        "width": 423.484375,
+        "height": 100.734375,
+        "fontSize": "19.181px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 54.640625,
+        "y": 843.640625,
+        "width": 624.15625,
+        "height": 59.90625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 54.640625,
+        "y": 935.546875,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 733.421875,
+        "y": 338.59375,
+        "width": 577.9375,
+        "height": 689.3125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 733.421875,
+        "y": 394.78125,
+        "width": 577.9375,
+        "height": 577.9375,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 13.65625,
+        "y": 506.5,
+        "width": 1285.421875,
+        "height": 232.21875,
+        "fontSize": "273.2px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 710.3125,
+        "y": 224.3125,
+        "width": 864,
+        "height": 864,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1191.8125,
+        "width": 1366,
+        "height": 1987.015625,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3178.828125,
+        "width": 1366,
+        "height": 1369.71875,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4548.546875,
+        "width": 1366,
+        "height": 1338.484375,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 5887.03125,
+        "width": 1366,
+        "height": 1383.25,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 7270.28125,
+        "width": 1366,
+        "height": 1445.921875,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 8716.203125,
+        "width": 1366,
+        "height": 1371.03125,
+        "fontSize": "18px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-1024": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 1024,
+        "height": 787.859375,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 40.953125,
+        "y": 315.34375,
+        "width": 467.890625,
+        "height": 178.96875,
+        "fontSize": "94.208px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 40.953125,
+        "y": 522.3125,
+        "width": 467.890625,
+        "height": 29.375,
+        "fontSize": "20.992px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 40.953125,
+        "y": 575.6875,
+        "width": 396.984375,
+        "height": 94.40625,
+        "fontSize": "17.984px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 40.953125,
+        "y": 702.09375,
+        "width": 467.890625,
+        "height": 59.90625,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 40.953125,
+        "y": 794,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 549.796875,
+        "y": 304.375,
+        "width": 433.234375,
+        "height": 544.609375,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 549.796875,
+        "y": 360.5625,
+        "width": 433.234375,
+        "height": 433.234375,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 10.234375,
+        "y": 436.109375,
+        "width": 963.609375,
+        "height": 174.0625,
+        "fontSize": "204.8px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 532.46875,
+        "y": 215.5,
+        "width": 768,
+        "height": 768,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 971.859375,
+        "width": 1024,
+        "height": 1895.96875,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 2867.828125,
+        "width": 1024,
+        "height": 1256.359375,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 4124.1875,
+        "width": 1024,
+        "height": 1212.46875,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 5336.65625,
+        "width": 1024,
+        "height": 1240.953125,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 6577.609375,
+        "width": 1024,
+        "height": 1331.625,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 7909.234375,
+        "width": 1024,
+        "height": 1131.140625,
+        "fontSize": "17.408px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-768": {
+      "#home": {
+        "x": 0,
+        "y": 184,
+        "width": 768,
+        "height": 663.59375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 32,
+        "y": 290,
+        "width": 370.296875,
+        "height": 125.46875,
+        "fontSize": "66.048px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 32,
+        "y": 443.46875,
+        "width": 370.296875,
+        "height": 26.5,
+        "fontSize": "18.944px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 32,
+        "y": 493.96875,
+        "width": 370.296875,
+        "height": 89.71875,
+        "fontSize": "17.088px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 32,
+        "y": 615.6875,
+        "width": 370.296875,
+        "height": 59.90625,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 32,
+        "y": 707.59375,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 433.015625,
+        "y": 313.609375,
+        "width": 302.984375,
+        "height": 414.359375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 433.015625,
+        "y": 369.796875,
+        "width": 302.984375,
+        "height": 302.984375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 7.671875,
+        "y": 396.34375,
+        "width": 722.703125,
+        "height": 130.546875,
+        "fontSize": "153.6px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 399.359375,
+        "y": 210.53125,
+        "width": 576,
+        "height": 576,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 847.59375,
+        "width": 768,
+        "height": 2925.71875,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3773.3125,
+        "width": 768,
+        "height": 2265.640625,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 6038.953125,
+        "width": 768,
+        "height": 2042.46875,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 8081.421875,
+        "width": 768,
+        "height": 1539.125,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9620.546875,
+        "width": 768,
+        "height": 2112.59375,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11733.140625,
+        "width": 768,
+        "height": 980.125,
+        "fontSize": "16.896px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-390": {
+      "#home": {
+        "x": 0,
+        "y": 164,
+        "width": 390,
+        "height": 1113.015625,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 20,
+        "y": 262,
+        "width": 350,
+        "height": 103.34375,
+        "fontSize": "54.4px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 20,
+        "y": 389.34375,
+        "width": 350,
+        "height": 22.390625,
+        "fontSize": "16px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 20,
+        "y": 435.734375,
+        "width": 350,
+        "height": 84,
+        "fontSize": "16px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 20,
+        "y": 543.734375,
+        "width": 350,
+        "height": 59.90625,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 20,
+        "y": 635.640625,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 20,
+        "y": 735.640625,
+        "width": 350,
+        "height": 461.375,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 20,
+        "y": 791.828125,
+        "width": 350,
+        "height": 350,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 3.890625,
+        "y": 787.28125,
+        "width": 513.796875,
+        "height": 92.8125,
+        "fontSize": "109.2px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 97.5,
+        "y": 319.8125,
+        "width": 487.5,
+        "height": 487.5,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1277.015625,
+        "width": 390,
+        "height": 2573.953125,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3850.96875,
+        "width": 390,
+        "height": 1895.546875,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 5746.515625,
+        "width": 390,
+        "height": 1989.140625,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 7735.65625,
+        "width": 390,
+        "height": 1883.4375,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9619.09375,
+        "width": 390,
+        "height": 2009.140625,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11628.234375,
+        "width": 390,
+        "height": 1045.9375,
+        "fontSize": "16.14px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    },
+    "light-320": {
+      "#home": {
+        "x": 0,
+        "y": 164,
+        "width": 320,
+        "height": 1071.015625,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-name": {
+        "x": 20,
+        "y": 262,
+        "width": 280,
+        "height": 103.34375,
+        "fontSize": "54.4px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-role": {
+        "x": 20,
+        "y": 389.34375,
+        "width": 280,
+        "height": 22.390625,
+        "fontSize": "16px",
+        "color": "rgb(164, 88, 38)",
+        "opacity": "1"
+      },
+      ".hero-introduction": {
+        "x": 20,
+        "y": 435.734375,
+        "width": 280,
+        "height": 112,
+        "fontSize": "16px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".hero-actions": {
+        "x": 20,
+        "y": 571.734375,
+        "width": 280,
+        "height": 59.90625,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".scroll-cue": {
+        "x": 20,
+        "y": 663.640625,
+        "width": 231.15625,
+        "height": 44,
+        "fontSize": "12px",
+        "color": "rgb(98, 91, 83)",
+        "opacity": "1"
+      },
+      ".mascot-stage": {
+        "x": 20,
+        "y": 763.640625,
+        "width": 280,
+        "height": 391.375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".mascot-artwork": {
+        "x": 20,
+        "y": 819.828125,
+        "width": 280,
+        "height": 280,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      ".hero-scene-type": {
+        "x": 3.1875,
+        "y": 763.765625,
+        "width": 421.578125,
+        "height": 76.140625,
+        "fontSize": "89.6px",
+        "color": "rgba(0, 0, 0, 0)",
+        "opacity": "1"
+      },
+      ".hero-scene-halo": {
+        "x": 80,
+        "y": 313.9375,
+        "width": 400,
+        "height": 400,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#about": {
+        "x": 0,
+        "y": 1235.015625,
+        "width": 320,
+        "height": 2638.84375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#education": {
+        "x": 0,
+        "y": 3873.859375,
+        "width": 320,
+        "height": 1934.734375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#projects": {
+        "x": 0,
+        "y": 5808.59375,
+        "width": 320,
+        "height": 2114.734375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#tech-stack": {
+        "x": 0,
+        "y": 7923.328125,
+        "width": 320,
+        "height": 1883.4375,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#experience": {
+        "x": 0,
+        "y": 9806.765625,
+        "width": 320,
+        "height": 2182.390625,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      },
+      "#contact": {
+        "x": 0,
+        "y": 11989.15625,
+        "width": 320,
+        "height": 1103.15625,
+        "fontSize": "16px",
+        "color": "rgb(36, 38, 44)",
+        "opacity": "1"
+      }
+    }
+  }
+}

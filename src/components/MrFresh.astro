@@ -1,0 +1,27 @@
+---
+import '../styles/mascot.css';
+---
+<div id="fresh-companion" class="fresh-companion" data-current-section="home" data-dock="home" data-state="entering" data-pose="sitting-in-container" data-paused="true" data-frame-active="false">
+  <div class="fresh-playground">
+    <button type="button" class="fresh-actor" data-fresh-actor disabled aria-label="Mr. Fresh. Say hello." aria-describedby="fresh-help">
+      <span class="fresh-attention"><span class="fresh-cue"><span class="fresh-breath">
+        <span class="fresh-layer" data-fresh-layer>
+          <img src="/assets/mr-fresh/container-960.webp" srcset="/assets/mr-fresh/container-512.webp 512w, /assets/mr-fresh/container-960.webp 960w" sizes="(min-width: 1440px) 420px, (min-width: 768px) 34vw, 64vw" width="1254" height="1254" alt="Mr. Fresh, an orange tabby in his transparent feeding container." fetchpriority="high" decoding="async" draggable="false" />
+        </span>
+        <span class="fresh-layer" data-fresh-layer hidden></span>
+      </span></span></span>
+    </button>
+  </div>
+  <div class="fresh-controls" role="group" aria-label="Mr. Fresh controls" hidden>
+    <button type="button" data-fresh-pet aria-label="Pet Mr. Fresh">Pet</button>
+    <button type="button" data-fresh-reset aria-label="Return Mr. Fresh to his resting spot">Reset</button>
+    <button type="button" data-fresh-pause aria-label="Pause Mr. Fresh animations" aria-pressed="false">Pause</button>
+  </div>
+  <p id="fresh-help" class="sr-only">Press Enter or Space to say hello, or use Pet for a gentle reaction. With a mouse, stroke gently or drag and release inside the stage. Escape returns Mr. Fresh. Touch scrolling stays available.</p>
+  <p class="sr-only" role="status" data-fresh-status></p>
+</div>
+<script>
+  import { initMascot } from '../scripts/mascot/controller';
+  initMascot();
+  window.addEventListener('pageshow', initMascot);
+</script>

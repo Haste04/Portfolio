@@ -1,0 +1,146 @@
+{
+  "javascript": {
+    "src": "/technology-icons/javascript.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/javascript.svg",
+    "hex": "#F7DF1E",
+    "fallback": "JS"
+  },
+  "typescript": {
+    "src": "/technology-icons/typescript.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/typescript.svg",
+    "hex": "#3178C6",
+    "fallback": "TS"
+  },
+  "python": {
+    "src": "/technology-icons/python.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/python.svg",
+    "hex": "#3776AB",
+    "fallback": "Python"
+  },
+  "go": {
+    "src": "/technology-icons/go.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/go.svg",
+    "hex": "#00ADD8",
+    "fallback": "Go"
+  },
+  "php": {
+    "src": "/technology-icons/php.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/php.svg",
+    "hex": "#777BB4",
+    "fallback": "PHP"
+  },
+  "sql": {
+    "src": null,
+    "source": null,
+    "hex": null,
+    "fallback": "SQL"
+  },
+  "csharp": {
+    "src": "/technology-icons/csharp.svg",
+    "source": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/logo/language-icons/csharp-72.svg",
+    "hex": "#512BD4",
+    "fallback": "C#"
+  },
+  "c": {
+    "src": "/technology-icons/c.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/c.svg",
+    "hex": "#A8B9CC",
+    "fallback": "C"
+  },
+  "java": {
+    "src": null,
+    "source": null,
+    "hex": null,
+    "fallback": "Java"
+  },
+  "astro": {
+    "src": "/technology-icons/astro.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/astro.svg",
+    "hex": "#BC52EE",
+    "fallback": "Astro"
+  },
+  "react": {
+    "src": "/technology-icons/react.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/react.svg",
+    "hex": "#61DAFB",
+    "fallback": "React"
+  },
+  "react-native": {
+    "src": "/technology-icons/react-native.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/react.svg",
+    "hex": "#61DAFB",
+    "fallback": "RN"
+  },
+  "nextjs": {
+    "src": "/technology-icons/nextjs.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/nextdotjs.svg",
+    "hex": "#FFFFFF",
+    "fallback": "Next.js"
+  },
+  "tailwind": {
+    "src": "/technology-icons/tailwind.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/tailwindcss.svg",
+    "hex": "#06B6D4",
+    "fallback": "Tailwind"
+  },
+  "fastapi": {
+    "src": "/technology-icons/fastapi.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/fastapi.svg",
+    "hex": "#009688",
+    "fallback": "FastAPI"
+  },
+  "mysql": {
+    "src": "/technology-icons/mysql.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/mysql.svg",
+    "hex": "#4479A1",
+    "fallback": "MySQL"
+  },
+  "sqlite": {
+    "src": "/technology-icons/sqlite.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/sqlite.svg",
+    "hex": "#003B57",
+    "fallback": "SQLite"
+  },
+  "upstash": {
+    "src": "/technology-icons/upstash.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/upstash.svg",
+    "hex": "#00E9A3",
+    "fallback": "Upstash"
+  },
+  "gemini": {
+    "src": "/technology-icons/gemini.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/googlegemini.svg",
+    "hex": "#8E75B2",
+    "fallback": "Gemini"
+  },
+  "nextauth": {
+    "src": "/technology-icons/nextauth.png",
+    "source": "https://raw.githubusercontent.com/nextauthjs/next-auth/6bca388f46636d1598a430ba6624e1201e70f213/docs/static/img/logo/logo-sm.png",
+    "hex": null,
+    "fallback": "NextAuth"
+  },
+  "git": {
+    "src": "/technology-icons/git.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/git.svg",
+    "hex": "#F03C2E",
+    "fallback": "Git"
+  },
+  "github": {
+    "src": "/technology-icons/github.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/github.svg",
+    "hex": "#FFFFFF",
+    "fallback": "GitHub"
+  },
+  "vercel": {
+    "src": "/technology-icons/vercel.svg",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/vercel.svg",
+    "hex": "#FFFFFF",
+    "fallback": "Vercel"
+  },
+  "powerbi": {
+    "src": "/technology-icons/powerbi.svg",
+    "source": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/SVG/Power-BI.svg",
+    "hex": "#F6D751",
+    "fallback": "Power BI"
+  }
+}

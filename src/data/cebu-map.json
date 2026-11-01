@@ -1,0 +1,24 @@
+{
+  "source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson",
+  "license": "Public domain",
+  "derivedFrom": "src/data/philippines-map.json",
+  "note": "Simplified Cebu-area coastline only; not administrative boundaries or an office map.",
+  "viewBox": "0 0 600 640",
+  "features": [
+    {
+      "name": "Cebu",
+      "highlighted": true,
+      "path": "M153.15 567.00L143.59 573.62L139.18 557.44L142.12 534.65L161.24 457.44L156.82 437.59L189.18 394.21L209.03 353.76L238.44 311.12L242.12 289.06L268.59 246.41L292.85 188.32L291.38 169.21L298.00 159.65L301.68 144.94L302.41 132.44L320.06 111.12L325.21 125.09L319.32 153.03L320.79 166.26L323.74 172.15L323.74 197.88L317.12 237.59L323.00 283.18L311.97 329.50L298.74 350.09L278.88 364.79L257.56 374.35L235.50 397.15L221.53 424.35L219.32 449.35L184.03 532.44L153.15 567.00Z"
+    },
+    {
+      "name": "Bantayan",
+      "highlighted": true,
+      "path": "M249.47 108.91L264.18 142.00L244.32 142.00L237.71 117.74L245.79 109.65L249.47 108.91Z"
+    },
+    {
+      "name": "Camotes",
+      "highlighted": true,
+      "path": "M389.91 278.03L382.56 279.50L394.32 253.03L403.15 256.71L406.09 259.65L406.09 271.41L389.91 278.03Z"
+    }
+  ]
+}

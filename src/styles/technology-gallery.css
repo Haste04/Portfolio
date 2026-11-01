@@ -1,0 +1,131 @@
+/* Tech Stack only. Interactive FLIP proxies never share transform ownership with page depth or Mr. Fresh. */
+#tech-stack .section-introduction { max-width: none; }
+#tech-stack [hidden] { display: none !important; }
+#tech-stack .toolkit-gallery { --chamber-gap: clamp(1rem, 2.2vw, 2rem); position: relative; isolation: isolate; min-width: 0; }
+#tech-stack .toolkit-atmosphere { position: absolute; inset: 0; z-index: -1; overflow: clip; pointer-events: none; }
+#tech-stack .toolkit-editorial-layer { position: absolute; top: 12%; left: 12%; color: color-mix(in srgb, var(--color-text) 1.176%, transparent); -webkit-text-stroke: 1px color-mix(in srgb, var(--color-text) 4.706%, transparent); font: 600 clamp(5rem, 14vw, 13rem)/1 var(--font-display); letter-spacing: -.08em; white-space: nowrap; }
+#tech-stack .toolkit-contour { position: absolute; inset: 15% 0 auto; width: 100%; height: 45%; fill: none; stroke: color-mix(in srgb, var(--color-accent) 7.843%, transparent); stroke-width: .7; }
+#tech-stack .toolkit-stage { display: grid; grid-template-columns: minmax(0,1fr); position: relative; min-width: 0; padding: clamp(.5rem, 2vw, 1.5rem); border: 1px solid transparent; border-radius: 12px; }
+#tech-stack [data-gallery-view='focus'] .toolkit-stage { border-color: color-mix(in srgb, var(--color-text) 12.549%, transparent); background: var(--surface-panel); }
+#tech-stack .toolkit-views { grid-area: 1 / 1; position: relative; min-width: 0; min-height: 500px; display: grid; align-items: start; }
+#tech-stack .toolkit-overview, #tech-stack .toolkit-focus { grid-area: 1 / 1; min-width: 0; }
+#tech-stack .toolkit-overview { display: grid; grid-template-columns: repeat(12,minmax(0,1fr)); grid-template-rows: repeat(2,1fr); gap: var(--chamber-gap); align-items: stretch; }
+#tech-stack .technology-category-depth[data-tech-placement='frontend'] { grid-area: 1 / 2 / 2 / 6; }
+#tech-stack .technology-category-depth[data-tech-placement='backend'] { grid-area: 1 / 8 / 2 / 12; }
+#tech-stack .technology-category-depth[data-tech-placement='languages'] { grid-area: 2 / 1 / 3 / 5; }
+#tech-stack .technology-category-depth[data-tech-placement='tools'] { grid-area: 2 / 9 / 3 / 13; }
+#tech-stack .technology-category-depth { position: relative; display: flex; min-width: 0; }
+#tech-stack .technology-category { width: 100%; min-width: 0; height: 100%; padding: clamp(1rem, 1.5vw, 1.5rem); border: 1px solid color-mix(in srgb, var(--color-text) 8.627%, transparent); border-radius: 8px; background: color-mix(in srgb, var(--color-surface) 40.000%, transparent); }
+#tech-stack .technology-category-depth:focus-within .technology-category { border-color: color-mix(in srgb, var(--color-accent) 37.647%, transparent); }
+#tech-stack .tech-gallery-rule { position: absolute; left: 0; top: 1rem; height: calc(100% - 2rem); width: 1px; background: linear-gradient(color-mix(in srgb, var(--color-accent) 37.647%, transparent), color-mix(in srgb, var(--color-text) 14.118%, transparent) 35%, color-mix(in srgb, var(--color-text) 3.137%, transparent)); transform-origin: 50% 0; pointer-events: none; }
+#tech-stack .technology-category-heading { display: flex; align-items: baseline; gap: .625rem; min-height: 48px; padding-bottom: 1rem; }
+#tech-stack .technology-category-heading > span { color: var(--color-accent); font-size: .5625rem; }
+#tech-stack .technology-category-heading h3 { margin: 0; font: 500 .8125rem / 1.55 var(--font-body); letter-spacing: -.015em; }
+#tech-stack .technology-logo-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .5rem .5rem; }
+#tech-stack .language-logo-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+#tech-stack .technology-button { display: flex; flex-direction: column; align-items: center; justify-content: start; gap: .5rem; width: 100%; min-width: 0; min-height: 96px; padding: .5rem .25rem; border: 1px solid transparent; border-radius: 10px; background: transparent; color: var(--color-muted); font: inherit; cursor: pointer; touch-action: manipulation; }
+#tech-stack .technology-button:disabled { cursor: default; }
+#tech-stack .technology-logo { display: grid; grid-template: minmax(0,1fr) / minmax(0,1fr); place-items: center; width: clamp(44px,4.4vw,60px); height: clamp(44px,4.4vw,60px); flex: 0 0 auto; }
+#tech-stack .technology-logo img, #tech-stack .tech-focus-logo img, #tech-stack .toolkit-zoom-logo img { display: block; min-width: 0; min-height: 0; max-height: 100%; width: 100%; height: 100%; object-fit: contain; }
+#tech-stack .tech-icon-fallback { display: block; color: var(--color-text); font: 600 clamp(1.125rem,2vw,1.75rem)/1 var(--font-display); letter-spacing: -.045em; text-align: center; }
+#tech-stack .technology-caption { max-width: 100%; font-size: .6875rem; line-height: 1.5; text-align: center; overflow-wrap: anywhere; }
+#tech-stack .technology-button:hover:not(:disabled), #tech-stack .technology-button[aria-pressed='true'] { border-color: color-mix(in srgb, var(--color-accent) 30.196%, transparent); color: var(--color-text); background: color-mix(in srgb, var(--color-accent) 2.745%, transparent); }
+#tech-stack .technology-button:focus-visible { outline-offset: 1px; }
+#tech-stack .technology-button:hover:not(:disabled) .technology-logo { transform: translateY(-3px) scale(1.035); }
+#tech-stack [data-gallery-view='opening'] .technology-category:not(.is-active-category) { opacity: .2; }
+#tech-stack [data-gallery-view='opening'] .is-active-category .technology-button:not([aria-pressed='true']) { opacity: .4; }
+#tech-stack [data-gallery-view='opening'] .technology-button[aria-pressed='true'] .technology-logo,
+#tech-stack [data-gallery-view='closing'] .technology-button[aria-pressed='true'] .technology-logo { opacity: 0; }
+#tech-stack [data-gallery-view='closing'] .toolkit-overview { opacity: .35; }
+#tech-stack [data-gallery-view='opening'] .toolkit-focus,
+#tech-stack [data-gallery-view='closing'] .toolkit-focus { visibility: hidden; }
+#tech-stack .toolkit-focus { padding: .5rem clamp(.5rem, 1.6vw, 1.5rem); }
+#tech-stack .toolkit-focus-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--color-border); }
+#tech-stack .toolkit-back { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; min-height: 44px; padding: .625rem 1rem; border: 1px solid var(--color-border); border-radius: 999px; background: var(--color-surface); color: var(--color-text); font: 500 .75rem / 1.4 var(--font-body); cursor: pointer; }
+#tech-stack .toolkit-back:hover { border-color: var(--color-accent); color: var(--color-accent); }
+#tech-stack .toolkit-switcher { display: grid; gap: .4rem; width: min(100%,19rem); }
+#tech-stack .toolkit-switcher label { font-size: .625rem; color: var(--color-muted); }
+#tech-stack .toolkit-switcher select { width: 100%; min-width: 0; min-height: 44px; padding: .625rem 2rem .625rem .75rem; border: var(--border-subtle); border-radius: 5px; background: var(--color-surface); color: var(--color-text); font: 400 .8125rem / 1.5 var(--font-body); color-scheme: inherit; }
+#tech-stack .toolkit-focus-body { display: grid; grid-template-columns: minmax(0,.55fr) minmax(0,1fr); gap: clamp(2rem,5vw,5rem); align-items: start; padding-top: 2.25rem; }
+#tech-stack .tech-focus-identity { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; padding-top: 1.25rem; }
+#tech-stack .tech-focus-logo { display: grid; grid-template: minmax(0,1fr) / minmax(0,1fr); place-items: center; width: clamp(144px,16vw,216px); aspect-ratio: 1; }
+#tech-stack .tech-focus-logo .tech-icon-fallback, #tech-stack .toolkit-zoom-logo .tech-icon-fallback { font-size: clamp(2.5rem,6vw,5rem); }
+#tech-stack .tech-focus-identity .eyebrow { margin: 0; font-size: .5625rem; color: var(--color-muted); }
+#tech-stack .tech-focus-category { margin: 0 0 .75rem; color: var(--color-accent); font-size: .6875rem; }
+#tech-stack .tech-focus-information { min-width: 0; }
+#tech-stack .tech-focus-information h3 { margin: 0; font: 500 clamp(2rem,3.5vw,3.5rem)/1.08 var(--font-display); letter-spacing: -.055em; overflow-wrap: anywhere; }
+#tech-stack .tech-focus-description { max-width: 58ch; margin: 1.25rem 0 1.75rem; color: var(--color-muted); font-size: .9375rem; line-height: 1.85; }
+#tech-stack .tech-focus-relationships { padding-top: 1.25rem; border-top: 1px solid var(--color-border); }
+#tech-stack .tech-focus-relationships h4 { margin: 0 0 .75rem; color: var(--color-text); font-size: .75rem; font-weight: 500; }
+#tech-stack .tech-focus-relationships ul { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; list-style: none; margin: 0; padding: 0; }
+#tech-stack .tech-focus-relationships a { display: inline-flex; align-items: center; min-height: 44px; font-size: .8125rem; color: var(--color-accent); }
+#tech-stack .tech-focus-relationships a::after { content: '\2197'; margin-left: .5rem; }
+#tech-stack .tech-no-projects { margin: 0; color: var(--color-muted); font-size: .8125rem; line-height: 1.7; }
+#tech-stack .tech-documentation { display: inline-flex; align-items: center; gap: .75rem; min-height: 44px; margin-top: .75rem; font-size: .6875rem; color: var(--color-muted); }
+#tech-stack .toolkit-zoom-layer { position: absolute; inset: 0; z-index: 10; overflow: clip; pointer-events: none; border-radius: 10px; }
+#tech-stack .toolkit-zoom-plane { position: absolute; transform-origin: 0 0; border: 1px solid color-mix(in srgb, var(--color-accent) 33.333%, transparent); border-radius: 10px; background: var(--surface-panel); }
+#tech-stack .toolkit-zoom-logo { position: absolute; display: grid; grid-template: minmax(0,1fr) / minmax(0,1fr); place-items: center; transform-origin: 0 0; }
+/* Shared grid overlay reserves the bottom center without placing the dock in an inert view. */
+#tech-stack .toolkit-mascot-footer { display: grid; grid-area: 1 / 1; grid-template-columns: repeat(12,minmax(0,1fr)); grid-template-rows: repeat(2,minmax(0,1fr)); gap: var(--chamber-gap); align-items: center; min-height: 0; margin: 0; pointer-events: none; z-index: 2; }
+#tech-stack .tech-mascot-anchor { grid-area: 2 / 5 / 3 / 9; pointer-events: none; }
+#tech-stack .tech-overview-anchor { width: min(100%,280px); height: 290px; justify-self: center; }
+#tech-stack .tech-focus-anchor { width: 184px; height: 210px; justify-self: center; }
+#tech-stack :where([data-gallery-view='focus']) .toolkit-stage { display: block; }
+#tech-stack :where([data-gallery-view='focus']) .toolkit-mascot-footer { grid-template-columns: minmax(0,1fr); grid-template-rows: minmax(0,1fr); gap: 0; align-items: end; min-height: 250px; margin-top: 1rem; }
+#tech-stack :where([data-gallery-view='focus']) .tech-mascot-anchor { grid-area: 1 / 1; }
+#tech-stack :where([data-gallery-view='focus']) .tech-overview-anchor { width: 240px; height: 250px; }
+#tech-stack :where([data-gallery-view='focus']) .tech-focus-anchor { justify-self: end; }
+#tech-stack .toolkit-mascot-footer .tech-gallery-dock { position: relative; width: 100%; height: 100%; margin: 0; pointer-events: auto; }
+#tech-stack .toolkit-fallback-art { position: absolute; left: 14%; top: 0; width: 72%; height: 78%; object-fit: contain; pointer-events: none; }
+#tech-stack .tech-gallery-dock:has(#fresh-companion[data-ready='true']) .toolkit-fallback-art { display: none; }
+#tech-stack .toolkit-static { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--color-border); }
+#tech-stack .toolkit-static > h3 { font: 500 1.75rem / 1.2 var(--font-display); letter-spacing: -.04em; }
+#tech-stack .toolkit-static > p { color: var(--color-muted); }
+#tech-stack .toolkit-static-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+#tech-stack .toolkit-static details { padding: 1rem; border: var(--border-subtle); border-radius: 5px; }
+#tech-stack .toolkit-static summary { min-height: 44px; cursor: pointer; }
+#tech-stack .toolkit-static summary > span { display: block; padding-top: .25rem; color: var(--color-muted); font-size: .6875rem; }
+#tech-stack .toolkit-static p { color: var(--color-muted); font-size: .875rem; line-height: 1.8; }
+#tech-stack .toolkit-static ul { list-style: none; padding: 0; }
+#tech-stack .toolkit-static a { margin-right: 1rem; min-height: 44px; display: inline-flex; align-items: center; font-size: .8125rem; }
+@media (max-width: 1023px) {
+ #tech-stack .toolkit-stage { display: block; }
+ #tech-stack .toolkit-overview { grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: repeat(2,1fr); gap: var(--chamber-gap); }
+ #tech-stack .technology-category-depth[data-tech-placement] { grid-area: auto; }
+ #tech-stack .toolkit-mascot-footer { grid-template-columns: minmax(0,1fr); grid-template-rows: minmax(0,1fr); gap: 0; align-items: end; min-height: 250px; margin-top: 1rem; }
+ #tech-stack .tech-mascot-anchor { grid-area: 1 / 1; }
+ #tech-stack .tech-overview-anchor { width: 240px; height: 250px; }
+ #tech-stack .tech-focus-anchor { justify-self: end; }
+ #tech-stack .technology-logo { width: 60px; height: 60px; }
+ #tech-stack .toolkit-views { min-height: 0; }
+ #tech-stack .toolkit-focus-body { gap: 2rem; grid-template-columns: minmax(0,.55fr) minmax(0,1fr); }
+}
+@media (max-width: 767px) {
+ #tech-stack .toolkit-stage { padding: .5rem; }
+ #tech-stack .technology-category { padding: .75rem .625rem; }
+ #tech-stack .language-logo-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+ #tech-stack .technology-category-heading { min-height: 70px; gap: .375rem; }
+ #tech-stack .technology-category-heading h3 { font-size: .6875rem; }
+ #tech-stack .technology-logo { width: 44px; height: 44px; }
+ #tech-stack .technology-button { min-height: 88px; padding: .5rem .125rem; gap: .5rem; }
+ #tech-stack .technology-logo-grid { gap: .625rem .25rem; }
+ #tech-stack .technology-caption { font-size: .625rem; }
+ #tech-stack .toolkit-focus { padding: .5rem; }
+ #tech-stack .toolkit-focus-toolbar { align-items: start; flex-direction: column; gap: 1rem; padding-bottom: 1.5rem; }
+ #tech-stack .toolkit-switcher { width: 100%; }
+ #tech-stack .toolkit-focus-body { grid-template-columns: minmax(0,1fr); padding-top: 1.5rem; gap: 1.5rem; }
+ #tech-stack .tech-focus-identity { gap: .75rem; padding-top: 0; }
+ #tech-stack .tech-focus-logo { width: 132px; }
+ #tech-stack .tech-focus-information h3 { font-size: clamp(2rem,9vw,3rem); }
+ #tech-stack .tech-focus-description { font-size: .875rem; }
+ #tech-stack .toolkit-mascot-footer { min-height: 210px; }
+ #tech-stack .tech-overview-anchor { width: 184px; height: 210px; }
+ #tech-stack .tech-focus-anchor { width: 156px; height: 190px; }
+ #tech-stack .toolkit-static-list { grid-template-columns: minmax(0,1fr); }
+}
+@media (prefers-reduced-motion: no-preference) {
+ #tech-stack .technology-logo { transition: transform 160ms ease; }
+ #tech-stack .technology-button { transition: border-color 160ms, background-color 160ms, color 160ms; }
+}
+html:has([data-fresh-pause][aria-pressed='true']) #tech-stack .technology-logo,
+html:has(#fresh-companion[data-paused='true']) #tech-stack .technology-logo { transition: none; }

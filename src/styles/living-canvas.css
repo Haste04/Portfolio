@@ -1,0 +1,42 @@
+/* Ambient owners are independent of page geometry, functional transitions and the actor. */
+:root{--living-ink:var(--color-accent);--living-soft:var(--color-muted);--living-line:.13;--living-response:.56;--living-glow:.16}
+:root[data-theme="light"]{--living-ink:#aa602b;--living-soft:color-mix(in srgb,var(--color-accent) 55%,var(--color-background));--living-line:.16;--living-response:.5;--living-glow:.14}
+.living-canvas{position:absolute;inset:0;z-index:0;overflow:clip;pointer-events:none;contain:paint;--near:0;--living-dx:0px;--living-dy:0px}
+.living-canvas *,[data-living-ring]{pointer-events:none}
+.living-svg{display:block;width:100%;height:100%;overflow:hidden;fill:none;stroke:var(--living-ink);stroke-width:1;mask-image:linear-gradient(transparent,black 14%,black 90%,transparent)}
+.living-svg path,.living-svg circle,.living-svg ellipse{vector-effect:non-scaling-stroke}
+[data-living-target]{--near:0;--living-dx:0px;--living-dy:0px;transition:opacity 550ms ease,translate 650ms cubic-bezier(.18,.8,.3,1)}
+[data-living-ring]{--near:0;--living-dx:0px;--living-dy:0px;translate:var(--living-dx) var(--living-dy);transition:translate 650ms cubic-bezier(.18,.8,.3,1)}
+[data-living-ring]::after{content:'';position:absolute;inset:-1px;border:1px solid var(--living-ink);border-radius:inherit;opacity:calc(.05 + var(--near)*.7);transition:opacity 450ms;animation:living-ring-breath 9s ease-in-out infinite;animation-play-state:paused}
+[data-living-running="true"] [data-living-ring]::after{animation-play-state:running}
+.living-light-follow{position:absolute;inset:8% -8%;translate:var(--living-dx) var(--living-dy)}
+.living-light-breath{width:100%;height:100%;opacity:calc(var(--living-glow) + var(--near)*.12);background:radial-gradient(ellipse at 32% 35%,var(--living-ink),transparent 48%),radial-gradient(ellipse at 73% 75%,var(--living-soft),transparent 40%);animation:living-light-breathe 12s ease-in-out infinite}
+.living-blueprint{animation:living-network-breathe 18s ease-in-out infinite}
+.living-grid-line{fill:none;stroke:var(--living-soft);opacity:.1;stroke-width:.7}
+.living-blueprint-point{fill:var(--living-ink);stroke:none;opacity:calc(.12 + var(--near)*.8)}
+.living-track{opacity:var(--living-line)}
+.living-signal{stroke-width:2;stroke-linecap:round;stroke-dasharray:8 310;opacity:calc(.3 + var(--near)*.65);animation:living-signal-travel var(--signal-duration,32s) linear infinite;animation-delay:var(--signal-delay,0s)}
+.living-link{opacity:calc(var(--living-line) + var(--near)*var(--living-response))}
+.living-node{fill:var(--living-ink);stroke:none;opacity:calc(.18 + var(--near)*.7)}
+.living-network{animation:living-network-breathe 16s ease-in-out infinite}
+.living-contour{opacity:calc(var(--living-line) + var(--near)*.4);translate:var(--living-dx) var(--living-dy)}
+.living-contours{animation:living-network-breathe 20s ease-in-out infinite}
+.living-rest-ring{transform-origin:50% 56%;opacity:calc(.09 + var(--near)*.22);animation:living-rest-breathe 20s ease-in-out infinite;animation-delay:var(--ripple-delay,0s)}
+.living-burst{opacity:0;stroke-width:1.3;transform-origin:50% 56%}
+.living-canvas [class*="living-"]{animation-play-state:paused}
+.living-canvas[data-running="true"] [class*="living-"]{animation-play-state:running}
+.living-canvas[data-tier="light"] .living-network,.living-canvas[data-tier="light"] .living-contours{animation:none}
+.living-canvas[data-tier="light"] .living-signal{animation-duration:52s}
+@keyframes living-ring-breath{50%{scale:1.012}}
+@keyframes living-light-breathe{50%{opacity:.1;scale:1.025}}
+@keyframes living-signal-travel{to{stroke-dashoffset:-954}}
+@keyframes living-network-breathe{50%{opacity:.65}}
+@keyframes living-rest-breathe{50%{scale:1.055 1.08}}
+@media(max-width:767px){.living-svg{stroke-width:.75}.living-light-follow{inset:5% -35%}.living-canvas{--living-line:.1}}
+@media(prefers-reduced-motion:reduce){
+ .living-canvas *,[data-living-ring],[data-living-ring]::after{animation:none!important;transition:none!important}
+ [data-living-ring],[data-living-target]{translate:none!important}
+}
+
+/* Invisible resets cannot launch new offscreen transitions. Visible Pause freezes them instead. */
+.living-canvas[data-visible="false"] [data-living-target],.portfolio-section[data-living-visible="false"] [data-living-ring]{transition:none}

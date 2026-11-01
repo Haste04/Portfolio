@@ -1,0 +1,32 @@
+---
+import LivingCanvas from './LivingCanvas.astro';
+import MascotDock from './MascotDock.astro';
+import type { PortfolioSection } from '../data/portfolio';
+interface Props { section: PortfolioSection; hero?: boolean; headerMascot?: boolean; }
+const { section, hero = false, headerMascot = true } = Astro.props;
+---
+<section id={section.id} class:list={['portfolio-section', { 'hero-section': hero }]} aria-labelledby={`${section.id}-heading`} tabindex="-1" data-section>
+  <LivingCanvas section={section.id} />
+  <slot name="scenery" />
+  {!hero && section.id !== "contact" && <div class="section-scenery" aria-hidden="true"><span class="section-echo">{section.number}</span><span class="section-hairline"></span><span class="section-depth-shape"></span></div>}
+  <div class="content-container">
+    <div class="section-layout">
+      {hero ? <p class="section-index"><span>{section.number}</span><span aria-hidden="true">/</span>{section.label}</p> : <div class="section-marker"><p class="section-index"><span>{section.number}</span><span aria-hidden="true">/</span>{section.label}</p>{headerMascot && section.id !== "contact" && <MascotDock dock={section.id} section={section.id} />}</div>}
+      <div class="section-body">
+        {hero ? (
+          <>
+            <h1 id={`${section.id}-heading`} class="hero-heading" data-component-reveal="home:0">
+              <span class="hero-name">Haggai <span class="name-line">Estavilla<span class="name-period" aria-hidden="true">.</span></span></span>
+              <span class="hero-role"><span aria-hidden="true">&#8212; </span>Software Developer</span>
+            </h1>
+            <slot />
+          </>
+        ) : (
+          <><h2 id={`${section.id}-heading`} class="section-heading" aria-label={section.heading}>{section.heading}</h2><slot name="intro" /></>
+        )}
+      </div>
+      {hero && <slot name="stage" />}
+    </div>
+    {!hero && <div class="section-content"><slot /></div>}
+  </div>
+</section>

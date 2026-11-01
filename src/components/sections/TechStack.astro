@@ -1,0 +1,94 @@
+---
+import SectionFrame from '../SectionFrame.astro';
+import { sections } from '../../data/portfolio';
+import { technologies, categories } from '../../data/technologies';
+import { technologyDetails } from '../../data/technology-details';
+import technologyIcons from '../../data/technology-icons.json';
+import { projects } from '../../data/projects';
+import { assetUrl } from '../../scripts/mascot/assets';
+import '../../styles/technology-gallery.css';
+const entries = technologies.map(technology => ({
+  ...technology,
+  ...technologyDetails[technology.id],
+  icon: technologyIcons[technology.id],
+  projects: projects.filter(project => (project.technologyIds as readonly string[]).includes(technology.id))
+    .map(project => ({ id: project.id, title: project.title })),
+}));
+// Presentation order is independent of the verified technology dataset.
+const galleryCategories = [
+  { name: categories[1], placement: 'frontend' },
+  { name: categories[2], placement: 'backend' },
+  { name: categories[0], placement: 'languages' },
+  { name: categories[3], placement: 'tools' },
+] as const;
+const serialized = JSON.stringify(entries).replace(/</g, '\\u003c');
+---
+<SectionFrame section={sections[4]} headerMascot={false}>
+  <p slot="intro" class="section-introduction">A growing toolkit, connected by curiosity. Choose a technology to find the work behind it.</p>
+  <div class="technology-explorer toolkit-gallery" data-technology-explorer data-tech-gallery>
+    <div class="toolkit-atmosphere" aria-hidden="true"><span class="toolkit-editorial-layer">TOOLKIT</span><svg class="toolkit-contour" viewBox="0 0 1000 420" preserveAspectRatio="none"><path d="M0 355Q250 40 500 210T1000 95M0 390Q250 90 500 250T1000 135" /></svg></div>
+    <div class="toolkit-stage">
+      <div class="toolkit-views" data-tech-views>
+        <div class="toolkit-overview" data-tech-overview>
+          {galleryCategories.map(({ name: category, placement },index) => <div class="technology-category-depth" data-tech-placement={placement} data-component-reveal={'tech-stack:'+index}>
+            <span class="tech-gallery-rule" aria-hidden="true"></span>
+            <div class="technology-category" data-tech-category={category}>
+              <header class="technology-category-heading"><span aria-hidden="true">0{index + 1}</span><h3 id={`technology-category-${index}`}>{category}</h3></header>
+              <div class:list={['technology-logo-grid',{'language-logo-grid': category === categories[0]}]} role="group" aria-labelledby={`technology-category-${index}`}>
+                {entries.filter(entry => entry.category === category).map(entry => <button type="button" class="technology-button" data-technology={entry.id} aria-label={`Explore ${entry.name}`} aria-controls="technology-focus" aria-pressed="false" disabled>
+                  <span class="technology-logo" data-tech-logo={entry.id} aria-hidden="true">
+                    {entry.icon.src && <img src={entry.icon.src} width="64" height="64" alt="" loading="lazy" decoding="async" data-tech-image />}
+                    <span class="tech-icon-fallback" data-tech-icon-fallback hidden={Boolean(entry.icon.src)}>{entry.icon.fallback}</span>
+                  </span>
+                  <span class="technology-caption">{entry.name}</span>
+                </button>)}
+              </div>
+            </div>
+          </div>)}
+        </div>
+        <article class="toolkit-focus" id="technology-focus" data-tech-focus role="region" aria-labelledby="technology-focus-heading" tabindex="-1" hidden>
+          <div class="toolkit-focus-toolbar">
+            <button type="button" class="toolkit-back" data-tech-back><span aria-hidden="true">&#8592;</span>Back to Toolkit</button>
+            <div class="toolkit-switcher"><label for="toolkit-switch">Inspect another technology</label><select id="toolkit-switch" data-tech-switch>{categories.map(category => <optgroup label={category}>{entries.filter(entry => entry.category === category).map(entry => <option value={entry.id}>{entry.name}</option>)}</optgroup>)}</select></div>
+          </div>
+          <div class="toolkit-focus-body" data-tech-focus-body>
+            <div class="tech-focus-identity"><span class="tech-focus-logo" data-tech-focus-logo aria-hidden="true"></span><span class="eyebrow" data-tech-position></span></div>
+            <div class="tech-focus-information">
+              <p class="tech-focus-category" data-tech-category-name></p>
+              <h3 id="technology-focus-heading" data-tech-name></h3>
+              <p class="tech-focus-description" data-tech-description></p>
+              <div class="tech-focus-relationships"><h4>Where it connects</h4><p class="tech-no-projects" data-tech-no-projects hidden>Part of my wider toolkit. No featured project is tagged with it yet.</p><ul data-tech-projects></ul></div>
+              <a class="text-link tech-documentation" data-tech-documentation target="_blank" rel="noopener noreferrer">Official documentation<span aria-hidden="true">&#8599;</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+        </article>
+        <div class="toolkit-zoom-layer" data-tech-zoom-layer aria-hidden="true"></div>
+      </div>
+      <div class="toolkit-mascot-footer">
+        <div class="tech-mascot-anchor tech-overview-anchor" id="tech-overview-anchor">
+          <div class="fresh-dock fresh-dock-secondary tech-gallery-dock" data-fresh-dock="tech-stack" data-fresh-section="tech-stack">
+            <img class="toolkit-fallback-art" src={assetUrl('curious-lean')} width="512" height="512" alt="" loading="lazy" decoding="async" />
+          </div>
+        </div>
+        <div class="tech-mascot-anchor tech-focus-anchor" id="tech-focus-anchor"></div>
+      </div>
+    </div>
+    <div class="toolkit-static" data-tech-static>
+      <h3>The toolkit, in detail.</h3>
+      <p>Explore each technology and the featured work connected to it.</p>
+      <div class="toolkit-static-list">{entries.map(entry => <details id={`technology-${entry.id}`}>
+        <summary>{entry.name}<span>{entry.category}</span></summary>
+        <p>{entry.description}</p>
+        {entry.projects.length ? <ul>{entry.projects.map(project => <li><a class="text-link" href={`#project-${project.id}`}>{project.title}</a></li>)}</ul> : <p>Part of my wider toolkit. No featured project is tagged with it yet.</p>}
+        <a class="text-link" href={entry.documentation} target="_blank" rel="noopener noreferrer">Official documentation<span class="sr-only"> (opens in a new tab)</span></a>
+      </details>)}</div>
+    </div>
+    <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-tech-status></p>
+    <script type="application/json" data-technology-data set:html={serialized}></script>
+  </div>
+</SectionFrame>
+<script>
+  import { initTechnologies } from '../../scripts/technologies';
+  initTechnologies();
+  window.addEventListener('pageshow', initTechnologies);
+</script>

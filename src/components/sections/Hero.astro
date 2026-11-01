@@ -1,0 +1,24 @@
+---
+import SectionFrame from '../SectionFrame.astro';
+import CinematicScene from '../CinematicScene.astro';
+import MrFresh from '../MrFresh.astro';
+import { sections } from '../../data/portfolio';
+---
+<SectionFrame section={sections[0]} hero>
+  <CinematicScene slot="scenery" kind="hero" />
+  <p class="hero-introduction" data-component-reveal="home:1">A Computer Science student building useful software, exploring AI, and learning through hands-on projects.</p>
+  <div class="hero-actions" data-component-reveal="home:2">
+    <a class="button button-primary" href="#projects">Explore Work <span aria-hidden="true">↗</span></a>
+    <a class="button button-quiet" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+  </div>
+  <a class="scroll-cue" href="#about">Scroll to explore <span aria-hidden="true">&#8595;</span></a>
+  <figure slot="stage" class="mascot-stage" data-component-reveal="home:3" data-mascot-anchor="hero">
+    <div class="stage-caption"><span class="status-dot" aria-hidden="true"></span>Meet Mr. Fresh <span class="stage-annotation">01 / Resident observer</span></div>
+    <div class="mascot-artwork fresh-dock" data-fresh-dock="home" data-fresh-section="home">
+      <div class="stage-orbit" aria-hidden="true"></div>
+      <MrFresh />
+    </div>
+    <figcaption>A little judgment. A lot of personality.<span class="fresh-stage-hint" data-fresh-hint>Say hello. Stroke gently. Try a little toss.</span></figcaption>
+  </figure>
+
+</SectionFrame>

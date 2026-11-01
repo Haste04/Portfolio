@@ -1,0 +1,217 @@
+[
+  {
+    "path": "Estavilla Resume.pdf",
+    "size": 190750,
+    "sha256": "57f8a234762463324da1b48c782771695943181836a8eed4ff6aaf5932e6e6da",
+    "format": "PDF",
+    "signature": "%PDF-1.7"
+  },
+  {
+    "path": "mr-fresh\\base\\mr-fresh-base.png",
+    "size": 1844785,
+    "sha256": "31590901235d6020054806940509a646107cb7dde65b3c7590d52d65091c2e74",
+    "format": "PNG",
+    "width": 1122,
+    "height": 1402
+  },
+  {
+    "path": "mr-fresh\\expressions\\annoyed.png",
+    "size": 2015904,
+    "sha256": "f12c33dccf1e54b090d5d63af3a34466a9eddde0fbc5f4ad98e144fe597b4012",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\confused.png",
+    "size": 1931842,
+    "sha256": "09c11c5e5824d49b429469ec505cb0da9bf1292738c1c9093cb73238e86396a7",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\curious.png",
+    "size": 1941933,
+    "sha256": "5d6b221eaf0ec59b7a7548cf3d0759181d28402d5c6b2efc715932511cba4108",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\dizzy.png",
+    "size": 1957232,
+    "sha256": "386ee38d6151b397dda74959d3cdb01ddd0e00617d7dab1b87e1b1f1b633b918",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\happy-content.png",
+    "size": 1983078,
+    "sha256": "5d0f361987d7891a0bbdf1d10cc9e673c4e42a227f33d9481c35cee111c9e5f5",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\judgmental-side-eye.png",
+    "size": 2026984,
+    "sha256": "3232530ee9b46ca12e26586a277a91d92883af73838c686a3f34f14285de5c51",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\neutral-relaxed.png",
+    "size": 2095594,
+    "sha256": "cd7d301411ad37a71bc1d5a7f602fd730f592166a5698a993fcce2e2d7158684",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\sleepy.png",
+    "size": 1984813,
+    "sha256": "12cf876800dd4223b504e1a91f6d09c231d481f0685439e53b0299b28f13ea33",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\smug.png",
+    "size": 1962189,
+    "sha256": "695fac4a3b552f46e818c2a8d1fe568f16f083c70d4da4c36daaa4f2c3ecc7e2",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\surprised.png",
+    "size": 2060247,
+    "sha256": "4b7402ef81409678a4296c3a8e81d7755cb14a5a6d292b168bb79d00d3a1fc41",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\expressions\\yawning.png",
+    "size": 2007108,
+    "sha256": "da7e9c0cbc85f2db885cc0932b8ceb647ae4112cb50fd6830e83e895349237ac",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\poses\\curious-lean.png",
+    "size": 1643356,
+    "sha256": "2041a226a52675638a2dd309a8b757ef99991d4c0e643c51cc873cd7f32f862b",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\poses\\default-sitting.png",
+    "size": 1640348,
+    "sha256": "a475c5f668d137d19484fc5db8de6fb263cef83f9bf2a6852387c94808fccce6",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\poses\\falling-tossed.png",
+    "size": 1657701,
+    "sha256": "7273baecde804d7677d198bf263c5cef811e90be8e580ab0bca1afa5c0ca63c0",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\poses\\jumping.png",
+    "size": 1577497,
+    "sha256": "c8dbe331752d595a0f9055a914d3bee838dc8ef842a002b64ce0f7e2c34ac2ca",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\poses\\paw-swipe.png",
+    "size": 1954363,
+    "sha256": "3bd70c07a8879674f052b2b86518bc1e9dc624a19b3686b5afe7b9bd5456fce6",
+    "format": "PNG",
+    "width": 1086,
+    "height": 1448
+  },
+  {
+    "path": "mr-fresh\\poses\\peeking.png",
+    "size": 1847110,
+    "sha256": "79cb5e7d237cb5409e28dcd87bea8b99615f2a2d6afc43634a9cd0019815c949",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\poses\\sitting-in-container.png",
+    "size": 1745096,
+    "sha256": "a62362560e0d0d110ce6578efb8cf51afdcbbaf8a13d527007747accde5e5832",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\poses\\sleeping-curl.png",
+    "size": 2546194,
+    "sha256": "062bebc4823bd9d53fdcc16df6d7be4b94cffb2bfac7a68a7bf78f829cf0c1bf",
+    "format": "PNG",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "path": "mr-fresh\\poses\\stretching.png",
+    "size": 1699007,
+    "sha256": "5e0d4afd2614055b66ad4b26111b87dd9ee90b7df75d8d7078bf43bb3127afc8",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "mr-fresh\\poses\\walking.png",
+    "size": 1709824,
+    "sha256": "e84a90fce134572dde41ce4ed3fc2cc42ca516dfa00e852f8a7489422271a615",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "path": "project-assets\\anthea\\homepage.png",
+    "size": 554102,
+    "sha256": "8855afcbbea7cbc0ce7358e0ce7d22a4ddccea65e25fa1fc0114317837b1db9f",
+    "format": "PNG",
+    "width": 1333,
+    "height": 609
+  },
+  {
+    "path": "project-assets\\lifevent\\homepage.png",
+    "size": 59504,
+    "sha256": "7e2caadcddaf826aace04ebefe47696db1ca261389b4a84a86f19e20deb7e782",
+    "format": "PNG",
+    "width": 1348,
+    "height": 614
+  },
+  {
+    "path": "project-assets\\philchan-cebu\\homepage.png",
+    "size": 885896,
+    "sha256": "040788b1378dfb3d180b77844ef1cd448c85be5e289b7765b5ff695e008e03a3",
+    "format": "PNG",
+    "width": 1327,
+    "height": 612
+  },
+  {
+    "path": "project-assets\\seek-first-books\\homepage.png",
+    "size": 790130,
+    "sha256": "ce8d7bfcfcc9530d78f516b04b5345cd38443b702344d03820bdcb5bffd8c7f6",
+    "format": "PNG",
+    "width": 1333,
+    "height": 612
+  }
+]

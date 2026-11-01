@@ -1,0 +1,11 @@
+---
+interface Props { kind: 'hero' | 'closing'; }
+const { kind } = Astro.props;
+---
+<div class:list={['cinematic-scene', `${kind}-scene`]} aria-hidden="true">
+  <div class:list={['scene-grid', `${kind}-scene-grid`]}></div>
+  <div data-living-ring={kind === 'hero' ? '' : undefined} class:list={['scene-halo', `${kind}-scene-halo`]}><span data-living-ring={kind === 'hero' ? '' : undefined}></span><i></i></div>
+  <div class="scene-orbit-depth"><span data-living-ring={kind === 'hero' ? '' : undefined}></span><span data-living-ring={kind === 'hero' ? '' : undefined}></span></div>
+  <p class:list={['scene-type', `${kind}-scene-type`]}>{kind === 'hero' ? 'DEVELOPER' : 'SOMETHING GREAT.'}</p>
+  <div class="scene-horizon"><span></span><span></span></div>
+</div>

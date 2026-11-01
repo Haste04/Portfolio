@@ -1,0 +1,5 @@
+---
+interface Props { dock: string; section: string; compact?: boolean; }
+const { dock, section, compact = false } = Astro.props;
+---
+<div class:list={['fresh-dock', 'fresh-dock-secondary', { 'fresh-dock-project': compact }]} data-fresh-dock={dock} data-fresh-section={section}></div>

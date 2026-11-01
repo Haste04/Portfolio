@@ -1,0 +1,28 @@
+{
+  "logo": {
+    "source": "public/assets/brand/Portfolio-Dark Mode.png",
+    "sha256": "23e78f657a9d72364362df696dfafb1ce9c8a57b695fbc5e6fad1300498382f0",
+    "width": 1254,
+    "height": 1254,
+    "output": "/assets/brand/portfolio-logo.webp",
+    "crop": {
+      "left": 0,
+      "top": 400,
+      "width": 1254,
+      "height": 480
+    }
+  },
+  "favicon": {
+    "source": "public/assets/brand/portfolio-favicon.png",
+    "sha256": "cf6b4d14171aedf89871fef6dc7d7939955a17a77201d66cf17a793648d6af3d",
+    "width": 1254,
+    "height": 1254,
+    "output": "/assets/brand/portfolio-favicon-64.png",
+    "crop": {
+      "left": 0,
+      "top": 400,
+      "width": 1254,
+      "height": 480
+    }
+  }
+}

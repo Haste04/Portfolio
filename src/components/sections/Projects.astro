@@ -1,0 +1,56 @@
+---
+import SectionFrame from '../SectionFrame.astro';
+import ProjectShowcase from '../ProjectShowcase.astro';
+import MascotDock from '../MascotDock.astro';
+import { sections } from '../../data/portfolio';
+import { projects } from '../../data/projects';
+import '../../styles/project-orbit.css';
+const glyphs = [
+ 'M12 21V11M12 14C4 15 3 8 4 3c7 0 11 2 10 9M12 17c0-7 4-10 9-10 1 6-2 11-9 10',
+ 'M4 20V9h4v11M10 20V4h4v16M16 20v-7h4v7',
+ 'M4 4h12l4 4v13H4zM15 4v5h5M8 13h8M8 17h6',
+ 'M9 3h6v6h6v6h-6v6H9v-6H3V9h6z',
+];
+---
+<SectionFrame section={sections[3]} headerMascot={false}>
+  <p slot="intro" class="section-introduction">Four projects. Different problems. A closer look at the part I played.</p>
+  <div class="project-orbit-layout" data-project-orbit>
+    <aside class="project-orbit-selector" data-component-reveal="projects:0" aria-labelledby="project-orbit-heading">
+      <div class="orbit-heading"><p class="eyebrow">04 / Selected work</p><h3 id="project-orbit-heading">Mr. Fresh&apos;s <span>Project Orbit.</span></h3></div>
+      <div class="project-orbit-surface" data-orbit-surface role="group" aria-label="Project orbit" aria-describedby="project-orbit-help">
+        <div class="orbit-depth-plane" aria-hidden="true">
+          <svg viewBox="0 0 600 600" preserveAspectRatio="none"><ellipse cx="300" cy="276" rx="246" ry="204" /><ellipse cx="300" cy="276" rx="211" ry="161" /><path class="orbit-front-arc" d="M54 276a246 204 0 0 0 492 0" /><path d="M300 45V75M300 477V507M35 276H65M535 276H565" /></svg>
+        </div>
+        <div class="orbit-camera" data-orbit-camera>
+        <div class="project-orbit-center">
+          <MascotDock dock="project-orbit" section="projects" />
+          <img class="orbit-mascot-fallback" src="/assets/mr-fresh/peeking-512.webp" width="512" height="512" alt="" loading="lazy" decoding="async" />
+        </div>
+        <div class="orbit-items" data-orbit-controls hidden>
+          {projects.map((project,index) => <div class="orbit-position" data-orbit-position={project.id}>
+            <button class="orbit-item" type="button" data-orbit-item={project.id} aria-label={`Select ${project.title}`} aria-pressed={index === 0 ? 'true' : 'false'} aria-controls={`project-${project.id}`}>
+              <span class="orbit-token" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d={glyphs[index]} /></svg></span>
+              <span class="orbit-item-name">{project.title}</span>
+              <span class="orbit-item-number" aria-hidden="true">{project.number}</span>
+            </button>
+          </div>)}
+        </div>
+        </div>
+      </div>
+      <nav class="orbit-navigation" aria-label="Project selection" data-orbit-controls hidden>
+        <button type="button" data-orbit-prev aria-label="Previous project"><span aria-hidden="true">&#8592;</span></button>
+        <p data-orbit-indicator aria-label="Selected project position">01 / 04</p>
+        <button type="button" data-orbit-next aria-label="Next project"><span aria-hidden="true">&#8594;</span></button>
+      </nav>
+      <p class="orbit-help" id="project-orbit-help">Choose a project. Use the arrows, arrow keys, or swipe across the orbit.</p>
+      <noscript><p class="orbit-help">Explore all four projects and their case studies below.</p></noscript>
+    </aside>
+    <div class="project-detail-depth" data-component-reveal="projects:1"><div class="orbit-details-panels">{projects.map(project => <ProjectShowcase project={project} />)}</div></div>
+    <p class="sr-only" data-orbit-status role="status" aria-live="polite" aria-atomic="true"></p>
+  </div>
+</SectionFrame>
+<script>
+  import { initProjectOrbit } from '../../scripts/project-orbit';
+  initProjectOrbit();
+  window.addEventListener('pageshow',initProjectOrbit);
+</script>

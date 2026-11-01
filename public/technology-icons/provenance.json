@@ -1,0 +1,834 @@
+{
+  "auditedOn": "2026-10-24",
+  "algorithm": "SHA-256",
+  "simpleIcons": {
+    "version": "16.35.0",
+    "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+    "release": "https://github.com/simple-icons/simple-icons/releases/tag/16.35.0",
+    "metadataURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/data/simple-icons.json",
+    "metadataSha256": "256322f4f06fe56b5ae8aed66375fda9d8f16a8955449f010c8533ef8b993ad2"
+  },
+  "icons": {
+    "javascript": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/javascript.svg",
+      "sourceSha256": "c9be35a7a861ebe80ae4ee706d05004b99ee59fc63db69da6dcc10776718434b",
+      "sourceBytes": 974,
+      "rawFile": "javascript.svg",
+      "localSha256": "673a6f54d0788fccd0f0b024cc4372c98a9f1c1f43859ec6227a599630f236c7",
+      "localBytes": 989,
+      "originalHex": "#F7DF1E",
+      "displayHex": "#F7DF1E",
+      "license": "MIT",
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "JavaScript",
+        "hex": "F7DF1E",
+        "source": "https://github.com/voodootikigod/logo.js/blob/1544bdeed6d618a6cfe4f0650d04ab8d9cfa76d9/js.svg",
+        "license": {
+          "type": "MIT"
+        }
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": "JavaScript community logo by Christopher Williams; MIT; adapted by Simple Icons; brand-color fill added locally."
+    },
+    "typescript": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/typescript.svg",
+      "sourceSha256": "7f023e8d1e767370306ec9437d2de5d5af97491d6208dd7799a3808a7c10a36a",
+      "sourceBytes": 1294,
+      "rawFile": "typescript.svg",
+      "localSha256": "662b9b049a06df067089cacc32c8a40e14b08e13b5874f397ccf3e70ef15872c",
+      "localBytes": 1309,
+      "originalHex": "#3178C6",
+      "displayHex": "#3178C6",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "TypeScript",
+        "hex": "3178C6",
+        "source": "https://www.typescriptlang.org/branding",
+        "guidelines": "https://www.typescriptlang.org/branding"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "python": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/python.svg",
+      "sourceSha256": "ad9468e1c4903f73ae7eebfbe980f0f727a10db695be3d914e7d8bd25356a862",
+      "sourceBytes": 1518,
+      "rawFile": "python.svg",
+      "localSha256": "a762008752dc999ad54e7e477194f12a1b2ce07c735be1f21b3b3af8f26eb7af",
+      "localBytes": 1533,
+      "originalHex": "#3776AB",
+      "displayHex": "#3776AB",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Python",
+        "hex": "3776AB",
+        "source": "https://www.python.org/community/logos/",
+        "guidelines": "https://www.python.org/community/logos/"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "go": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/go.svg",
+      "sourceSha256": "36a745fe15584bf138d02ae6abcbdd155bc1cd4f4976634ad34861b2059db559",
+      "sourceBytes": 1636,
+      "rawFile": "go.svg",
+      "localSha256": "33e31a3d049683755ceb07b4a6abe830b2ee02e6ffeee408fe705ef078d3849e",
+      "localBytes": 1651,
+      "originalHex": "#00ADD8",
+      "displayHex": "#00ADD8",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Go",
+        "hex": "00ADD8",
+        "source": "https://blog.golang.org/go-brand",
+        "guidelines": "https://blog.golang.org/go-brand"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "php": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/php.svg",
+      "sourceSha256": "cd1beaa0dde7e765b5d2cbae786c1f6db967f72073eb7b9f9bbc63da55b9d0f6",
+      "sourceBytes": 1127,
+      "rawFile": "php.svg",
+      "localSha256": "73160274ce28c2cf01020519a08c959ae1922df0548da0a895ab4baff314f0dc",
+      "localBytes": 1142,
+      "originalHex": "#777BB4",
+      "displayHex": "#777BB4",
+      "license": "CC-BY-SA-4.0",
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "PHP",
+        "hex": "777BB4",
+        "source": "https://php.net/download-logos.php",
+        "license": {
+          "type": "CC-BY-SA-4.0"
+        }
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": "PHP logo by Colin Viebrock; CC BY-SA 4.0; monochrome adaptation by Simple Icons; brand-color fill added locally. This adapted SVG remains CC BY-SA 4.0."
+    },
+    "sql": {
+      "reason": "SQL is a generic standardized database language, not one database brand. No single canonical SQL mark was identified; another database logo would misrepresent it.",
+      "checked": [
+        "https://www.iso.org/standard/76583.html",
+        "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/data/simple-icons.json"
+      ],
+      "sourceURL": null,
+      "sourceSha256": null,
+      "originalHex": null,
+      "license": null
+    },
+    "csharp": {
+      "provider": "dotnet/brand",
+      "commit": "91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa",
+      "sourceURL": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/logo/language-icons/csharp-72.svg",
+      "sourceSha256": "9316224a173d1723fe0c4d1cedb6aaca685e067b1a9e9b5b233dbd5fdbb77208",
+      "sourceBytes": 2575,
+      "rawFile": "csharp.svg",
+      "localSha256": "9316224a173d1723fe0c4d1cedb6aaca685e067b1a9e9b5b233dbd5fdbb77208",
+      "localBytes": 2575,
+      "originalHex": "#512BD4",
+      "originalColors": [
+        "#927BE5",
+        "#512BD4",
+        "#FFFFFF"
+      ],
+      "displayHex": "#512BD4",
+      "license": "CC0-1.0",
+      "modifications": [],
+      "attribution": "Official C# language icon from dotnet/brand. Kept completely unmodified in accordance with language-icon instructions."
+    },
+    "c": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/c.svg",
+      "sourceSha256": "fde4284070eedf24f3acc2f78368b8c25a204f9a1b8831caaae4652c3e716c88",
+      "sourceBytes": 496,
+      "rawFile": "c.svg",
+      "localSha256": "cafe43fbeedf09e13c80d029b0bf698ce37006d79018c151cf45631c227f5deb",
+      "localBytes": 511,
+      "originalHex": "#A8B9CC",
+      "displayHex": "#A8B9CC",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "C",
+        "hex": "A8B9CC",
+        "source": "https://commons.wikimedia.org/wiki/File:The_C_Programming_Language_logo.svg"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "java": {
+      "reason": "Java is absent from Simple Icons 16.35.0. Oracle Java logo and Dev.java affinity terms are limited permissions, not an open artwork license; affinity marks require an active Dev.java link and prohibit resizing/animation. Use plain Java text rather than a substitute mascot or unlicensed coffee-cup mark.",
+      "checked": [
+        "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/data/simple-icons.json",
+        "https://www.oracle.com/legal/trademarks.html",
+        "https://dev.java/community/affinity/"
+      ],
+      "sourceURL": null,
+      "sourceSha256": null,
+      "originalHex": null,
+      "license": null
+    },
+    "astro": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/astro.svg",
+      "sourceSha256": "fe8e943b26bf966824341377875056270af186e500bdf4732c803b51c0b4f674",
+      "sourceBytes": 779,
+      "rawFile": "astro.svg",
+      "localSha256": "38502102492c2b4a0cb93227c51f12150fe8b695aca236d66a29302166b2b4c2",
+      "localBytes": 794,
+      "originalHex": "#BC52EE",
+      "displayHex": "#BC52EE",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Astro",
+        "hex": "BC52EE",
+        "source": "https://astro.build/press"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "react": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/react.svg",
+      "sourceSha256": "ab9136a1a4a8be72ac6743e1bdd1912d878bd68d57787ea7a6c6838e3b23c01c",
+      "sourceBytes": 2926,
+      "rawFile": "react.svg",
+      "localSha256": "37c8c23bc6ea999ad58b7f3883fc08b7e22128ec25adcca60ae1046ff878bcc3",
+      "localBytes": 2941,
+      "originalHex": "#61DAFB",
+      "displayHex": "#61DAFB",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "React",
+        "hex": "61DAFB",
+        "source": "https://github.com/facebook/create-react-app/blob/282c03f9525fdf8061ffa1ec50dce89296d916bd/test/fixtures/relative-paths/src/logo.svg",
+        "aliases": {
+          "dup": [
+            {
+              "title": "React Native",
+              "source": "https://reactnative.dev"
+            }
+          ]
+        }
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "react-native": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/react.svg",
+      "sourceSha256": "ab9136a1a4a8be72ac6743e1bdd1912d878bd68d57787ea7a6c6838e3b23c01c",
+      "sourceBytes": 2926,
+      "rawFile": "react.svg",
+      "localSha256": "4d7a5b088b17607939bb5ad8cd018efd2f37a8a4663d9ebf87218cf9c060dffb",
+      "localBytes": 2948,
+      "originalHex": "#61DAFB",
+      "displayHex": "#61DAFB",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "React",
+        "hex": "61DAFB",
+        "source": "https://github.com/facebook/create-react-app/blob/282c03f9525fdf8061ffa1ec50dce89296d916bd/test/fixtures/relative-paths/src/logo.svg",
+        "aliases": {
+          "dup": [
+            {
+              "title": "React Native",
+              "source": "https://reactnative.dev"
+            }
+          ]
+        }
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering.",
+        "Reused React geometry; changed title to React Native, matching its distinct caption and upstream alias."
+      ],
+      "attribution": null
+    },
+    "nextjs": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/nextdotjs.svg",
+      "sourceSha256": "593e14da3ddb65be4c8fa6a178f2f48a01a8bd39ea384f679cd7182b520da502",
+      "sourceBytes": 322,
+      "rawFile": "nextdotjs.svg",
+      "localSha256": "34b8d044b3aee099f39a15a93ec81b7637b6681c91668bb113926d3f648c1520",
+      "localBytes": 337,
+      "originalHex": "#000000",
+      "displayHex": "#FFFFFF",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Next.js",
+        "hex": "000000",
+        "source": "https://vercel.com/design/brands#next-js",
+        "guidelines": "https://vercel.com/design/brands#next-js"
+      },
+      "modifications": [
+        "Added white root fill for the monochrome mark on a dark background."
+      ],
+      "attribution": null
+    },
+    "tailwind": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/tailwindcss.svg",
+      "sourceSha256": "5d4ede3c95da824f543c6eefbe7c78b45ecce6796f6633de196dd712a7841140",
+      "sourceBytes": 602,
+      "rawFile": "tailwindcss.svg",
+      "localSha256": "34074570b0fbe21cad76e3bb14224945949c27f5f120d1098bb50d7837169d79",
+      "localBytes": 617,
+      "originalHex": "#06B6D4",
+      "displayHex": "#06B6D4",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Tailwind CSS",
+        "hex": "06B6D4",
+        "source": "https://tailwindcss.com/brand",
+        "guidelines": "https://tailwindcss.com/brand"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "fastapi": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/fastapi.svg",
+      "sourceSha256": "af0bdd5fd3f16a49e341089049418af7b02a04eefdc088b2e26c4524fa8b75d1",
+      "sourceBytes": 347,
+      "rawFile": "fastapi.svg",
+      "localSha256": "faca76e57b2cb4164d3a51d680ce014fd925c7c96a993f2fafa109386758cad3",
+      "localBytes": 362,
+      "originalHex": "#009688",
+      "displayHex": "#009688",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "FastAPI",
+        "hex": "009688",
+        "source": "https://github.com/tiangolo/fastapi/blob/ffb4f77a11f83132b521ba0aac6c95792c19e797/docs/en/docs/img/icon-white.svg"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "mysql": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/mysql.svg",
+      "sourceSha256": "67c144cc3e44ad14062a3f20ebe29c5e7eeb2c2c9c0f43cf48d87fe6291a8b2d",
+      "sourceBytes": 3625,
+      "rawFile": "mysql.svg",
+      "localSha256": "df58ab1e11500e6862bb2c53fbbe688e21b40758cd09090f2283649268f27872",
+      "localBytes": 3640,
+      "originalHex": "#4479A1",
+      "displayHex": "#4479A1",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "MySQL",
+        "hex": "4479A1",
+        "source": "https://www.mysql.com/about/legal/logos.html",
+        "guidelines": "https://www.mysql.com/about/legal/logos.html"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "sqlite": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/sqlite.svg",
+      "sourceSha256": "71d4153bc9661dfe6b92dad70f737ec2b6c7c839311e502b4ca66fe664fe12b6",
+      "sourceBytes": 1420,
+      "rawFile": "sqlite.svg",
+      "localSha256": "5d6914ac86d88c380d485b219171c18cb7eff2c738851f40f3c83d4d933c7cb1",
+      "localBytes": 1435,
+      "originalHex": "#003B57",
+      "displayHex": "#003B57",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "SQLite",
+        "hex": "003B57",
+        "source": "https://github.com/sqlite/sqlite/blob/43e862723ec680542ca6f608f9963c0993dd7324/art/sqlite370.eps"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "upstash": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/upstash.svg",
+      "sourceSha256": "a4a5e46e5be6ad38140cd3ad59dec2022ccbe6aba6d9ffaf67ee6d376c179f1e",
+      "sourceBytes": 814,
+      "rawFile": "upstash.svg",
+      "localSha256": "675ff511f908374f623152033b9e0d4f70edf0b5839a43c7832dc66a15fa53a7",
+      "localBytes": 829,
+      "originalHex": "#00E9A3",
+      "displayHex": "#00E9A3",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Upstash",
+        "hex": "00E9A3",
+        "source": "https://upstash.com"
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "gemini": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/googlegemini.svg",
+      "sourceSha256": "a6228d8846040401e941a39ed17459785e8324dbb7b870ce84233c9b3e9863a0",
+      "sourceBytes": 401,
+      "rawFile": "googlegemini.svg",
+      "localSha256": "404eba6940a54e63d40edcce2d2e7cb2b3dbfec765e7a1d523662b6f4e0d6747",
+      "localBytes": 416,
+      "originalHex": "#8E75B2",
+      "displayHex": "#8E75B2",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Google Gemini",
+        "hex": "8E75B2",
+        "source": "https://gemini.google.com",
+        "aliases": {
+          "old": [
+            "Google Bard"
+          ]
+        }
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": null
+    },
+    "nextauth": {
+      "provider": "nextauthjs/next-auth",
+      "commit": "6bca388f46636d1598a430ba6624e1201e70f213",
+      "sourceURL": "https://raw.githubusercontent.com/nextauthjs/next-auth/6bca388f46636d1598a430ba6624e1201e70f213/docs/static/img/logo/logo-sm.png",
+      "sourceSha256": "251d702080d2472e78c467e27978feb299ba362545acb7128475a26d89fbbee1",
+      "sourceBytes": 81799,
+      "rawFile": "nextauth.png",
+      "localSha256": "251d702080d2472e78c467e27978feb299ba362545acb7128475a26d89fbbee1",
+      "localBytes": 81799,
+      "originalHex": null,
+      "originalColors": null,
+      "displayHex": null,
+      "license": "ISC",
+      "modifications": [],
+      "attribution": "NextAuth.js official logo; Copyright (c) 2018-2021, Iain Collins; ISC. Original PNG, unmodified, from next-auth@4.24.11."
+    },
+    "git": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/git.svg",
+      "sourceSha256": "95724d436215d483de82288610c3c144854138f49945424697fcdf8be66e17d6",
+      "sourceBytes": 426,
+      "rawFile": "git.svg",
+      "localSha256": "ae0cc33bc3fc7c29c500c90a029e32f21fdb9297e0b3d59948da27b2607e8a2c",
+      "localBytes": 441,
+      "originalHex": "#F03C2E",
+      "displayHex": "#F03C2E",
+      "license": "CC-BY-3.0",
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Git",
+        "hex": "F03C2E",
+        "source": "https://git-scm.com/community/logos",
+        "license": {
+          "type": "CC-BY-3.0"
+        }
+      },
+      "modifications": [
+        "Added original brand hex as root fill for external img rendering."
+      ],
+      "attribution": "Git Logo by Jason Long; CC BY 3.0; monochrome geometry adapted by Simple Icons; brand-color fill added locally."
+    },
+    "github": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/github.svg",
+      "sourceSha256": "3bf8cceead820aec50d4ee825a3fd02c5a1cd6665cc9cf4cbf3d9c8861a204bb",
+      "sourceBytes": 822,
+      "rawFile": "github.svg",
+      "localSha256": "141e413b3eaa71a9fdc848fe87f04e22b3ad83a0a20bc4bb9c0df310878e1a6c",
+      "localBytes": 837,
+      "originalHex": "#181717",
+      "displayHex": "#FFFFFF",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "GitHub",
+        "hex": "181717",
+        "source": "https://github.com/logos",
+        "guidelines": "https://github.com/logos"
+      },
+      "modifications": [
+        "Added white root fill for the monochrome mark on a dark background."
+      ],
+      "attribution": null
+    },
+    "vercel": {
+      "provider": "Simple Icons",
+      "version": "16.35.0",
+      "commit": "ed9a5192b24ad2f169bf1009931da0df27d5a49a",
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/vercel.svg",
+      "sourceSha256": "57f1e4135486c566e9878fddd259f7f6bf8ec43f31e7e6e38a36d9e814a1c0e0",
+      "sourceBytes": 132,
+      "rawFile": "vercel.svg",
+      "localSha256": "414545d1b0c426b274c0d080fdb8a6b164e6069a0a0bacefc19a17a87f2860f8",
+      "localBytes": 147,
+      "originalHex": "#000000",
+      "displayHex": "#FFFFFF",
+      "license": null,
+      "collectionLicense": "CC0-1.0",
+      "upstreamMetadata": {
+        "title": "Vercel",
+        "hex": "000000",
+        "source": "https://vercel.com/geist/brands",
+        "guidelines": "https://vercel.com/geist/brands"
+      },
+      "modifications": [
+        "Added white root fill for the monochrome mark on a dark background."
+      ],
+      "attribution": null
+    },
+    "powerbi": {
+      "provider": "microsoft/PowerBI-Icons",
+      "commit": "24f1db8bdfab951c25db591772140d2f4ec5bc1e",
+      "sourceURL": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/SVG/Power-BI.svg",
+      "sourceSha256": "55daee85ccbe0d410909cd3b2b2d974d9a450ca3c6208992eec99fa9fa7b0b8d",
+      "sourceBytes": 4988,
+      "rawFile": "powerbi.svg",
+      "localSha256": "55daee85ccbe0d410909cd3b2b2d974d9a450ca3c6208992eec99fa9fa7b0b8d",
+      "localBytes": 4988,
+      "originalHex": "#F6D751",
+      "originalColors": [
+        "#FFFFFF",
+        "#E6AD10",
+        "#C87E0E",
+        "#F6D751",
+        "#F9E589"
+      ],
+      "displayHex": "#F6D751",
+      "license": "CC-BY-4.0",
+      "modifications": [],
+      "attribution": "Power BI icon by Microsoft and contributors; CC BY 4.0. Original SVG, unmodified. Used to identify the documented Microsoft product; no affiliation or endorsement."
+    }
+  },
+  "supportingFiles": {
+    "public/technology-icons/licenses/simple-icons-LICENSE.md": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/LICENSE.md",
+      "sha256": "9046848b63a5c92bff14e4accca80bd987e0623b74adf9226ce5198d312b79d5",
+      "bytes": 6569
+    },
+    "public/technology-icons/licenses/simple-icons-DISCLAIMER.md": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/DISCLAIMER.md",
+      "sha256": "5757a1f28eff735a8b5e7425478f367812d71e974530f5bedd01219480965f4a",
+      "bytes": 4604
+    },
+    "public/technology-icons/licenses/javascript-MIT.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/voodootikigod/logo.js/1544bdeed6d618a6cfe4f0650d04ab8d9cfa76d9/LICENSE",
+      "sha256": "0d3f7c086c6b6cf3ea4aac714e9aa3e1fb02e355ce35bd21c56acf8d04390885",
+      "bytes": 1116
+    },
+    "public/technology-icons/licenses/git-CC-BY-3.0.txt": {
+      "sourceURL": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "bytes": 19467
+    },
+    "public/technology-icons/licenses/php-CC-BY-SA-4.0.txt": {
+      "sourceURL": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "bytes": 20138
+    },
+    "public/technology-icons/licenses/dotnet-CC0.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/LICENSE",
+      "sha256": "6a1ee543e5282cd9061881edf462e6fdab181f328da71fc2c9a6950a80e94d01",
+      "bytes": 6556
+    },
+    "public/technology-icons/licenses/dotnet-README.md": {
+      "sourceURL": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/README.md",
+      "sha256": "7019f2b54d47ee640a9f03f22a8400080b94e356e8dfb8a5e407ccd7ba51a4e7",
+      "bytes": 2395
+    },
+    "public/technology-icons/licenses/dotnet-language-icons-README.md": {
+      "sourceURL": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/logo/language-icons/README.md",
+      "sha256": "71787264381c3e85c54e583407e22cbf4875c048306ed86bb025ca554b61a58d",
+      "bytes": 148
+    },
+    "public/technology-icons/licenses/nextauth-ISC.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/nextauthjs/next-auth/6bca388f46636d1598a430ba6624e1201e70f213/LICENSE",
+      "sha256": "523848dd40e2bd005c46d80ea3c4c2477dbd8b93239814bb204b9de9693c8155",
+      "bytes": 748
+    },
+    "public/technology-icons/licenses/powerbi-CC-BY-4.0.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/LICENSE",
+      "sha256": "9bbc1ea9fe5c96df01b311a2ac864d5b18fc87b9948bfd14770e4b44db755ee9",
+      "bytes": 18653
+    },
+    "public/technology-icons/licenses/powerbi-MIT.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/LICENSE-CODE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141
+    },
+    "public/technology-icons/licenses/powerbi-README.md": {
+      "sourceURL": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/README.md",
+      "sha256": "5573a61b10d7eda2faf820cc937b0b880b056f2491abf650d9f3f4d530195b75",
+      "bytes": 21251
+    }
+  },
+  "notes": [
+    "Original technology IDs, categories and project associations are read-only.",
+    "Source SVG path data is preserved exactly; only root fill and the React Native title differ for Simple Icons.",
+    "A null license field means upstream did not specify a per-icon license; it does not assert that the brand mark is CC0.",
+    "NextAuth uses the original locally hosted official PNG, not the unrelated docs/static/img/logo.svg Docusaurus mascot."
+  ],
+  "rawDownloads": {
+    "simple-icons-data.json": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/data/simple-icons.json",
+      "sha256": "256322f4f06fe56b5ae8aed66375fda9d8f16a8955449f010c8533ef8b993ad2",
+      "bytes": 460303
+    },
+    "simple-icons-package.json": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/package.json",
+      "sha256": "7201f6f0d3e2a47eeffe31a0f9dc98e517d94659cbc0d4d46d1175646b26932a",
+      "bytes": 3957
+    },
+    "simple-icons-LICENSE.md": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/LICENSE.md",
+      "sha256": "9046848b63a5c92bff14e4accca80bd987e0623b74adf9226ce5198d312b79d5",
+      "bytes": 6569
+    },
+    "simple-icons-DISCLAIMER.md": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/DISCLAIMER.md",
+      "sha256": "5757a1f28eff735a8b5e7425478f367812d71e974530f5bedd01219480965f4a",
+      "bytes": 4604
+    },
+    "javascript-MIT.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/voodootikigod/logo.js/1544bdeed6d618a6cfe4f0650d04ab8d9cfa76d9/LICENSE",
+      "sha256": "0d3f7c086c6b6cf3ea4aac714e9aa3e1fb02e355ce35bd21c56acf8d04390885",
+      "bytes": 1116
+    },
+    "git-CC-BY-3.0.txt": {
+      "sourceURL": "https://creativecommons.org/licenses/by/3.0/legalcode.txt",
+      "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+      "bytes": 19467
+    },
+    "php-CC-BY-SA-4.0.txt": {
+      "sourceURL": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "bytes": 20138
+    },
+    "dotnet-CC0.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/LICENSE",
+      "sha256": "6a1ee543e5282cd9061881edf462e6fdab181f328da71fc2c9a6950a80e94d01",
+      "bytes": 6556
+    },
+    "dotnet-README.md": {
+      "sourceURL": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/README.md",
+      "sha256": "7019f2b54d47ee640a9f03f22a8400080b94e356e8dfb8a5e407ccd7ba51a4e7",
+      "bytes": 2395
+    },
+    "dotnet-language-icons-README.md": {
+      "sourceURL": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/logo/language-icons/README.md",
+      "sha256": "71787264381c3e85c54e583407e22cbf4875c048306ed86bb025ca554b61a58d",
+      "bytes": 148
+    },
+    "nextauth-ISC.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/nextauthjs/next-auth/6bca388f46636d1598a430ba6624e1201e70f213/LICENSE",
+      "sha256": "523848dd40e2bd005c46d80ea3c4c2477dbd8b93239814bb204b9de9693c8155",
+      "bytes": 748
+    },
+    "powerbi-CC-BY-4.0.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/LICENSE",
+      "sha256": "9bbc1ea9fe5c96df01b311a2ac864d5b18fc87b9948bfd14770e4b44db755ee9",
+      "bytes": 18653
+    },
+    "powerbi-MIT.txt": {
+      "sourceURL": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/LICENSE-CODE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "bytes": 1141
+    },
+    "powerbi-README.md": {
+      "sourceURL": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/README.md",
+      "sha256": "5573a61b10d7eda2faf820cc937b0b880b056f2491abf650d9f3f4d530195b75",
+      "bytes": 21251
+    },
+    "javascript.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/javascript.svg",
+      "sha256": "c9be35a7a861ebe80ae4ee706d05004b99ee59fc63db69da6dcc10776718434b",
+      "bytes": 974
+    },
+    "typescript.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/typescript.svg",
+      "sha256": "7f023e8d1e767370306ec9437d2de5d5af97491d6208dd7799a3808a7c10a36a",
+      "bytes": 1294
+    },
+    "python.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/python.svg",
+      "sha256": "ad9468e1c4903f73ae7eebfbe980f0f727a10db695be3d914e7d8bd25356a862",
+      "bytes": 1518
+    },
+    "go.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/go.svg",
+      "sha256": "36a745fe15584bf138d02ae6abcbdd155bc1cd4f4976634ad34861b2059db559",
+      "bytes": 1636
+    },
+    "php.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/php.svg",
+      "sha256": "cd1beaa0dde7e765b5d2cbae786c1f6db967f72073eb7b9f9bbc63da55b9d0f6",
+      "bytes": 1127
+    },
+    "c.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/c.svg",
+      "sha256": "fde4284070eedf24f3acc2f78368b8c25a204f9a1b8831caaae4652c3e716c88",
+      "bytes": 496
+    },
+    "astro.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/astro.svg",
+      "sha256": "fe8e943b26bf966824341377875056270af186e500bdf4732c803b51c0b4f674",
+      "bytes": 779
+    },
+    "react.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/react.svg",
+      "sha256": "ab9136a1a4a8be72ac6743e1bdd1912d878bd68d57787ea7a6c6838e3b23c01c",
+      "bytes": 2926
+    },
+    "nextdotjs.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/nextdotjs.svg",
+      "sha256": "593e14da3ddb65be4c8fa6a178f2f48a01a8bd39ea384f679cd7182b520da502",
+      "bytes": 322
+    },
+    "tailwindcss.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/tailwindcss.svg",
+      "sha256": "5d4ede3c95da824f543c6eefbe7c78b45ecce6796f6633de196dd712a7841140",
+      "bytes": 602
+    },
+    "fastapi.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/fastapi.svg",
+      "sha256": "af0bdd5fd3f16a49e341089049418af7b02a04eefdc088b2e26c4524fa8b75d1",
+      "bytes": 347
+    },
+    "mysql.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/mysql.svg",
+      "sha256": "67c144cc3e44ad14062a3f20ebe29c5e7eeb2c2c9c0f43cf48d87fe6291a8b2d",
+      "bytes": 3625
+    },
+    "sqlite.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/sqlite.svg",
+      "sha256": "71d4153bc9661dfe6b92dad70f737ec2b6c7c839311e502b4ca66fe664fe12b6",
+      "bytes": 1420
+    },
+    "upstash.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/upstash.svg",
+      "sha256": "a4a5e46e5be6ad38140cd3ad59dec2022ccbe6aba6d9ffaf67ee6d376c179f1e",
+      "bytes": 814
+    },
+    "googlegemini.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/googlegemini.svg",
+      "sha256": "a6228d8846040401e941a39ed17459785e8324dbb7b870ce84233c9b3e9863a0",
+      "bytes": 401
+    },
+    "git.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/git.svg",
+      "sha256": "95724d436215d483de82288610c3c144854138f49945424697fcdf8be66e17d6",
+      "bytes": 426
+    },
+    "github.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/github.svg",
+      "sha256": "3bf8cceead820aec50d4ee825a3fd02c5a1cd6665cc9cf4cbf3d9c8861a204bb",
+      "bytes": 822
+    },
+    "vercel.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/simple-icons/simple-icons/ed9a5192b24ad2f169bf1009931da0df27d5a49a/icons/vercel.svg",
+      "sha256": "57f1e4135486c566e9878fddd259f7f6bf8ec43f31e7e6e38a36d9e814a1c0e0",
+      "bytes": 132
+    },
+    "csharp.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/dotnet/brand/91845f6ddf2123b3bb1bfd1b6a386d9ce02b43aa/logo/language-icons/csharp-72.svg",
+      "sha256": "9316224a173d1723fe0c4d1cedb6aaca685e067b1a9e9b5b233dbd5fdbb77208",
+      "bytes": 2575
+    },
+    "powerbi.svg": {
+      "sourceURL": "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/24f1db8bdfab951c25db591772140d2f4ec5bc1e/SVG/Power-BI.svg",
+      "sha256": "55daee85ccbe0d410909cd3b2b2d974d9a450ca3c6208992eec99fa9fa7b0b8d",
+      "bytes": 4988
+    },
+    "nextauth.png": {
+      "sourceURL": "https://raw.githubusercontent.com/nextauthjs/next-auth/6bca388f46636d1598a430ba6624e1201e70f213/docs/static/img/logo/logo-sm.png",
+      "sha256": "251d702080d2472e78c467e27978feb299ba362545acb7128475a26d89fbbee1",
+      "bytes": 81799
+    }
+  }
+}

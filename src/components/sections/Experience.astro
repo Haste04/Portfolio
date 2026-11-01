@@ -1,0 +1,103 @@
+---
+import SectionFrame from '../SectionFrame.astro';
+import { sections } from '../../data/portfolio';
+import { internship, contributions, cebuLocation, experiencePoint, type ExperiencePhoto } from '../../data/experience';
+import geography from '../../data/cebu-map.json';
+import { prepareLifewoodPhotos } from '../../../scripts/lifewood-media.mjs';
+import '../../styles/experience.css';
+import { findCompanyLogo } from '../../../scripts/company-logos.mjs';
+const companyLogo = await findCompanyLogo();
+const photos: ExperiencePhoto[] = (await prepareLifewoodPhotos()).map(({files: _files, ...photo}) => photo);
+const first = photos[0];
+const [cityX, cityY] = experiencePoint(cebuLocation.coordinates);
+const catalog = JSON.stringify(photos).replaceAll('<', '\\u003c');
+---
+<SectionFrame section={sections[5]}>
+  <p slot="intro" class="section-introduction">Practical experience, shared projects, and the lessons that come with doing the work.</p>
+  <div class="experience-showcase" data-experience>
+    <article class="experience-profile" data-component-reveal="experience:0" aria-labelledby="experience-company experience-role">
+      <div class="experience-info-depth">
+        <p class="eyebrow experience-period"><time datetime="2026-08">August 2026</time><span aria-hidden="true">&#8212;</span><time datetime="2026-10">October 2026</time></p>
+        <div class="experience-company-identity">
+          <span class="experience-company-mark" aria-hidden="true">
+            <img data-experience-company-logo data-theme-image data-theme-dark-src={companyLogo?.src} data-theme-light-src={companyLogo ? "/company-logos/lifewood-logo-light.webp" : undefined} src={companyLogo?.src} alt="" width="128" height="56" loading="lazy" decoding="async" hidden={!companyLogo} />
+            <span data-experience-company-fallback hidden={!!companyLogo}><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M6 27V7h14v20M20 15h6v12M3 27h26M10 12h6M10 17h6M10 22h6M23 19v3"/></svg></span>
+          </span>
+          <h3 id="experience-company" class="experience-company">{internship.company}</h3>
+        </div>
+        <p id="experience-role" class="experience-role">{internship.role}<span class="accent-period" aria-hidden="true">.</span></p>
+        <p class="experience-location"><span aria-hidden="true">&#8599;</span>{internship.location}</p>
+        <p class="experience-overview">{internship.overview}</p>
+      </div>
+      <p class="eyebrow experience-work-label">The work / My contributions</p>
+      <div class="experience-contributions">
+        {contributions.map((entry,index) => <details open={index === 0} data-experience-contribution={entry.id}>
+          <summary><span class="experience-entry-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><span class="experience-entry-title">{entry.title}<span class="experience-summary-note">{entry.label}</span></span><span class="disclosure-symbol" aria-hidden="true">+</span></summary>
+          <p>{entry.description}</p>
+        </details>)}
+      </div>
+    </article>
+    <div class="experience-visual-depth" data-component-reveal="experience:1">
+      <div class="experience-atlas" data-experience-stage>
+        <div class="experience-view experience-map-view" id="experience-map" data-experience-view="map" tabindex="-1" role="region" aria-label="Cebu map">
+          <header class="experience-visual-header"><p class="eyebrow">06 / On location</p></header>
+          <svg class="experience-cebu-map" viewBox="90 70 480 530" role="group" aria-label="Cebu regional map with a Cebu City gallery marker">
+            <defs>
+              <pattern id="experience-map-grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="var(--color-text)" stroke-width=".5" /></pattern>
+              <clipPath id="experience-map-clip"><rect x="22" y="14" width="556" height="610" rx="4" /></clipPath>
+            </defs>
+            <g aria-hidden="true" clip-path="url(#experience-map-clip)">
+              <rect class="experience-map-grid" width="600" height="640" fill="url(#experience-map-grid)" />
+              {geography.features.map(feature => <path class:list={['experience-coast',{'is-cebu':feature.highlighted}]} d={feature.path} />)}
+              <text class="experience-map-region" x="165" y="248" transform="rotate(-63 165 248)">CEBU</text>
+              <text class="experience-map-context" x="360" y="105">CAMOTES SEA</text>
+              <path class="experience-map-leader" d={'M'+cityX+' '+cityY+'L'+(cityX+48)+' '+(cityY-30)+'H546'} />
+              <text class="experience-city-label" x={cityX+58} y={cityY-43}>Cebu City</text>
+              <text class="experience-city-caption" x={cityX+58} y={cityY-12}>Internship / 2026</text>
+              <path class="experience-map-compass" d="M530 110V150M522 120L530 109L538 120" /><text class="experience-map-context" x="525" y="96">N</text>
+            </g>
+            <a href="#experience-gallery" data-experience-open aria-controls="experience-gallery" aria-expanded="false" aria-label="Cebu City, Cebu, Philippines: View My Experience">
+              <circle cx={cityX} cy={cityY} r="58" fill="transparent" pointer-events="all" />
+              <circle class="experience-city-aura" cx={cityX} cy={cityY} r="34" />
+              <circle class="experience-city-halo" cx={cityX} cy={cityY} r="24" />
+              <circle class="experience-city-pin" cx={cityX} cy={cityY} r="7" />
+            </a>
+          </svg>
+          <footer class="experience-map-footer">
+            <p>Cebu City, Cebu, Philippines<small>Simplified regional coastline. City-level location.</small></p>
+            {!photos.length && <span class="experience-coming-soon">Photographs coming soon</span>}
+          </footer>
+          <nav class="experience-filmstrip" data-experience-filmstrip aria-label="Preview internship photographs" hidden={!photos.length}>
+            {photos.slice(0,2).map((photo,index)=><a href="#experience-gallery" data-experience-open data-experience-preview={index} aria-controls="experience-gallery" aria-expanded="false" aria-label={'Open photograph '+(index+1)}><img src={photo.thumbnail} alt="" width="160" height="96" loading="lazy" decoding="async"/><span aria-hidden="true">{String(index+1).padStart(2,'0')}</span></a>)}
+          </nav>
+        </div>
+        <div class="experience-view experience-gallery-view" id="experience-gallery" data-experience-view="gallery" tabindex="-1" aria-labelledby="experience-gallery-title">
+          <header class="experience-visual-header experience-gallery-header"><div><p class="eyebrow">Lifewood / Photo journal</p><h3 id="experience-gallery-title">Personal moments.</h3></div><a href="#experience-map" class="experience-back" data-experience-back>Back to Map <span aria-hidden="true">&#8592;</span></a></header>
+          <div class="experience-gallery-empty" data-experience-empty hidden={photos.length > 0}>
+            <svg viewBox="0 0 100 90" aria-hidden="true"><rect x="16" y="12" width="68" height="62" rx="3"/><circle cx="35" cy="31" r="6"/><path d="M16 60L39 43L56 57L69 47L84 61M24 82H76"/></svg>
+            <p class="eyebrow">A little space for the memories</p>
+            <h4>Photos coming soon.</h4>
+            <p>Internship photographs will be added here. Until then, explore the place behind the experience.</p>
+          </div>
+          <div class="experience-gallery-content" data-experience-gallery-content hidden={!photos.length}>
+            <figure class="experience-photo">
+              <div class="experience-photo-stage"><img data-experience-photo src={first?.src} width={first?.width} height={first?.height} alt={first?.alt ?? ''} loading="lazy" decoding="async" hidden={!first}/><p data-experience-photo-error hidden>This photograph is unavailable. Choose another photograph or return to the map.</p></div>
+              <figcaption data-experience-caption>{first?.caption ?? ''}</figcaption>
+            </figure>
+            <nav class="experience-photo-controls" aria-label="Internship photograph navigation" data-experience-photo-controls hidden>
+              <button type="button" data-experience-previous aria-label="Previous photograph">&#8592;</button><p data-experience-counter></p><button type="button" data-experience-next aria-label="Next photograph">&#8594;</button>
+            </nav>
+            <div class="experience-thumbnails" data-experience-thumbnails aria-label="Choose an internship photograph">{photos.map((photo,index)=><a href={photo.src} aria-label={'View photograph '+(index+1)}><img src={photo.thumbnail} alt="" width="72" height="56" loading="lazy" decoding="async"/></a>)}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-experience-status></p>
+    <script type="application/json" data-experience-photos set:html={catalog} />
+  </div>
+</SectionFrame>
+<script>
+  import { initExperience } from '../../scripts/experience';
+  initExperience();
+  window.addEventListener('pageshow',initExperience);
+</script>

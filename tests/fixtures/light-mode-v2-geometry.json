@@ -1,0 +1,162 @@
+{
+  "light-1366": {
+    "stories": [
+      {
+        "width": 1257,
+        "height": 340
+      },
+      {
+        "width": 1257,
+        "height": 340
+      },
+      {
+        "width": 1257,
+        "height": 340
+      },
+      {
+        "width": 1257,
+        "height": 340
+      }
+    ],
+    "map": [
+      {
+        "width": 604.53125,
+        "height": 443.984375,
+        "left": 28.3125,
+        "top": 56.3125
+      },
+      {
+        "width": 194.84375,
+        "height": 81.953125,
+        "left": 28.3125,
+        "top": 654.6875
+      },
+      {
+        "width": 194.84375,
+        "height": 81.953125,
+        "left": 233.15625,
+        "top": 654.6875
+      }
+    ]
+  },
+  "dark-1366": {
+    "stories": [
+      {
+        "width": 1257,
+        "height": 340
+      },
+      {
+        "width": 1257,
+        "height": 340
+      },
+      {
+        "width": 1257,
+        "height": 340
+      },
+      {
+        "width": 1257,
+        "height": 340
+      }
+    ],
+    "map": [
+      {
+        "width": 604.53125,
+        "height": 443.984375,
+        "left": 28.3125,
+        "top": 56.3125
+      },
+      {
+        "width": 194.84375,
+        "height": 81.953125,
+        "left": 28.3125,
+        "top": 654.6875
+      },
+      {
+        "width": 194.84375,
+        "height": 81.953125,
+        "left": 233.15625,
+        "top": 654.6875
+      }
+    ]
+  },
+  "light-390": {
+    "stories": [
+      {
+        "width": 350,
+        "height": 500
+      },
+      {
+        "width": 350,
+        "height": 500
+      },
+      {
+        "width": 350,
+        "height": 526
+      },
+      {
+        "width": 350,
+        "height": 500
+      }
+    ],
+    "map": [
+      {
+        "width": 316,
+        "height": 303.609375,
+        "left": 17,
+        "top": 45
+      },
+      {
+        "width": 100,
+        "height": 60,
+        "left": 17,
+        "top": 499
+      },
+      {
+        "width": 100,
+        "height": 60,
+        "left": 125,
+        "top": 499
+      }
+    ]
+  },
+  "dark-390": {
+    "stories": [
+      {
+        "width": 350,
+        "height": 500
+      },
+      {
+        "width": 350,
+        "height": 500
+      },
+      {
+        "width": 350,
+        "height": 526
+      },
+      {
+        "width": 350,
+        "height": 500
+      }
+    ],
+    "map": [
+      {
+        "width": 316,
+        "height": 303.609375,
+        "left": 17,
+        "top": 45
+      },
+      {
+        "width": 100,
+        "height": 60,
+        "left": 17,
+        "top": 499
+      },
+      {
+        "width": 100,
+        "height": 60,
+        "left": 125,
+        "top": 499
+      }
+    ]
+  }
+}
