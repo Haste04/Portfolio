@@ -1,52 +1,112 @@
 ---
-import { sections } from '../data/portfolio';
-import branding from '../data/branding.json';
-import ThemeToggle from './ThemeToggle.astro';
-const logoUrl=branding.logo.output+'?v='+branding.logo.sha256.slice(0,12);
+import { sections } from "../data/portfolio";
+import branding from "../data/branding.json";
+import ThemeToggle from "./ThemeToggle.astro";
+const logoUrl =
+  branding.logo.output + "?v=" + branding.logo.sha256.slice(0, 12);
 ---
-<div class="floating-navigation" data-navigation>
-  <div class="navigation-content" id="floating-navigation-content" data-navigation-content>
-  <nav class="desktop-navigation" aria-label="Primary">
-    <span class="navigation-brand"><img class="portfolio-logo" src={logoUrl} data-theme-image data-theme-dark-src={logoUrl} data-theme-light-src="/assets/brand/portfolio-logo-light.webp" width="264" height="101" alt="Haggai Estavilla" /></span>
-    <ul class="navigation-links">
-      {sections.map((section) => (
-        <li>
-          <a href={`#${section.id}`} aria-current={section.id === 'home' ? 'location' : undefined}>
-            {section.navigationLabel}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </nav>
 
-  <details class="mobile-navigation" data-mobile-menu>
-    <summary aria-controls="mobile-navigation-panel">
-      <span class="menu-mark"><img class="portfolio-logo" src={logoUrl} data-theme-image data-theme-dark-src={logoUrl} data-theme-light-src="/assets/brand/portfolio-logo-light.webp" width="264" height="101" alt="Haggai Estavilla" /></span>
-      <span>Menu</span>
-      <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
-    </summary>
-    <nav id="mobile-navigation-panel" aria-label="Mobile primary">
+<div class="floating-navigation" data-navigation>
+  <div
+    class="navigation-content"
+    id="floating-navigation-content"
+    data-navigation-content
+  >
+    <nav class="desktop-navigation" aria-label="Primary">
+      <span class="navigation-brand"
+        ><img
+          class="portfolio-logo"
+          src={logoUrl}
+          data-theme-image
+          data-theme-dark-src={logoUrl}
+          data-theme-light-src="/assets/brand/portfolio-logo-light.webp"
+          width="264"
+          height="101"
+          alt="Haggai Estavilla"
+        /></span
+      >
       <ul class="navigation-links">
-        {sections.map((section) => (
-          <li>
-            <a href={`#${section.id}`} aria-current={section.id === 'home' ? 'location' : undefined}>
-              <span class="menu-number" aria-hidden="true">{section.number}</span>
-              {section.navigationLabel}
-            </a>
-          </li>
-        ))}
+        {
+          sections.map((section) => (
+            <li>
+              <a
+                href={`#${section.id}`}
+                aria-current={section.id === "home" ? "location" : undefined}
+              >
+                {section.navigationLabel}
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </nav>
-  </details>
+
+    <details class="mobile-navigation" data-mobile-menu>
+      <summary aria-controls="mobile-navigation-panel">
+        <span class="menu-mark"
+          ><img
+            class="portfolio-logo"
+            src={logoUrl}
+            data-theme-image
+            data-theme-dark-src={logoUrl}
+            data-theme-light-src="/assets/brand/portfolio-logo-light.webp"
+            width="264"
+            height="101"
+            alt="Haggai Estavilla"
+          /></span
+        >
+        <span>Menu</span>
+        <span class="menu-icon" aria-hidden="true"
+          ><span></span><span></span></span
+        >
+      </summary>
+      <nav id="mobile-navigation-panel" aria-label="Mobile primary">
+        <ul class="navigation-links">
+          {
+            sections.map((section) => (
+              <li>
+                <a
+                  href={`#${section.id}`}
+                  aria-current={section.id === "home" ? "location" : undefined}
+                >
+                  <span class="menu-number" aria-hidden="true">
+                    {section.number}
+                  </span>
+                  {section.navigationLabel}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </details>
   </div>
-  <button class="navigation-visibility-toggle" type="button" data-navigation-visibility aria-controls="floating-navigation-content" aria-expanded="true" aria-label="Hide navigation bar" hidden>
-    <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10 4-4 4 4" /></svg>
+  <button
+    class="navigation-visibility-toggle"
+    type="button"
+    data-navigation-visibility
+    aria-controls="floating-navigation-content"
+    aria-expanded="true"
+    aria-label="Hide navigation bar"
+    hidden
+  >
+    <svg
+      viewBox="0 0 16 16"
+      width="16"
+      height="16"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"><path d="m4 10 4-4 4 4"></path></svg
+    >
     <span data-navigation-visibility-label>Hide</span>
   </button>
   <ThemeToggle />
 </div>
 
 <script>
-  import { initNavigation } from '../scripts/navigation';
+  import { initNavigation } from "../scripts/navigation";
   initNavigation();
 </script>

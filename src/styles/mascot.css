@@ -1,40 +1,214 @@
 /* Phase 3: one movable companion, bounded entirely by reserved content docks. */
-.fresh-dock { position: relative; isolation: isolate; }
-.mascot-artwork.fresh-dock { aspect-ratio: 1; width: 100%; min-height: 250px; overflow: clip; }
-.fresh-companion { position: absolute; inset: 0; z-index: 2; opacity: 1; transition: opacity 110ms ease-out; }
-.fresh-playground { position: absolute; inset: 0 0 48px; overflow: clip; contain: layout; touch-action: pan-y pinch-zoom; }
-.fresh-actor { position: absolute; left: 0; top: 0; width: 72%; aspect-ratio: 1; padding: 0; border: 0; border-radius: 35%; background: none; color: inherit; touch-action: pan-y pinch-zoom; user-select: none; -webkit-user-select: none; cursor: grab; transform: translate(19%, 20%); -webkit-tap-highlight-color: transparent; }
-.fresh-actor:disabled { cursor: default; }
-.fresh-actor:focus-visible { outline: 2px solid var(--color-accent); outline-offset: -4px; }
-.fresh-attention, .fresh-cue, .fresh-breath, .fresh-layer { position: absolute; inset: 0; display: block; pointer-events: none; }
-.fresh-layer[hidden] { display: none; }
-.fresh-attention { transform: rotate(calc(var(--fresh-tilt, 0deg) + var(--fresh-rotation, 0deg))) translateY(var(--fresh-lift, 0px)); transform-origin: 50% 85%; transition: transform 180ms ease-out; }
-.fresh-companion[data-state='dragging'] .fresh-attention, .fresh-companion[data-state='airborne'] .fresh-attention, .fresh-companion[data-state='bouncing'] .fresh-attention { transition: none; }
-.fresh-companion[data-state='dragging'] .fresh-actor { cursor: grabbing; }
-.fresh-dock .fresh-layer img { position: absolute; display: block; left: 50%; bottom: 3%; width: 92%; max-width: none; height: auto; transform: translateX(-50%); pointer-events: none; user-select: none; -webkit-user-drag: none; }
-.fresh-layer img[data-framing="portrait"] { mask-image: linear-gradient(to bottom, #000 88%, transparent 100%); }
-.fresh-controls { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: flex; justify-content: center; gap: 3px; width: max-content; max-width: 100%; }
-.fresh-controls[hidden] { display: none; }
-.fresh-controls button { font: 500 10px/1 var(--font-body); color: var(--color-muted); border: 1px solid transparent; border-radius: 999px; background: transparent; min-width: 44px; min-height: 44px; padding: 0 7px; cursor: pointer; }
-.fresh-controls button:hover, .fresh-controls button[aria-pressed='true'] { border-color: var(--color-border); color: var(--color-text); background: var(--color-surface); }
-.fresh-controls button:focus-visible { outline-offset: -2px; }
-.fresh-dock-secondary { width: min(100%, 172px); height: 190px; margin-top: 1.5rem; }
-.section-marker { min-width: 0; }
-.fresh-dock-project { width: 160px; height: 170px; margin-top: 1.25rem; }
-.resting-stage { min-width: 0; }
-.resting-stage .fresh-dock { width: 100%; height: 220px; margin-top: 0; }
-.fresh-stage-hint { display: block; color: var(--color-muted); font-size: 0.625rem; margin-top: .35rem; }
-@keyframes fresh-breathe { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-1px) scale(1.006); } }
-@media (prefers-reduced-motion: no-preference) {
-  .fresh-companion[data-paused='false']:not([data-tier='C'])[data-state='idle'] .fresh-breath,
-  .fresh-companion[data-paused='false']:not([data-tier='C'])[data-state='sleeping'] .fresh-breath { animation: fresh-breathe 3.8s ease-in-out infinite; transform-origin: 50% 95%; }
+.fresh-dock {
+  position: relative;
+  isolation: isolate;
 }
-.fresh-companion[data-paused='true'], .fresh-companion[data-tier='C'], .fresh-companion[data-paused='true'] *, .fresh-companion[data-tier='C'] * { animation: none !important; transition: none !important; }
-@media (prefers-reduced-motion: reduce) { .fresh-companion, .fresh-attention { transition: none; } }
+.mascot-artwork.fresh-dock {
+  aspect-ratio: 1;
+  width: 100%;
+  min-height: 250px;
+  overflow: clip;
+}
+.fresh-companion {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 110ms ease-out;
+}
+.fresh-playground {
+  position: absolute;
+  inset: 0 0 12px;
+  overflow: clip;
+  contain: layout;
+  touch-action: pan-y pinch-zoom;
+}
+.fresh-actor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 72%;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  border-radius: 35%;
+  background: none;
+  color: inherit;
+  touch-action: pan-y pinch-zoom;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+  transform: translate(19%, 20%);
+  -webkit-tap-highlight-color: transparent;
+}
+.fresh-actor:disabled {
+  cursor: default;
+}
+.fresh-actor[data-head="true"]:not(:disabled) {
+  cursor: pointer;
+}
+.fresh-actor:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -4px;
+}
+.fresh-attention,
+.fresh-cue,
+.fresh-breath,
+.fresh-layer {
+  position: absolute;
+  inset: 0;
+  display: block;
+  pointer-events: none;
+}
+.fresh-layer[hidden] {
+  display: none;
+}
+.fresh-attention {
+  transform: rotate(calc(var(--fresh-tilt, 0deg) + var(--fresh-rotation, 0deg)))
+    translateY(var(--fresh-lift, 0px));
+  transform-origin: 50% 85%;
+  transition: transform 180ms ease-out;
+}
+.fresh-companion[data-state="dragging"] .fresh-attention,
+.fresh-companion[data-state="airborne"] .fresh-attention,
+.fresh-companion[data-state="bouncing"] .fresh-attention {
+  transition: none;
+}
+.fresh-companion[data-state="dragging"] .fresh-actor {
+  cursor: grabbing;
+}
+.fresh-dock .fresh-layer img {
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: 3%;
+  width: 92%;
+  max-width: none;
+  height: auto;
+  transform: translateX(-50%);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.fresh-layer img[data-framing="portrait"] {
+  mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+}
+.fresh-controls {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  width: max-content;
+  max-width: 100%;
+}
+.fresh-controls[hidden] {
+  display: none;
+}
+.fresh-controls button {
+  font: 500 10px/1 var(--font-body);
+  color: var(--color-muted);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 7px;
+  cursor: pointer;
+}
+.fresh-controls button:hover,
+.fresh-controls button[aria-pressed="true"] {
+  border-color: var(--color-border);
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+.fresh-controls button:focus-visible {
+  outline-offset: -2px;
+}
+.fresh-dock-secondary {
+  width: min(100%, 172px);
+  height: 190px;
+  margin-top: 1.5rem;
+}
+.section-marker {
+  min-width: 0;
+}
+.fresh-dock-project {
+  width: 160px;
+  height: 170px;
+  margin-top: 1.25rem;
+}
+.resting-stage {
+  min-width: 0;
+}
+.resting-stage .fresh-dock {
+  width: 100%;
+  height: 220px;
+  margin-top: 0;
+}
+.fresh-stage-hint {
+  display: block;
+  color: var(--color-muted);
+  font-size: 0.625rem;
+  margin-top: 0.35rem;
+}
+@keyframes fresh-breathe {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-1px) scale(1.006);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .fresh-companion[data-paused="false"]:not([data-tier="C"])[data-state="idle"]
+    .fresh-breath,
+  .fresh-companion[data-paused="false"]:not(
+      [data-tier="C"]
+    )[data-state="sleeping"]
+    .fresh-breath {
+    animation: fresh-breathe 3.8s ease-in-out infinite;
+    transform-origin: 50% 95%;
+  }
+}
+.fresh-companion[data-paused="true"],
+.fresh-companion[data-tier="C"],
+.fresh-companion[data-paused="true"] *,
+.fresh-companion[data-tier="C"] * {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fresh-companion,
+  .fresh-attention {
+    transition: none;
+  }
+}
 @media (max-width: 767px) {
-  .section-marker { display: flex; align-items: start; justify-content: space-between; gap: 1rem; }
-  .section-marker .fresh-dock { width: 140px; height: 146px; margin: -1rem 0 -1rem; flex-shrink: 0; }
-  .fresh-dock-project { margin-left: auto; width: 140px; height: 146px; }
-  .resting-stage .fresh-dock { height: 200px; }
-  .fresh-controls button { padding: 0 4px; }
+  .section-marker {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .section-marker .fresh-dock {
+    width: 140px;
+    height: 146px;
+    margin: -1rem 0 -1rem;
+    flex-shrink: 0;
+  }
+  .fresh-dock-project {
+    margin-left: auto;
+    width: 140px;
+    height: 146px;
+  }
+  .resting-stage .fresh-dock {
+    height: 200px;
+  }
+  .fresh-controls button {
+    padding: 0 4px;
+  }
 }
