@@ -1,37 +1,158 @@
 ---
-import type { Project } from '../data/projects';
-import { technologyName } from '../data/technologies';
-interface Props { project: Project; }
+import type { Project } from "../data/projects";
+import { technologyName } from "../data/technologies";
+interface Props {
+  project: Project;
+}
 const { project } = Astro.props;
-const restricted = project.publication === 'pending';
+const restricted = project.publication === "pending";
 const localPreview = restricted && import.meta.env.DEV;
-const showLinks = !restricted || localPreview;
-const screenshot = localPreview ? '/__local-media/philchan-cebu.webp' : `/assets/projects/${project.id}-1280.webp`;
+const showLinks = project.id !== "philchan-cebu";
+const screenshot = localPreview
+  ? "/__local-media/philchan-cebu.webp"
+  : `/assets/projects/${project.id}-1280.webp`;
 ---
-<article id={`project-${project.id}`} class="project-showcase orbit-project-card" data-project={project.id} data-technologies={project.technologyIds.join(' ')} aria-labelledby={`project-${project.id}-heading`} tabindex="-1">
-  <div class="project-topline"><p class="eyebrow"><span class="project-number">{project.number}</span> / {project.category}</p><span class:list={['project-status',{'status-unreleased':restricted}]}>{project.status}</span></div>
+
+<article
+  id={`project-${project.id}`}
+  class="project-showcase orbit-project-card"
+  data-project={project.id}
+  data-technologies={project.technologyIds.join(" ")}
+  aria-labelledby={`project-${project.id}-heading`}
+  tabindex="-1"
+>
+  <div class="project-topline">
+    <p class="eyebrow">
+      <span class="project-number">{project.number}</span> / {project.category}
+    </p><span
+      class:list={["project-status", { "status-unreleased": restricted }]}
+      >{project.status}</span
+    >
+  </div>
   <h3 id={`project-${project.id}-heading`}>{project.title}</h3>
   <figure class="project-visual orbit-project-visual">
-    {(!restricted || localPreview) ? <>
-      <div class="browser-chrome" aria-hidden="true"><span></span><span></span><span></span><span class="browser-title">{project.title}</span><span class="browser-end">&#8599;</span></div>
-      <img class="project-image" src={screenshot} srcset={localPreview ? undefined : `/assets/projects/${project.id}-640.webp 640w, /assets/projects/${project.id}-1280.webp 1280w`} sizes="(min-width: 1024px) 44vw, 92vw" width={project.media.width} height={project.media.height} alt={project.media.alt} loading="lazy" decoding="async" data-local-only={localPreview || undefined} />
-    </> : <div class="media-withheld" data-media-withheld><span class="eyebrow">Unreleased Client Project</span><p>Some work stays<br /><span>behind the scenes.</span></p><span class="withheld-note">Client media is not publicly available.</span></div>}
-    {project.id === 'lifevent' && <figcaption class="project-caption">Platform homepage shown for context. My work focused on login UI/UX and rate limiting.</figcaption>}
-    {localPreview && <figcaption class="project-caption local-preview-notice">Local preview only. Client media and project links are withheld from the production build pending permission.</figcaption>}
+    {
+      !restricted || localPreview ? (
+        <>
+          <div class="browser-chrome" aria-hidden="true">
+            <>
+              <span />
+              <span />
+              <span />
+              <span class="browser-title">{project.title}</span>
+              <span class="browser-end">&#8599;</span>
+            </>
+          </div>
+          <img
+            class="project-image"
+            src={screenshot}
+            srcset={
+              localPreview
+                ? undefined
+                : `/assets/projects/${project.id}-640.webp 640w, /assets/projects/${project.id}-1280.webp 1280w`
+            }
+            sizes="(min-width: 1024px) 44vw, 92vw"
+            width={project.media.width}
+            height={project.media.height}
+            alt={project.media.alt}
+            loading="lazy"
+            decoding="async"
+            data-local-only={localPreview || undefined}
+          />
+        </>
+      ) : (
+        <div class="media-withheld" data-media-withheld>
+          <>
+            <span class="eyebrow">Unreleased Client Project</span>
+            <p>
+              Some work stays
+              <>
+                <br />
+                <span>behind the scenes.</span>
+              </>
+            </p>
+            <span class="withheld-note">
+              Client media is not publicly available.
+            </span>
+          </>
+        </div>
+      )
+    }
+    {
+      project.id === "lifevent" && (
+        <figcaption class="project-caption">
+          Platform homepage shown for context. My work focused on login UI/UX
+          and rate limiting.
+        </figcaption>
+      )
+    }
+    {
+      localPreview && (
+        <figcaption class="project-caption local-preview-notice">
+          Local preview only. Client media and project links are withheld from
+          the production build pending permission.
+        </figcaption>
+      )
+    }
   </figure>
   <p class="orbit-project-description">{project.description}</p>
-  <div class="orbit-project-role"><h4>My contribution</h4><p>{project.role}</p></div>
-  <ul class="technology-tags" aria-label={`${project.title} verified technologies`}>{project.technologyIds.map(id => <li>{technologyName(id)}</li>)}</ul>
+  <div class="orbit-project-role">
+    <h4>My contribution</h4><p>{project.role}</p>
+  </div>
+  <ul
+    class="technology-tags"
+    aria-label={`${project.title} verified technologies`}
+  >
+    {project.technologyIds.map((id) => <li>{technologyName(id)}</li>)}
+  </ul>
   <details class="case-study">
-    <summary><span>Read the case study<span class="sr-only">: {project.title}</span></span><span class="disclosure-symbol" aria-hidden="true">+</span></summary>
+    <summary
+      ><span
+        >Read the case study<span class="sr-only">: {project.title}</span></span
+      ><span class="disclosure-symbol" aria-hidden="true">+</span></summary
+    >
     <div class="case-study-content">
       <div><h4>The context</h4><p>{project.context}</p></div>
-      <div><h4>What I contributed</h4><ul>{project.contributions.map(contribution => <li>{contribution}</li>)}</ul></div>
+      <div>
+        <h4>What I contributed</h4><ul>
+          {project.contributions.map((contribution) => <li>{contribution}</li>)}
+        </ul>
+      </div>
       <div><h4>The takeaway</h4><p>{project.reflection}</p></div>
     </div>
   </details>
   <div class="project-links">
-    {showLinks && <a class="text-link" data-live href={project.live} target="_blank" rel="noopener noreferrer">{restricted ? 'View demonstration' : 'Visit website'}<span class="sr-only">: {project.title} (opens in a new tab)</span><span aria-hidden="true">&#8599;</span></a>}
-    {showLinks && project.github && <a class="text-link muted-link" data-source href={project.github} target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only">: {project.title} (opens in a new tab)</span><span aria-hidden="true">&#8599;</span></a>}
+    {
+      showLinks && (
+        <a
+          class="text-link"
+          data-live
+          href={project.live}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {restricted ? "View demonstration" : "Visit website"}
+          <span class="sr-only">: {project.title} (opens in a new tab)</span>
+          <span aria-hidden="true">&#8599;</span>
+        </a>
+      )
+    }
+    {
+      showLinks && project.github && (
+        <a
+          class="text-link muted-link"
+          data-source
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+          <>
+            <span class="sr-only">: {project.title} (opens in a new tab)</span>
+            <span aria-hidden="true">&#8599;</span>
+          </>
+        </a>
+      )
+    }
   </div>
 </article>

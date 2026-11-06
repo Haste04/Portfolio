@@ -151,7 +151,7 @@ export const projects = [
       height: 612,
       alt: "Local-only PhilCHAN Cebu website preview with its healthcare introduction and community clinic photograph.",
     },
-    publication: "pending",
+    publication: "public",
     context:
       "The website reached deployment readiness and a custom domain had been secured for its intended release. It did not officially launch.",
     contributions: [
